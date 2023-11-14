@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(3, 155, 229);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Mulish', sans-serif;
+}
+
+section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 410px;
+    height: 700px;
+    background-color: white;
+    overflow-y: hidden;
+}
+
+header {
+    position: relative;
+    background: linear-gradient(90deg, rgb(56, 89, 101), rgb(37, 47, 60));
+    width: 100%;
+    color: white;
+    padding: 18px 20px;
+    box-shadow: 0px 30px 26px -12px rgba(0,0,0,0.2);
+    margin-bottom: 32px;
+    height: 192px;
+}
+
+svg {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: 1;
+} 
+
+.icons, .pic-name, .months {
+    position: relative;
+    z-index: 9999;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.bell  {
+    position: relative;
+}
+
+.bell-dot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgb(241, 14, 93);
+    top: 1px;
+    right: -4px;
+    border: 2px solid rgb(37, 47, 60);
+}
+
+.pic-name {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    margin-right: 20px;
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    object-fit: cover;
+}
+
+.titles {
+    margin-top: -10px;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+h4 {
+    font-weight: 300;
+}
+
+.months {
+    display: flex;
+}
+
+.months h3:nth-child(1) {
+    font-weight: 400;
+    padding-bottom: 8px;
+    border-bottom: 2px solid rgb(241, 14, 93);
+}
+
+.months h3:nth-last-child(1) {
+    color: rgb(174, 188, 190);
+}
+
+h3 {
+    margin-right: 30px;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.dates {
+    display: flex;
+    height: 18%;
+    width: 100%;
+    padding-left: 15px;
+    position: relative;
+    margin-bottom: -7px;
+}
+
+.dates:last-of-type .dot-line > .line {
+    height: 120px;
+}
+
+.dates:nth-child(3) button {
+    background: rgb(232, 232, 232);
+    color: rgb(107, 109, 127);
+    padding-right: 26px;
+    padding-left: 18px;
+}
+
+.top {
+    margin-top: -10px;
+}
+
+.center {
+    display: flex;
+    color: rgb(107, 109, 127);
+    margin-top: 14px;
+}
+
+.center > i {
+    font-size: 0.8rem;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+h5:nth-child(2) {
+    margin-right: 25px;
+}
+
+h5 {
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.schedule > h3 {
+    font-weight: 700;
+}
+
+.schedule > h4 {
+    font-weight: 500;
+}
+
+button {
+    background: linear-gradient(90deg, rgb(56, 89, 101) 30%, rgb(37, 47, 60));
+    padding: 9px 15px 13px 15px;
+    border-radius: 24px;
+    color: white;
+    margin-top: 2px;
+    margin-bottom: auto;
+    margin-right: -50px;
+    border: none;
+    position: absolute;
+    right: 70px;
+    box-shadow: 0px 3px 15px 1px rgba(0,0,0,0.3);
+}
+
+span {
+    font-family: 'Mulish', sans-serif;
+    font-size: 1rem;
+}
+
+.fa-ticket {
+    transform: rotate(315deg);
+    margin-right: 4px;
+}
+
+.dot-line {
+    
+    width: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 8px;
+    margin-top: 4px;
+}
+
+.red-dot {
+    
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgb(241, 14, 93);
+}
+
+.line {
+    width: 1px;
+    height: 95px;
+    background-color: rgb(174, 188, 190);
+    margin-top: 5px;
+}

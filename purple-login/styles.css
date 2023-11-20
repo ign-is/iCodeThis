@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(224, 158, 201);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(66, 88, 90);
+}
+
+section {
+    background-color: rgb(248, 245, 253);
+    padding: 10px 35px;
+    height: 600px;
+    width: 355px;
+    margin-top: 24px;
+    position: relative;
+}
+
+.shadow-one, .shadow-two {
+    position: absolute;
+}
+
+.shadow-one {
+    height: 12px;
+    width: 320px;
+    background-color: rgba(248, 245, 253, 0.7);
+    top: -12px;
+    left: 16px;
+}
+
+.shadow-two {
+    background-color: rgba(248, 245, 253, 0.5);
+    height: 22px;
+    width: 300px;
+    top: -20px;
+    left: 26px;
+}
+
+img {
+    width: 95px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+p {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+form {
+    margin-top: 30px;
+}
+
+label {
+    display: block;
+    border-bottom: 2px solid rgb(215, 205, 251);
+    padding-bottom: 6px;
+    margin-bottom: 22px;
+}
+
+input {
+    border: none;
+    background-color: rgb(248, 245, 253);
+    padding-left: 9px;
+    font-size: 0.9rem;
+    color: rgb(66, 88, 90);
+}
+
+input:focus {
+    outline: none;
+}
+
+::placeholder {
+    font-size: 1rem;
+    color: rgb(128, 139, 142);
+}
+
+i {
+    color: rgb(160, 107, 236);
+    font-size: 1.1rem;
+}
+
+.radio-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio-button > label {
+    font-size: 0.5rem;
+    border: none;
+    display: block;
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.radio-button > label > input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(248, 245, 253);
+    border: 2px solid rgba(160, 107, 236, 0.7);
+}
+
+
+/* On mouse-over, add a grey background color */
+.radio-button > label:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+/* When the checkbox is checked, add a violet background */
+.radio-button > label > input:checked ~ .checkmark {
+    background-color: rgb(160, 107, 236);
+}
+  
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radio-button > label > input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.radio-button > label .checkmark:after {
+    left: 4px;
+    top: 2px;
+    width: 5px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.radio-button > label {
+    font-size: 0.8rem;
+
+}
+
+.forgot {
+    color: rgb(255, 117, 168);
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+button {
+    width: 100%;
+    color: rgb(248, 245, 253);
+    border: none;
+    padding: 16px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.btn-log {
+    background-color: rgb(160, 107, 236);
+    margin-top: 15px;
+}
+
+.btn-sign {
+    background-color: rgb(244, 60, 126);
+}
+
+span {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}

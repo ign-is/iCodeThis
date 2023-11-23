@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(33, 35, 48);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(46, 47, 56);
+}
+
+.container {
+    height: 600px;
+    width: 350px;
+}
+
+.circle {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.jb {
+    font-size: 1.6rem;
+    font-weight: 500;
+    border: 2px solid rgb(252, 180, 6);
+    border-radius: 50%;
+    height: 85px;
+    width: 85px;
+    color: rgb(252, 180, 6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+
+.jb:hover {
+    border-color: rgb(252, 137, 6);
+    color: rgb(252, 137, 6);
+}
+
+section {
+    background-color: white;
+    width: 350px;
+    height: 430px;
+    border-radius: 16px;
+    padding: 30px;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1rem;
+    color: rgb(252, 180, 6);
+    font-weight: 600;
+}
+
+h5:hover {
+    color: rgb(252, 137, 6);
+}
+
+button {
+    background-color: rgb(252, 180, 6);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 98px 15px 98px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(252, 137, 6);
+}
+
+span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+    margin-top: 30px;
+}
+
+li {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 37px;
+    cursor: pointer;
+}
+
+li:hover {
+    font-weight: 600;
+}
+
+li:last-of-type {
+    margin-top: 107px;
+}
+
+i {
+    margin-right: 12px;
+    margin-left: 10px;
+    font-size: 1.4rem;
+}

@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(252,141,96);
+    background: -webkit-gradient(114deg, rgba(252,141,96,1) 0%, rgba(255,204,112,1) 100%); /* Chrome, Safari4+ */
+    background: -webkit-linear-gradient(114deg, rgba(252,141,96,1) 0%, rgba(255,204,112,1) 100%); /* Chrome10+, Safari5.1+ */
+    background: -moz-linear-gradient(114deg, rgba(252,141,96,1) 0%, rgba(255,204,112,1) 100%);    /* FF3.6+ */
+    background: linear-gradient(114deg, rgba(252,141,96,1) 0%, rgba(255,204,112,1) 100%); 
+    font-family: 'Open Sans', system-ui;
+}
+
+.container {
+    width: 75vw;
+    height: 80vh;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    width: 100%;
+    height: 54px;
+    background-color: rgb(35, 46, 77);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 350px;
+    font-size: 0.9rem;
+}
+
+ul a {
+    text-decoration: none;
+    color: rgb(199, 207, 227);
+    cursor: pointer;
+}
+
+ul a:hover {
+    color: white;
+}
+
+.btn-sign {
+    background-color: rgb(255, 98, 69);
+    border: none;
+    padding: 6px 18px;
+    border-radius: 3px;
+}  
+
+.btn-sign > a {
+    color: rgb(255, 236, 223);
+}
+
+main {
+    background-image: url("https://i.imgur.com/56MYEom.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    object-fit: cover;
+    height: calc(100% - 34px);
+    width: 100%;
+    padding-left: 4vw;
+    padding-top: 10vh;
+}
+
+h1 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    line-height: 42px;
+    font-size: 2.3rem;
+}
+
+p {
+    font-weight: 500;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+
+form {
+    width: 520px;
+    height: 51px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+label {
+    border-radius: 4px;
+    position: relative;
+}
+
+form > label > i {
+    color: rgb(118, 117, 120);
+    height: 7.5vh;
+    position: absolute;
+    right: -16px;
+    top: 5px;
+}
+
+input {
+    border: none;
+    height: 100%;
+    width: 65%;
+    padding-left: 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+input::placeholder {
+    font-size: 1rem;
+    font-family: 'Open Sans', system-ui;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+button {
+    background-color: rgb(255, 98, 69);
+    border: none;
+    padding: 18px 35px;
+    color: white;
+    font-weight: 500;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+}
+
+
+footer {
+    height: 38px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+footer ul {
+    width: 300px;
+    margin-left: 20px;
+}
+
+footer ul, .copy {
+    color: rgb(118, 117, 120);
+}
+
+footer > ul > li {
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.copy {
+    margin-left: -220px;
+}
+
+.social {
+    color: rgb(154, 154, 170);
+    margin-right: 28px;
+}
+
+.social i {
+    margin-left: 10px;
+    cursor: pointer;
+}

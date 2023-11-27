@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Mulish', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(28, 34, 121);
+}
+
+section {
+    width: 560px;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    padding: 30px 38px 30px 30px;
+    box-shadow: 0px -10px 15px -8px rgba(0,0,0,0.1),
+                0px 10px 15px 2px rgba(0,0,0,0.1);
+}
+
+.left {
+    margin-right: 25px;
+}
+
+img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.stars {
+    font-size: 0.7rem;
+    margin-left: 19px;
+    margin-top: 5px;
+}
+
+.rating {
+    background-color: rgb(16, 167, 77);
+    color: white;
+    padding: 2px 4px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 6px 40px;
+    font-size: 0.9rem;
+}
+
+.right {
+    margin-top: 12px;
+    width: 100%;
+}
+
+.right > h1 {
+    font-size: 1.6rem;
+    margin-bottom: 1px;
+}
+
+.right > h3 {
+    color: rgb(151, 151, 165);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.websites {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(227, 227, 227);
+}
+
+.site {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.site > i {
+    margin-bottom: -4px;
+    font-size: 1rem;
+}
+
+.site > h3 {
+    font-size: 1.1rem;
+    margin-left: 7px;
+}
+
+.corporations {
+    font-size: 1.5rem;
+}
+
+.corporations > i {
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.fa-linkedin-in {
+    color: rgb(19, 120, 230);
+}
+
+.fa-behance {
+    color: rgb(73, 131, 246);
+}
+
+.fa-google-plus-g {
+    color: rgb(199, 121, 113);
+}
+
+.jobs {
+    padding-top: 20px;
+    display: flex;
+    border-bottom: 1px solid rgb(227, 227, 227);
+    padding-bottom: 20px;
+}
+
+.completed {
+    margin-right: 40px;
+}
+
+.completed > h1, .time > h1 {
+    font-size: 1.3rem;
+}
+
+.completed > h3, .time > h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 2px;
+}
+
+.description > p {
+    font-weight: 600;
+    margin-bottom: 35px;
+    margin-top: 28px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+span {
+    font-weight: 700;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1rem;
+}
+
+.btn-hire {
+    background-color: rgb(254, 146, 0);
+    color: white;
+    padding: 14px 22px;
+    border-radius: 3px;
+    margin-right: 18px;
+}
+
+.btn-hire:hover {
+    background-color: rgb(254, 123, 0);
+}
+
+.btn-add {
+    color: rgb(156, 155, 171);
+    background-color: transparent;
+    padding: 14px 22px;
+    border-radius: 3px;
+}
+
+.btn-add:hover {
+    background-color: rgb(156, 155, 171);
+    color: white;
+}

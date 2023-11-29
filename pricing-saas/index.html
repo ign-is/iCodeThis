@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="current-plan">
+        <p>Your current plan:</p>
+        <h3>Starter Trial • 500MAUs</h3>
+    </div>
+    <div class="choose">
+        <h1>Choose a plan</h1>
+        <div class="billed">
+            <p>Billed monthly</p>
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+            <p>Billed anually</p>
+        </div>
+    </div>
+
+    <div class="plans">
+        <div class="starter">
+            <h4>Starter</h4>
+            <h1 class="price">$19</h1>
+            <ul>
+                <li>500 MAUs</li>
+                <li>3 projects</li>
+                <li>Unlimited guides</li>
+                <li>Unlimited flows</li>
+                <li>Unlimited branded themes</li>
+                <li>Email support</li>
+            </ul>
+            <button class="btn-left"><span class="btn-text">Choose Plan</span></button>
+        </div>
+        <div class="pro">
+            <h4>Pro</h4>
+            <h1 class="price">$99<span> / month</span></h1>
+            <label for="MAU">
+                <select name="MAU" id="MAU">
+                    <option value="2500">2500 MAUs</option>
+                    <option value="3000">3000 MAUs</option>
+                </select>
+                <i class="fa-solid fa-chevron-down"></i>
+            </label>
+            <p>Monthly active users</p>
+            <ul>
+                <li>All starter features, plus:</li>
+                <li>Unlimited projects</li>
+                <li>Unlimited fully customizable themes</li>
+                <li>A dedicated Customer Success Manager</li>
+            </ul>
+            <button class="btn-middle"><span class="btn-text">Choose Plan</span></button>
+        </div>
+        <div class="enterprice">
+            <h4>Enterprice</h4>
+            <h1>Let's Talk!</h1>
+            <ul>
+                <li>All Pro features</li>
+                <li>Unlimited MAUs</li>
+                <li>Dedicated environment</li>
+                <li>Enterprice account administration</li>
+                <li>Premium support and services</li>
+            </ul>
+            <button class="btn-right"><span class="btn-text">Contact Us</span></button>
+        </div>
+    </div>
+</body>
+</html>

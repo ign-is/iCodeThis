@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(91, 105, 121);
+    width: 100vw;
+    height: 100Vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    background-image: url("https://icodethis.com/images/iCodeMas/sale_banner.png");
+    background-position: center center;
+    background-size: cover;
+    width: 937px;
+    height: 518px;
+    text-align: center;
+}
+
+h1 {
+    background: -webkit-linear-gradient(rgb(215, 176, 82), rgb(191, 131, 49) 70%, rgb(98, 59, 33));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 185px;
+    font-size: 2.3rem;
+    margin-bottom: 5px;
+}
+
+p {
+    color: rgb(152, 144, 126);
+    margin-bottom: 30px;
+    font-size: 0.7rem;
+}
+
+button {
+    background-color: rgb(71, 61, 42);
+    border: none;
+    border-radius: 24px;
+    color: white;
+    padding: 10px 24px;
+    font-size: 0.7rem;
+}
+
+button:hover {
+    background-color: rgb(191, 131, 49);
+}
+
+span {
+    font-family: 'Poppins', sans-serif;
+}

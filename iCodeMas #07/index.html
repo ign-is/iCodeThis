@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCodeMas #07</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body> 
+    <aside>
+        <h2>Filters</h2>
+        <div class="categories">
+            <h3>Category</h3>
+            <label for="cookies"> 
+                <input type="checkbox" id="cookies" name="cookies" value="cookies"> Cookies
+            </label>
+            <label for="candies"> 
+                <input type="checkbox" id="candies" name="candies" value="candies"> Candies
+            </label>
+            <label for="ornaments"> 
+                <input type="checkbox" id="ornaments" name="ornaments" value="ornaments"> Ornaments
+            </label>
+            <label for="accessories"> 
+                <input type="checkbox" id="accessories" name="accessories" value="accessories"> Accessories
+            </label>
+        </div>
+        <div class="colors">
+            <h3>Colors</h3>
+            <label for="red"> 
+                <input type="checkbox" id="red" name="red" value="red"> Red
+            </label>
+            <label for="white"> 
+                <input type="checkbox" id="white" name="white" value="white"> White
+            </label>
+            <label for="green"> 
+                <input type="checkbox" id="green" name="green" value="green"> Green
+            </label>
+            <label for="brown"> 
+                <input type="checkbox" id="brown" name="brown" value="brown"> Brown
+            </label>
+        </div>
+        <div class="size">
+            <h3>Size</h3>
+            <label for="small"> 
+                <input type="checkbox" id="small" name="small" value="small"> Small
+            </label>
+            <label for="medium"> 
+                <input type="checkbox" id="medium" name="medium" value="medium"> Medium
+            </label>
+            <label for="large"> 
+                <input type="checkbox" id="large" name="large" value="large"> Large
+            </label>
+        </div>
+    </aside>
+    <main>
+        <section>
+            <div class="product ornaments large green">
+                <div class="new">NEW</div>
+                <img src="https://icodethis.com/images/iCodeMas/tree.png" alt="tree">
+                <button><span>Add to cart </span> <i class="fa-solid fa-bag-shopping"></i></button>
+                <div class="added"><span>Added to cart</span></div>
+                <p>Christmas Tree Decoration</p>
+                <div class="price">$19.99</div>
+            </div>
+    
+            <div class="product accessories medium white">
+                <div class="discount">-23%</div>
+                <img src="https://icodethis.com/images/iCodeMas/gift.png" alt="gift">
+                <button><span>Add to cart </span> <i class="fa-solid fa-bag-shopping"></i></button>
+                <div class="added"><span>Added to cart</span></div>
+                <p>Gift Box</p>
+                <div class="discount-price">
+                    <div class="price">$9.99</div>
+                    <h4>$12.99</h4>
+                </div>
+            </div>
+    
+            <div class="product cookies small brown">
+                <img src="https://icodethis.com/images/iCodeMas/gingerbread_cookie.png" alt="gingerbread man cookie">
+                <button><span>Add to cart </span> <i class="fa-solid fa-bag-shopping"></i></button>
+                <div class="added"><span>Added to cart</span></div>
+                <p>Gingerbread Man Cookie</p>
+                <div class="price">$12.99</div>
+            </div>
+    
+            <div class="product ornaments small">
+                <img src="https://icodethis.com/images/iCodeMas/snowflake.png" alt="Snowflake Decoration">
+                <button><span>Add to cart </span> <i class="fa-solid fa-bag-shopping"></i></button>
+                <div class="added"><span>Added to cart</span></div>
+                <p>Snowflake Decoration</p>
+                <div class="price">$4.99</div>
+            </div>
+    
+            <div class="product cookies small white brown">
+                <img src="https://icodethis.com/images/iCodeMas/star_cookie.png" alt="Star-shaped Cookie">
+                <button><span>Add to cart </span> <i class="fa-solid fa-bag-shopping"></i></button>
+                <div class="added"><span>Added to cart</span></div>
+                <p>Star-shaped Cookie</p>
+                <div class="price">$12.99</div>
+            </div>
+    
+            <div class="product accessories medium white">
+                <img src="https://icodethis.com/images/iCodeMas/santa_hat.png" alt="Santa's Hat">
+                <button><span>Add to cart </span> <i class="fa-solid fa-bag-shopping"></i></button>
+                <div class="added"><span>Added to cart</span></div>
+                <p>Santa's Hat</p>
+                <div class="price">$39.99</div>
+            </div>
+    
+            <div class="product candies small white">
+                <img src="https://icodethis.com/images/iCodeMas/candy_cane.png" alt="Candy Cane">
+                <button><span>Add to cart </span> <i class="fa-solid fa-bag-shopping"></i></button>
+                <div class="added"><span>Added to cart</span></div>
+                <p>Candy Cane</p>
+                <div class="price">$8.99</div>
+            </div>
+    
+            <div class="product ornaments small white">
+                <img src="https://icodethis.com/images/iCodeMas/snowman_deco.png" alt="Snowman Decoration">
+                <button><span>Add to cart </span> <i class="fa-solid fa-bag-shopping"></i></button>
+                <div class="added"><span>Added to cart</span></div>
+                <p>Snowman Decoration</p>
+                <div class="price">$39.99</div>
+            </div>
+    
+            <div class="product ornaments small red white">
+                <img src="https://icodethis.com/images/iCodeMas/christmas_ball.png" alt="Christmas ball">
+                <button><span>Add to cart </span> <i class="fa-solid fa-bag-shopping"></i></button>
+                <div class="added"><span>Added to cart</span></div>
+                <p>Christmas ball</p>
+                <div class="price">$4.99</div>
+            </div>
+    
+            <div class="product accessories medium red white">
+                <img src="https://icodethis.com/images/iCodeMas/christmas_sock.png" alt="Christmas Red Socks">
+                <button><span>Add to cart </span> <i class="fa-solid fa-bag-shopping"></i></button>
+                <div class="added"><span>Added to cart</span></div>
+                <p>Christmas Red Socks</p>
+                <div class="price">$29.99</div>
+            </div>
+    
+            <div class="product ornaments small red">
+                <img src="https://icodethis.com/images/iCodeMas/red_ribbon.png" alt="Red Ribbon">
+                <button><span>Add to cart </span> <i class="fa-solid fa-bag-shopping"></i></button>
+                <div class="added"><span>Added to cart</span></div>
+                <p>Red Ribbon</p>
+                <div class="price">$3.99</div>
+            </div>
+    
+            <div class="product cookies small red white green brown">
+                <img src="https://icodethis.com/images/iCodeMas/tree_cookie.png" alt="Christmas Tree Cookie">
+                <button><span>Add to cart </span> <i class="fa-solid fa-bag-shopping"></i></button>
+                <div class="added"><span>Added to cart</span></div>
+                <p>Christmas Tree Cookie</p>
+                <div class="price">$3.99</div>
+            </div>
+        </section>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>

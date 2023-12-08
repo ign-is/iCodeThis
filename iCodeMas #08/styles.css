@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgb(159, 63, 57);
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+nav, .discount {
+    width: 100%;
+}
+
+.discount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 40px;
+    background-color: rgb(252, 214, 207);
+}
+
+.discount > .fa-xmark {
+    position: absolute;
+    right: 47px;
+    top: 12px;
+    cursor: pointer;
+}
+
+nav {
+    height: 62px;
+    padding: 0 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav > .left {
+    display: flex;
+    align-items: center;
+}
+
+nav > .left > label {
+    background-color: rgb(239, 243, 246);
+    padding: 10px 12px;
+    border-radius: 16px;
+    margin-left: 30px;
+}
+
+nav > .left > label > .fa-magnifying-glass {
+    margin-left: -3px;
+    margin-right: 7px;
+}
+
+nav > .left > label > input {
+    outline: none;
+    border: none;
+    background-color: rgb(239, 243, 246);
+}
+
+nav > .right {
+    display: flex;
+}
+
+.right > ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 38px;
+}
+
+.right > ul > li {
+    margin-left: 26px;
+}
+
+.right > ul > li > a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.right > .bag {
+    position: relative;
+    cursor: pointer;
+}
+
+.bag > .num {
+    position: absolute;
+    top: -7px;
+    right: -10px;
+    color: white;
+    background-color: rgb(231, 89, 82);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Products added to cart aside */
+.cart {
+    width: 355px;
+    height: calc(100% - 62px);;
+    background-color: white;
+    float: right;
+    border-top: 1px solid rgb(234, 234, 234);
+    padding: 30px 26px;
+    position: relative;
+    right: -400px;
+    transition: right 1s;
+}
+
+.product-added {
+    display: flex;
+    padding: 10px 8px 20px 8px;
+    border-bottom: 1px solid rgb(234, 234, 234);
+}
+
+.left-added {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-added > img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    display: block;
+    margin-right: 35px;
+}
+
+.cart h3 {
+    margin-top: -8px;
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+}
+
+.cart h2 {
+    margin-bottom: 16px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(111, 110, 115);
+}
+
+.add-items {
+    display: flex;
+    border: 1px solid rgb(111, 110, 115);
+    width: 90px;
+    height: 30px;
+}
+
+.add-items button {
+    border: none;
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.add-items .num {
+    border-left: 1px solid rgb(111, 110, 115);
+    border-right: 1px solid rgb(111, 110, 115);
+    width: 30px;
+    height: 29px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.subtotal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: absolute;
+    border-top: 1px solid rgb(234, 234, 234);
+    border-bottom: 1px solid rgb(234, 234, 234);
+    padding: 18px 0px;
+    bottom: 84px;
+    width: 320px;
+}
+
+.subtotal > h2 {
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    margin-bottom: 0px;
+}
+
+.span {
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+}
+
+i {
+    margin-left: 5px;
+}
+
+aside > button {
+    position: absolute;
+    bottom: 26px;
+    background-color: rgb(34, 115, 147);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 12px 74px;
+    display: block;
+    margin: 0 auto;
+}
+
+aside > button:hover {
+    background-color: rgb(25, 85, 109);
+}

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(26, 117, 146);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.feedback {
+    background-color: white;
+    width: 790px;
+    height: 590px;
+    position: relative;
+    border-radius: 14px;
+    padding: 0px 80px;
+    margin-top: 20px;
+}
+
+.santa-hat {
+    position: absolute;
+    transform: rotate(331deg) scaleX(-1);
+    left: -90px;
+    top: -50px;
+    width: 168px;
+}
+
+.fa-xmark {
+    position: absolute;
+    right: 45px;
+    top: 38px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 55px;
+    font-size: 1.9rem;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+.emotions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.emotions div {
+    border: 1px solid rgb(232, 232, 232);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 108px;
+    height: 110px;
+}
+
+.emotions div > h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(151, 153, 157);
+}
+
+.emotions div:hover {
+    border: 1px solid rgb(95, 107, 117);
+    background-color: rgb(249, 251, 252);
+}
+
+.emotions div:hover h2 {
+    color: rgb(0, 0, 0);
+}
+
+.emotions img {
+    width: 50px;
+    margin-bottom: 8px;
+    margin-top: 3px;
+}
+
+.share {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+textarea {
+    width: 100%;
+    background-color: rgb(249, 251, 252);
+    border: 1px solid rgb(232, 232, 232);
+    padding: 15px 20px;
+    resize: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+textarea:focus {
+    outline: 1px solid rgb(95, 107, 117);
+}
+
+::placeholder {
+    color: rgb(151, 153, 157);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+button {
+    display: block;
+    border: none;
+    color: white;
+    background-color: rgb(35, 115, 145);
+    margin: 14px auto;
+    padding: 12px 24px;
+    border-radius: 24px;
+}
+
+button:hover {
+    background-color: rgb(20, 138, 180);
+}
+
+span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+

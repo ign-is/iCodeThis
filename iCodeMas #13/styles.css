@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(156, 166, 176);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+.chat {
+    width: 330px;
+    height: 510px;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.header {
+    background-color: rgb(34, 115, 147);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    text-align: center;
+    height: 104px;
+    padding: 18px 10px;
+}
+
+.header > h1 {
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: rgb(178, 212, 239);
+    font-size: 0.8rem;
+    line-height: 18px;
+}
+
+
+.chat-body {
+    padding: 30px 20px 20px 18px;
+}
+
+.virtual-message {
+    display: flex;
+    margin-top: 30px;
+}
+
+.left {
+    display: flex;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    align-self: flex-end;
+}
+
+.right {
+    margin-left: 16px;
+}
+
+.right h4, .user-message h4{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.right h4 {
+    background-color: rgb(239, 243, 246);
+    padding: 12px 14px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.right p {
+    color: rgb(166, 168, 170);
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.user-message {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.user-message h4 {
+    background-color: rgb(223, 244, 253);
+    padding: 12px 14px;
+    display: inline-block;
+    margin-bottom: 8px;
+    margin-left: auto;
+}
+
+.message {
+    border-top: 2px solid rgb(218, 217, 220);
+}
+
+.message {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 20px 12px 24px;
+
+}
+
+input {
+    border: none;
+    outline: none;
+    width: 240px;
+}
+
+::placeholder {
+    color: rgb(0, 0, 0);
+    font-size: 0.9rem;
+}
+
+button {
+    border: none;
+    color: rgb(47, 114, 148);
+    cursor: pointer;
+}
+
+.fa-paper-plane {
+    font-size: 1rem;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(47, 114, 148);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: -280px;
+    margin-top: 12px;
+    cursor: pointer;
+}

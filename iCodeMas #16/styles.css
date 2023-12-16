@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+}
+
+.numbers {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 14px;
+}
+
+.newNumber {
+    padding: 10px 12px;
+    margin-right: 10px;
+}
+
+.newNumber:hover {
+    border-radius: 3px;
+    background-color: rgb(240, 245, 245);
+}
+
+.selected {
+    border-radius: 3px;
+    background-color: rgb(240, 245, 245);
+}
+
+/* .dots {
+    display: none;
+} */
+
+button {
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:  rgb(245, 247, 249);
+    color: rgb(207, 205, 210);
+}
+
+button:hover {
+    background-color: rgb(240, 245, 245);
+    color: rgb(0, 0, 0);
+}

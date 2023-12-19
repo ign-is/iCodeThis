@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎅 iCodeMas #19</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <form action="#">
+        <i class="fa-solid fa-xmark"></i>
+        <h3>Contact info</h3>
+        <label for="email">
+            Email <span class="asterisk">*</span>
+            <input type="email" id="email" placeholder="Enter email">
+        </label>
+
+        <h3 class="shipping">Shipping info</h3>
+        <label for="name">
+            Name <span class="asterisk">*</span>
+            <input type="text" id="name" placeholder="Enter name">
+        </label>
+        <label for="country">
+            Country / Region <span class="asterisk">*</span>
+            <input type="text" id="country" placeholder="Enter country">
+        </label>
+        <label for="address">
+            Address <span class="asterisk">*</span>
+            <input type="text" id="address" placeholder="Enter address">
+        </label>
+
+        <h3 class="payment">Payment info</h3>
+        <div class="payment-method">
+            <div class="card">
+                <img src="https://raw.githubusercontent.com/leetebbs/storage/main/card.PNG" alt="card">
+                <h4>Card</h4>
+            </div>
+            <div class="cash">
+                <img src="https://raw.githubusercontent.com/leetebbs/storage/main/cash.PNG" alt="cash">
+                <h4>Cash at arrival</h4>
+            </div>
+            <div class="paypal">
+                <img src="https://raw.githubusercontent.com/leetebbs/storage/main/paypal.PNG" alt="paypal">
+                <h4>Paypal</h4>
+            </div>
+        </div>
+
+        <label for="ccn" class="ccn">
+            Card number <span class="asterisk">*</span>
+            <img class="mastercard" src="https://cdn2.iconfinder.com/data/icons/bitsies/128/Mastercard-512.png" alt="mastercard">
+            <input id="ccn" 
+                    type="tel" 
+                    inputmode="numeric" 
+                    pattern="[0-9\s]{13,19}" 
+                    autocomplete="cc-number" 
+                    maxlength="19" 
+                    placeholder="xxxx xxxx xxxx xxxx" 
+                    value="0044 1234 5678 9012"
+                    required
+            >
+        </label>
+
+        <div class="date">
+            <label for="expiry">
+                Expiry date <span class="asterisk">*</span>
+                <input type="text" id="expiry" placeholder="MM / YY">
+            </label>
+            <label for="cvc">
+                CVC <span class="asterisk">*</span>
+                <input type="text" id="cvc" placeholder="123">
+            </label>
+        </div>
+
+        <button><span>Place order</span></button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(65, 94, 102);
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    position: relative;
+    width: 530px;
+    height: 805px;
+    border-radius: 12px;
+    background-color: white;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    padding: 45px 80px 40px 60px;
+}
+
+.fa-xmark {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    cursor: pointer;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.shipping {
+    margin-top: 24px;
+}
+
+.asterisk {
+    color: red;
+}
+
+label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+label, input {
+    display: block;
+    width: 100%;
+    outline: none;
+    background-color: rgb(253, 253, 253);
+}
+
+input {
+    padding: 7px 10px;
+    outline: none;
+    border: 1px solid rgb(209, 211, 213);
+    margin-top: 8px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input:focus, label:focus {
+    background-color: rgb(249, 251, 252);
+    outline: none;
+}
+
+.payment {
+    margin-top: 34px;
+}
+
+.payment-method {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 28px;
+}
+
+.payment-method > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80px;
+    color: rgb(192, 193, 197);
+    border: 1px solid rgb(209, 211, 213);
+    padding: 12px 0px 0px 12px;
+}
+
+.payment-method > div:hover {
+    background-color: rgb(249, 251, 252);
+    border: 1px solid rgb(109, 147, 162);
+    color: rgb(0, 0, 0);
+}
+
+.card > img, .cash > img, .paypal > img {
+    width: 30px;
+    margin-bottom: 7px;
+}
+
+h4 {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.ccn {
+    position: relative;
+}
+
+.mastercard {
+    width: 26px;
+    position: absolute;
+    top: 26px;
+    left: 160px;
+}
+
+.date {
+    display: flex;
+    gap: 12px;
+}
+
+button {
+    font-size: 0.8rem;
+    border: none;
+    padding: 13px 22px;
+    border-radius: 22px;
+    background-color: rgb(34, 115, 147);
+    color: white;
+    margin-top: 28px;
+}
+
+button > span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: rgb(62, 159, 197);
+}

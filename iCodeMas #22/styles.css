@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(91, 105, 121);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.purchase-thanks {
+    position: relative;
+    background-color: white;
+    width: 750px;
+    height: 320px;
+    text-align: center;
+    border-radius: 16px;
+}
+
+.purchase-thanks img {
+    margin-top: 60px;
+    margin-bottom: 15px;
+    width: 82px;
+}
+
+.purchase-thanks h1 {
+    margin-bottom: 12px;
+}
+
+.fa-xmark {
+    position: absolute;
+    top: 40px;
+    right: 44px;
+    cursor: pointer;
+}
+
+.feedback {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 750px;
+    height: 110px;
+    margin-top: 20px;
+    border-radius: 16px;
+    padding: 30px;
+}
+
+.feedback button {
+    border: none;
+    background-color: rgb(35, 116, 148);
+    padding: 12px 16px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.feedback button:hover {
+    background-color: rgb(64, 157, 194);
+}
+
+.feedback button span {
+    color: white;
+    font-family: 'Inter', sans-serif;
+}

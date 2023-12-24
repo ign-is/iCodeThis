@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(91, 105, 121);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.privacy-cookie {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(233, 245, 252);
+    padding: 26px 45px;
+    width: 1200px;
+    max-width: 1200px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.privacy-cookie .left {
+    display: flex;
+    align-items: center;
+}
+
+.privacy-cookie .left img {
+    margin-right: 24px;
+}
+
+.privacy-cookie .right {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    padding: 10px 18px;
+    border-radius: 24px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-learn {
+    background-color: white;
+    border: none;
+}
+
+.btn-okay {
+    background-color: rgb(34, 115, 147);
+    border: none;
+    color: white;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-left: 16px;
+}
+
+@media(max-width: 1170px) {
+    .privacy-cookie, .left {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .left img {
+        margin-bottom: 20px;
+    }
+
+    .left {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}

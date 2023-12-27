@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(243, 245, 247);
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+article {
+    position: relative;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.second-half {
+    display: flex;
+    margin-top: 10px;
+}
+
+.hypnotherapy {
+    display: flex;
+    width: 500px;
+    height: 150px;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+    margin-left: -120px;
+    margin-top: 20px;
+}
+
+.hypnotherapy img {
+    width: 120px;
+    height: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-right: 30px;
+}
+
+.hypnotherapy h1 {
+    font-size: 1.1rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+span, a {
+    color: rgb(0, 0, 0);
+    font-size: 0.9rem;
+}
+
+.hypnotherapy i {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    cursor: pointer;
+}
+
+span, a, p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fire {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 300px;
+    height: 440px;
+    text-align: center;
+    margin-right: 45px;
+    transition: all 0.3s ease-in-out;
+}
+
+.fire img {
+    width: 100%;
+    height: 160px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.fire h1 {
+    font-size: 1.2rem;
+    margin-top: 22px;
+    margin-bottom: 10px;
+}
+
+.fire p {
+    font-size: 0.9rem;
+}
+
+.fire button {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background-color: rgb(15, 22, 22);
+    padding: 12px 45px;
+    border-radius: 6px;
+    margin-top: 26px;
+}
+
+.fire button span {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.fire button:hover {
+    background-color: rgb(37, 39, 39);
+}
+
+.wings {
+    width: 560px;
+    height: 340px;
+    padding: 30px;
+    margin-top: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.wings div {
+    display: flex;
+    gap: 10px;
+}
+
+.wings div img:nth-child(1) {
+    width: 130px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.wings div img:nth-child(2) {
+    width: 100%;
+}
+
+.wings div img:nth-child(3) {
+    width: 130px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.wings img {
+    height: 135px;
+    object-fit: cover;
+}
+
+.wings h1 {
+    font-size: 1.2rem;
+    margin-top: 22px;
+    margin-bottom: 5px;
+}
+
+.wings p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.hypnotherapy:hover, 
+.fire:hover, 
+.wings:hover {
+    transform: scale(1.1);
+    box-shadow: 8px 8px 29px -5px rgba(144, 171, 199, 0.5),-7px -5px 29px -5px rgba(144, 171, 199, 0.5);
+}
+
+@media screen and (max-width: 940px) {
+    .second-half {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hypnotherapy {
+        margin-left: 0px;
+    }
+
+    .wings {
+        margin-top: -4px;
+        margin-bottom: 30px;
+    }
+}

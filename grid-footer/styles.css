@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --bg-body: rgb(239, 239, 255);
+    --shadow-container: rgb(255, 255, 255);
+    --bg-search: rgb(251, 137, 107);
+    --bg-cro: rgb(251, 107, 108);
+    --bg-social: rgb(241, 168, 99);
+    --bg-other: rgb(251, 211, 106);
+    --bg-book: rgb(71, 82, 87);
+    --bg-google: rgb(243, 114, 82);
+    --color-primary: rgb(255, 255, 255);
+    --color-secondary: rgb(71, 82, 87);
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-body);
+    color: var(--shadow-container);
+}
+
+.container {
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1000px;
+    width: 1000px;
+    height: 600px;
+    overflow: hidden;
+    grid-template-areas: 
+    "search cro social"
+    "other book book";
+}
+
+.behind {
+    background-color: var(--color-primary);
+    width: 950px;
+    height: 627px;
+    z-index: -1;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.container > div {
+    height: 300px;
+}
+
+.search,
+.cro,
+.social {
+    padding-top: 90px;
+}
+
+.search {
+    background-color: var(--bg-search);
+    padding-left: 70px;
+    grid-area: search;
+}
+
+.cro {
+    background-color: var(--bg-cro);
+    padding-left: 45px;
+    grid-area: cro;
+}
+
+.social {
+    background-color: var(--bg-social);
+    padding-left: 45px;
+    grid-area: social;
+}
+
+.other {
+    background-color: var(--bg-other);
+    color: var(--bg-book);
+    padding-left: 70px;
+    padding-top: 50px;
+    grid-area: other;
+}
+
+.book {
+    background-color: var(--bg-book);
+    grid-column: 2 / 4;
+    padding-left: 45px;
+    padding-top: 50px;
+    grid-area: book;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title i {
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+p:first-of-type {
+    margin-top: 18px;
+}
+
+.google {
+    background-color: var(--bg-google);
+    width: 240px;
+    padding: 10px;
+    margin-left: -10px;
+}
+
+.book > p {
+    margin-top: 12px;
+}
+
+.book button {
+    margin-top: 8px;
+    padding: 12px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: none;
+}
+
+.book button:hover {
+    background-color: gray;
+    color: white;
+}
+
+.book button span {
+    font-family: 'Poppins', sans-serif;
+}
+
+@media only screen and (max-width: 1030px) {
+    body {
+        height: 100%;
+    }
+
+    .behind {
+        width: 610px;
+        height: 930px;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 333px);
+        margin: 40px;
+        height: auto;
+        width: auto;
+        grid-template-areas: 
+            "search cro"
+            "social other"
+            "book book";
+
+    }
+
+    .other, .social {
+        padding-top: 90px;
+        padding-left: 45px;
+    }
+
+    .book {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    
+}
+
+@media only screen and (max-width: 770px) {
+
+    .behind {
+        width: 290px;
+        height: 1525px;
+    }
+
+    .container {
+        grid-template-columns: 333px;
+        margin: 40px;
+        height: auto;
+        width: auto;
+        grid-template-areas: 
+            "search"
+            "cro"
+            "social"
+            "other"
+            "book";
+    }
+
+    .container > div {
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    .title {
+        justify-content: center;
+        margin-left: -5px;
+    }
+
+    .google {
+        margin: 0 auto
+    }
+
+    .book h1 {
+        font-size: 1.2rem;
+    }
+
+    .book > p {
+        font-size: 0.7rem;
+        margin-top: 16px;
+        margin-bottom: 28px;
+    }
+
+    .book > button {
+        padding: 10px;
+    }
+
+    .book > button span {
+        font-size: 0.8rem;
+    }
+}

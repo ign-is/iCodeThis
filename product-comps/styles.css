@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;1000&family=Noto+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+    --bg-color: rgb(2, 60, 82);
+    --bg-primary: rgb(219, 162, 120);
+    --bg-items: rgb(255, 255, 255);
+    --text-color: rgb(45, 45, 61);
+    --border: rgb(222, 222, 222);
+    --font-family-one: Mulish, sans-serif;
+    --font-family-two: "Noto Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--font-family-two);
+    color: var(--text-color);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 130px;
+    padding-bottom: 50px;
+    gap: 30px;
+}
+
+/* cart */
+
+.cart {
+    background-color: var(--bg-items);
+    border-radius: 15px;
+    width: 470px;
+    padding: 45px 50px;
+}
+
+.cart > h1 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+    
+}
+
+.creator > div:first-of-type span {
+    font-size: 0.8rem;
+}
+
+.creator > div:first-of-type a{
+    font-size: 0.9rem;
+    font-weight: 1000;
+    color: var(--text-color);
+    margin-left: 4px;
+}
+
+.creator > div:nth-of-type(2) {
+    border: 2px solid var(--border);
+    margin-top: 28px;
+    padding: 22px 30px;
+}
+
+.creator > div:nth-of-type(2) h1 {
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.licence > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-family-one);
+    margin-bottom: 20px;
+    /* font-size: 0.9rem; */
+}
+
+.price {
+    font-weight: 700;
+}
+
+.price-sarting {
+    color: rgb(150, 150, 150);
+}
+
+.licence a {
+    display: block;
+    color: var(--text-color);
+    font-size: 0.8rem;
+    margin-top: 16px;
+}
+
+.licence {
+    margin-bottom: 24px;
+}
+
+.btn-add, .btn-add-secondary {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 50px;
+    font-size: 1rem;
+}
+
+.btn-add {
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    position: relative;
+    padding-top: 3px;
+    padding-left: 34px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+  
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid gray;
+}
+  
+label:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+label input:checked ~ .checkmark {
+    background-color: white;
+}
+  
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+label input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+label .checkmark:after {
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: rgb(0, 63, 81);
+}
+
+/* card  */
+
+.mulish {
+    font-family: var(--font-family-one);
+}
+
+button > span {
+    font-family: var(--font-family-two);
+}
+
+.card {
+    background-color: var(--bg-items);
+    width: 336px;
+    height: 340px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: -80px;
+    margin-left: -70px;
+    margin-bottom: 80px;
+    box-shadow: -10px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.card h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    margin-bottom: 28px;
+}
+
+.card div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 37px;
+    margin-bottom: 7px;
+}
+
+button {
+    border-radius: 4px;
+}
+
+.btn-follow, .btn-message {
+    width: 118px;
+    height: 50px;
+    display: block;
+}
+
+.btn-follow > span, .btn-message > span {
+    font-size: 1rem;
+}
+
+.btn-follow, .btn-add-secondary {
+    border: 2px solid var(--border);
+    background-color: var(--bg-items);
+    color: var(--bg-primary);
+}
+
+.btn-message, .btn-add {
+    border: none;
+    background-color: var(--bg-primary);
+    color: var(--bg-items);
+    box-shadow: 0px 5px 11px -3px rgba(219,162,120,0.6);
+}
+
+/* social */
+
+.social {
+    background-color: var(--bg-items);
+    width: 500px;
+    height: 128px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.social div {
+    border: 2px solid var(--border);
+    padding: 8px 16px;
+}
+
+.social div:nth-of-type(1), .social div:nth-of-type(2) {
+    color: rgb(108, 108, 110);
+}
+
+
+.fa-share-nodes {
+    margin-right: 3px;
+}
+
+.fa-heart {
+    margin-right: 3px;
+}
+
+.fa-bookmark {
+    margin-right: 7px;
+}

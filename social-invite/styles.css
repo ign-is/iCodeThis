@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --bg-body: rgb(251, 241, 245);
+    --bg-article: rgb(255, 255, 255);
+    --bg-active: rgb(249, 243, 252);
+    --bg-button: rgb(162, 0, 98);
+    --border: rgb(243, 239, 245);
+    --text-color: rgb(29, 33, 82);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-body);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+article {
+    background-color: var(--bg-article);
+    border-radius: 18px;
+    height: 710px;
+    width: 500px;
+    padding-left: 70px;
+    padding-right: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+    box-shadow: 0px 10px 18px 3px rgba(0,0,0,0.1);
+}
+
+img {
+    border-radius: 50%;
+    border: 10px solid var(--border);
+    height: 140px;
+    width: 140px;
+    object-fit: cover;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+.active-users {
+    background-color: var(--bg-active);
+    border-radius: 6px;
+    padding: 14px 16px;
+}
+
+label {
+    display: block;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 0.9rem;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.user input {
+    border-radius: 6px;
+    border: 1px solid gray;
+    padding: 20px 18px;
+    margin-top: 4px;
+    font-size: 1rem;
+    transition: border 1s ease;
+}
+
+::placeholder {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+input[type=text]:focus {
+    outline: none !important;
+    border: 1px solid var(--bg-button);
+}
+
+article > a {
+    font-size: 0.9rem;
+}
+
+a {
+    color: var(--bg-button);
+}
+
+/* checkbox */
+.main { 
+    display: block; 
+    position: relative; 
+    margin-left: -16px;
+    padding-left: 40px; 
+    margin-bottom: 15px; 
+    cursor: pointer; 
+    font-size: 1rem; 
+} 
+  
+/* Hide the default checkbox */ 
+input[type=checkbox] { 
+    visibility: hidden; 
+} 
+  
+/* Creating a custom checkbox 
+based on demand */ 
+.geekmark { 
+    position: absolute; 
+    top: 2px; 
+    left: 0; 
+    height: 25px; 
+    width: 25px; 
+    border: 1px solid gray;
+    border-radius: 6px;
+    background-color: var(--bg-article); 
+} 
+  
+/* Specify the background color to be 
+shown when hovering over checkbox */ 
+.main:hover input ~ .geekmark { 
+    background-color: var(--border); 
+} 
+  
+/* Specify the background color to be 
+shown when checkbox is active */ 
+.main input:active ~ .geekmark { 
+    background-color: var(--bg-button); 
+} 
+  
+/* Specify the background color to be 
+shown when checkbox is checked */ 
+.main input:checked ~ .geekmark { 
+    background-color: var(--bg-button); 
+} 
+  
+/* Checkmark to be shown in checkbox */ 
+/* It is not be shown when not checked */ 
+.geekmark:after { 
+    content: ""; 
+    position: absolute; 
+    display: none; 
+} 
+  
+/* Display checkmark when checked */ 
+.main input:checked ~ .geekmark:after { 
+    display: block; 
+} 
+  
+/* Styling the checkmark using webkit */ 
+/* Rotated the rectangle by 45 degree and  
+showing only two border to make it look 
+like a tickmark */ 
+.main .geekmark:after { 
+    left: 7px; 
+    bottom: 5px; 
+    width: 6px; 
+    height: 12px; 
+    border: solid white; 
+    border-width: 0 4px 4px 0; 
+    -webkit-transform: rotate(45deg); 
+    -ms-transform: rotate(45deg); 
+    transform: rotate(45deg); 
+} 
+
+button {
+    background-color: var(--bg-button);
+    border-radius: 6px;
+    border: none;
+    color: var(--bg-article);
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-top: 18px;
+    margin-bottom: 40px;
+}
+
+button span {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+    background-color: rgb(172, 41, 119);
+    -webkit-transition: background-color3 00ms ease-in;
+    -ms-transition: background-color 300ms ease-in;
+    transition: background-color 300ms ease-in;
+}

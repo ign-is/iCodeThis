@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --bg-body: rgb(198, 200, 201);
+    --bg-primary: rgb(235, 235, 235);
+    --bg-secondary: rgb(0, 0, 0);
+    --bg-circle-graph: rgb(160, 204, 226);
+    --bg-triangle-graph: rgb(66, 79, 193);
+    --line-one: rgb(232, 154, 101);
+    --line-two: rgb(143, 166, 233);
+    --line-three: rgb(108, 197, 140);
+    --text-secondary: rgb(77, 79, 167);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--bg-body);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Poppins', sans-serif;
+}
+
+.storage {
+    width: 540px;
+    height: 470px;
+    background-color: var(--bg-primary);
+    border-radius: 20px;
+    padding: 45px;
+    position: relative;
+}
+
+.storage .total {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.storage .total > div {
+    background-color: white;
+    width: 50px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    border-radius: 9px;
+    margin-right: 14px;
+    cursor: pointer;
+}
+
+i {
+    display: block;
+    margin-top: 2px;
+}
+
+.storage .total h2 {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.graph-numbers {
+    display: flex;
+}
+
+.graph-border {
+    width: 276px;
+    height: 276px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.graph {
+    width: 255px;
+    height: 255px;
+    border-radius: 50%;
+    background-color: var(--bg-circle-graph);
+    overflow: hidden;
+    position: relative;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 43px solid transparent;
+    border-right: 43px solid transparent;
+    border-top: 130px solid var(--bg-triangle-graph);
+    position: absolute;
+    top: 3px;
+    right: 65px;
+    rotate: 20deg;
+}
+
+.total-space {
+    margin-top: 24px;
+    margin-left: 40px;
+}
+
+.total-space h2 {
+    font-weight: 600;
+    margin-bottom: -4px;
+}
+
+.total-space p {
+    font-weight: 600;
+}
+
+.total-space h2:nth-of-type(2), .total-space p:nth-of-type(2) {
+    color: var(--text-secondary);
+}
+
+.total-space h2:nth-of-type(2) {
+    margin-top: 20px;
+}
+
+.total-space button, .price {
+    border: none;
+    background-color: var(--bg-secondary);
+    color: white;
+    padding: 14px 20px;
+    border-radius: 12px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.total-space button span {
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.plan-one,
+.plan-two,
+.plan-three {
+    width: 540px;
+    height: 180px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    padding: 50px 45px;
+    position: relative;
+    overflow: hidden;
+}
+
+.plan-one {
+    background-color: var(--bg-secondary);
+    color: white;
+    margin-top: 20px;
+}
+
+.plan-one h3 {
+    font-weight: 500;
+    font-size: 1.35rem;
+    margin-top: -3px;
+}
+
+.plan-two,
+.plan-three {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg-primary);
+}
+
+.plan-two .price {
+    width: 176px;
+}
+
+.line {
+    width: 24px;
+    height: 5px;
+    border-radius: 20px;
+}
+
+.plan-one .line {
+    background-color: var(--line-one);
+}
+
+.plan-two .line {
+    background-color: var(--line-two);
+}
+
+.plan-three .line {
+    background-color: var(--line-three);
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+.plan-two div:last-of-type, .plan-three div:last-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: -3px;
+}
+
+.plan-two div:last-of-type p, .plan-three div:last-of-type p {
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.price {
+    width: 182px;
+    margin-bottom: 14px;
+}
+
+.back, .back-two {
+    position: absolute;
+    border: 1px solid white;
+    width: 500px;
+    height: 200px;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.3) 5%, rgba(255, 255, 255, 0.2));
+    border-radius: 20px;
+    left: 18px;
+    top: -18px;
+    z-index: -1;
+}
+
+.plans {
+    position: relative;
+}
+
+.back-two {
+    position: absolute;
+    height: 620px;
+    top: -20px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+
+@media screen and (max-width: 1100px) {
+    body {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .storage {
+        margin-bottom: 34px;
+        margin-top: 50px;
+    }
+
+    .plans {
+        margin-bottom: 30px;
+    }
+}

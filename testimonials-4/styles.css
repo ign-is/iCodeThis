@@ -1,0 +1,137 @@
+:root {
+    --bg-body: rgb(237, 240, 248);
+    --bg-dialog: rgb(17, 16, 35);
+    --bg-section: rgb(255, 255, 255);
+    --text-color: rgb(13, 10, 25);
+    --text-color-secondary: rgb(126, 126, 126);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--bg-body);
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    height: 485px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 22px;
+    background-color: var(--bg-section);
+    padding: 70px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    height: 500px;
+    margin-top: 94px;
+    transition: all 0.8s;
+    
+}
+
+h1 {
+    font-family: serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.comment {
+    background-color: var(--bg-dialog);
+    color: white;
+    padding: 30px;
+    line-height: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 11px 15px 3px rgba(0,0,0,0.1);
+}
+
+.circle-left,
+.circle-right {
+    border: 1px solid lightslategray;
+    background-color: white;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    transition: all 300ms ease-in;
+}
+
+.circle-left {
+    top: 40%;
+    left: 14%;
+}
+
+.circle-right {
+    top: 40%;
+    right: 14%;
+}
+
+.circle-left:hover,
+.circle-right:hover {
+    transform: scale(1.1);
+}
+
+.circle-left:active,
+.circle-right:active {
+    background-color: var(--bg-body);
+    transform: scale(0.9);
+}
+
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 14px solid var(--bg-dialog);
+}
+
+img {
+    border-radius: 50%;
+    width: 74px;
+    height: 74px;
+    object-fit: cover;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.position {
+    color: var(--text-color-secondary);
+    font-weight: 600;
+}

@@ -1,0 +1,95 @@
+:root {
+    --bg-body: rgb(10, 57, 128);
+    --bg-dot: rgb(23, 235, 181);
+    --bg-profile: rgb(13, 71, 161);
+    --bg-follow: rgb(255, 201, 38);
+    --text-primary: rgb(255, 255, 255);
+    --text-secondary: rgb(4, 58, 129);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--bg-body);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.container  {
+    position: relative;
+}
+
+img {
+    width: 400px;
+    height: 280px;
+    object-fit: cover;
+}
+
+.dot {
+    position: absolute;
+    background-color: var(--bg-dot);
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    top: 245px;
+    left: 32px;
+}
+
+ul {
+    list-style: none;
+    background-color: var(--bg-profile);
+    margin: -10px auto 0px auto;
+    width: 360px;
+    height: 210px;
+    padding: 38px 24px;
+}
+
+li {
+    padding: 7px;
+    transition: all 300ms ease-in;
+}
+
+li:hover {
+    background-color: var(--bg-body);
+}
+
+a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 200ms ease-in;
+}
+
+a:hover {
+    font-weight: 600;
+}
+
+.follow {
+    background-color: var(--bg-follow);
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 20px;
+    width: 185px;
+    position: absolute;
+    right: -35px;
+    bottom: -24px;
+    transition: all 200ms ease-in;
+    box-shadow: 0px -4px 20px 6px rgba(0,0,0,0.2),0px 10px 20px 6px rgba(0,0,0,0.2);
+}
+
+.follow:hover {
+    transform: scale(1.1);
+    font-weight: 600;
+}
+
+i {
+    margin-right: 6px;
+}

@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+:root {
+    --bg-body: rgb(17, 24, 65);
+    --bg-title: rgb(21, 27, 75);
+    --bg-main: rgb(25, 32, 87);
+    --purple: rgb(184, 105, 200);
+    --pink: rgb(232, 66, 124);
+    --orange: rgb(237, 109, 2);
+    --yellow: rgb(253, 216, 64);
+    --green: rgb(104, 240, 176);
+    --text-color: rgb(255, 255, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--bg-body);
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    background-color: var(--bg-main);
+    width: 720px;
+    height: 500px;
+    box-shadow: 0px 14px 15px 7px rgba(0,0,0,0.3);
+}
+
+.head {
+    width: 100%;
+    height: 85px;
+    background-color: var(--bg-title);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head h1 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+.main {
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+}
+
+.pie-chart {
+	background:
+		radial-gradient(
+			circle closest-side,
+			var(--bg-main) 0,
+			var(--bg-main) 70.56%,
+			transparent 70.56%,
+			transparent 84%,
+			var(--bg-main) 0
+		),
+		conic-gradient(
+			#b869c8 0,
+			#b869c8 41%,
+			#e8427c 0,
+			#e8427c 70%,
+			#ed6d02 0,
+			#ed6d02 93%,
+			#f3d840 0,
+			#f3d840 97%,
+			#68f0b0 0,
+			#68f0b0 100%
+	);
+	position: relative;
+	width: 500px;
+	min-height: 350px;
+	margin: 0;
+    margin-left: -30px;
+    margin-top: 40px;
+}
+
+.pie-chart figcaption {
+	position: absolute;
+	bottom: 1em;
+	right: 1em;
+	font-size: smaller;
+	text-align: right;
+}
+
+.pie-chart span:after {
+	display: inline-block;
+	content: "";
+	width: 0.8em;
+	height: 0.8em;
+	margin-left: 0.4em;
+	height: 0.8em;
+	border-radius: 0.2em;
+	background: currentColor;
+}
+
+.visitors {
+    position: absolute;
+    top: 128px;
+    left: 184px;
+    text-align: center;
+}
+
+.visitors h1 {
+    font-size: 3.4rem;
+}
+
+.visitors h4 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.right  {
+    z-index: 3;
+}
+
+ul {
+    list-style: none;
+    margin-left: -35px;
+    margin-top: 82px;
+}
+
+li {
+    margin-bottom: 35px;
+    z-index: 1000;
+}
+
+span {
+    color: var(--bg-main);
+    font-weight: 600;
+    display: inline-block;
+    width: 45px;
+    padding: 2px 5px;
+    text-align: center;
+    border-radius: 12px;
+    margin-right: 5px;
+}
+
+.purple {
+    background-color: var(--purple);
+}
+
+.orange {
+    background-color: var(--orange);
+}
+
+.pink {
+    background-color: var(--pink);
+}
+
+.yellow {
+    background-color: var(--yellow);
+}
+
+.green {
+    background-color: var(--green);
+}
+

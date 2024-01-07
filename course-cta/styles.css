@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;800&display=swap');
+
+:root {
+    --bg-text-body: rgb(23, 16, 60);
+    --bg-container: rgb(212, 235, 234);
+    --bg-select: rgb(195, 225, 219);
+    --bg-button: rgb(255, 165, 147);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-text-body);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    background-color: var(--bg-container);
+    width: 1000px;
+    height: 590px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 60px;
+}
+
+ul {
+    list-style: none;
+}
+
+article {
+    margin-top: 20px;
+}
+
+.bold {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.thin {
+    line-height: 24px;
+}
+
+.number {
+    font-weight: 800;
+    font-size: 2.9rem;
+}
+
+/* first article */
+
+.study > p:first-of-type {
+    margin-bottom: 22px;
+}
+
+.study .number{
+    margin-bottom: 14px;
+}
+
+.study > .thin {
+    margin-bottom: 60px;
+} 
+
+.study > ul {
+    margin-top: 18px;
+    margin-left: -18px;
+}
+
+.study > ul li {
+    font-weight: 500;
+    padding: 10px 18px;
+    border-radius: 3px;
+    transition: background-color 200ms ease-in;
+}
+
+.study > ul li:hover {
+    background-color: var(--bg-select);
+}
+
+/* second article */
+.portfolio > .number {
+    margin-top: 40px;
+    margin-bottom: 14px;
+}
+
+.deadline {
+    margin-top: 60px;
+    background-color: var(--bg-select);
+    padding: 24px 24px 10px 24px;
+    margin-left: -20px;
+    width: 265px;
+}
+
+.deadline .thin {
+    margin-bottom: 5px;
+}
+
+.deadline .bold {
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+/* third article */
+
+.choose-us {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    border-radius: 3px;
+    padding: 28px;
+}
+
+.choose-us > .bold {
+    margin-bottom: 30px;
+}
+
+.choose-us ul {
+    margin-bottom: 80px;
+}
+
+.choose-us li {
+    margin-bottom: 20px;
+}
+
+.choose-us li i {
+    margin-right: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 16px;
+    background-color: var(--bg-button);
+    border-radius: 3px;
+    color: var(--bg-text-body);
+    box-shadow: 0px 12px 15px -3px rgba(255, 165, 147,0.5);
+    transition: all 300ms ease;
+}
+
+span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+button:hover {
+    background-color: rgb(240, 154, 115);
+    box-shadow: 0px 12px 15px -3px rgba(240, 154, 115,0.5);
+}
+
+@media screen and (max-width: 880px) {
+
+    body {
+        height: 100%;
+    }
+    .container {
+        flex-wrap: wrap;
+        /* height: 1300px; */
+        height: min-content;
+        padding: 60px 80px;
+        margin: 30px;
+    }
+
+    .choose-us {
+        margin: 50px auto 0px auto;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .container {
+        flex-direction: column;
+        width: 400px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .choose-us, 
+    .study, 
+    .portfolio  {
+        margin: 50px auto 0px auto;
+    }
+
+    .stady {
+        margin-bottom: 20px;
+    }
+
+    .study ul {
+        margin: 20px auto 50px;
+        text-align: center;
+    }
+
+    .study .thin {
+        margin-bottom: 30px;
+    }
+
+    .portfolio {
+        margin-top: -60px;
+    }
+
+    .deadline {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+}

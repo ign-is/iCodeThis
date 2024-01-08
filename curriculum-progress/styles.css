@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+:root {
+    --bg-body: rgb(227, 225, 239);
+    --bg-item: rgb(255, 255, 255);
+    --text-color: rgb(3, 3, 3);
+    --bg-progress: rgb(50, 47, 98);
+    --bg-circle: rgb(222, 220, 237);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    max-height: 100vh;
+    background-color: var(--bg-body);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.progress {
+    background-color: var(--bg-item);
+    width: 400px;
+    height: 620px;
+    border-radius: 18px;
+    padding: 60px 60px 60px 60px;
+}
+
+.circle {
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 15px solid var(--bg-circle);
+    height: 160px;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform: rotate(45deg);
+    transition: all 300ms ease;
+}
+
+.inner-circle {
+    transform: rotate(-45deg);
+    text-align: center;
+}
+
+.inner-circle h1 {
+    font-weight: 800;
+    font-size: 2.4rem;
+}
+
+.progress h3 {
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+
+.chapter {
+    padding: 24px 20px;
+    border: 2px solid var(--bg-circle);
+    display: flex;
+    margin-bottom: 8px;
+    border-radius: 6px;
+}
+
+/* check */
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: #eee;
+    border-radius: 50%;
+    border: 3px solid var(--bg-circle);
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: var(--bg-progress);
+    border: none;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 11px;
+    top: 6px;
+    width: 6px;
+    height: 11px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.container {
+    margin-right: 10px;
+}
+
+h4 {
+    font-weight: 800;
+    margin-bottom: 8px;
+}

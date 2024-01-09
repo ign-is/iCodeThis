@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+:root {
+    --bg-body: rgb(242, 248, 255);
+    --bg-item: rgb(255, 255, 255);
+    --gradient-left: rgb(56, 141, 208);
+    --gradient-right: rgb(141, 226, 236);
+    --text-color: rgb(52, 69, 79);
+    --input-color: rgb(138, 150, 164);
+    --border-word: rgba(209, 222, 240, 0.3);
+    --border-power: rgba(248, 215, 203, 0.3);
+    --border-ia: rgba(216, 153, 67, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    min-height: 100vh;
+    background-color: var(--bg-body);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+}
+
+.container {
+    width: 400px;
+}
+
+.terms {
+    background: rgb(56,141,208);
+    background: linear-gradient(90deg, rgba(56,141,208,1) 0%, rgba(141,226,236,1) 100%);
+    padding: 30px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.terms a {
+    color: white;
+    font-weight: 600;
+}
+
+.fa-xmark {
+    display: block;
+    position: absolute;
+    top: -20px;
+    right: -12px;
+    font-size: 1.3rem;
+    background-color: rgb(126, 207, 227);
+    padding: 30px 30px 20px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.main {
+    background-color: var(--bg-item);
+    border-radius: 10px;
+    padding: 20px 14px 8px 14px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.title button {
+    background-color: white;
+    color: var(--gradient-left);
+    border: 1px solid var(--gradient-left);
+    border-radius: 18px;
+    padding: 7px 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.title button:hover {
+    background: rgb(56,141,208);
+    background: linear-gradient(90deg, rgba(56,141,208,1) 0%, rgba(141,226,236,1) 100%);
+    color: white;
+}
+
+.fa-plus {
+    margin-right: 5px;
+}
+
+span {
+    font-family: 'Montserrat', sans-serif;
+}
+
+label {
+    border: 1px solid var(--input-color);
+    padding: 12px 10px;
+    margin-bottom: 18px;
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+input[type="text"] {
+    border: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fa-magnifying-glass {
+    color: var(--input-color);
+    margin-right: 10px;
+}
+
+::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--input-color);
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+}
+
+svg {
+    width: 26px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+li:nth-of-type(1) > div:nth-child(1) {
+    background-color: rgba(209, 222, 240, 0.5);
+    border: 3px solid var(--border-word);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+li:nth-of-type(2) > div:nth-child(1) {
+    background-color: rgba(248, 215, 203, 0.5);
+    border: 3px solid var(--border-power);
+    border-radius: 50%;
+    padding: 6px;
+}
+
+li:nth-of-type(3) > div:nth-child(1) {
+    background-color: rgba(216, 153, 67, 0.3);
+    border: 3px solid var(--border-ia);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.name {
+    margin-left: 14px;
+    font-weight: 500;
+}

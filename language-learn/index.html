@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="back"></div>
+    <section class="select">
+        <h3>Select a tier</h3>
+        <div>
+            <div>
+                <h4>$5/month</h4>
+                <p>A significant contribution</p>
+            </div>
+            <button><span>Select</span></button>
+        </div>
+        <div>
+            <div>
+                <h4>$30/month</h4>
+                <p>A shuge contribution</p>
+            </div>
+            <button><span>Select</span></button>
+        </div>
+    </section>
+
+    <section class="nature">
+        <div class="circle">
+            <svg width="32" height="32" viewBox="0 0 512 512">
+                <path fill="#a6673a" d="M174.15 342.83V490.8a21.2 21.2 0 0 1-42.38 0V342.83a21.2 21.2 0 0 1 42.38 0z"></path>
+                <path fill="#99522e" d="M174.15 342.83V490.8a21.2 21.2 0 0 1-21.19 21.2V321.64a21.2 21.2 0 0 1 21.2 21.19z"></path>
+                <path fill="#88cc2a" d="M252.41 99.45v165.12c0 54.83-44.6 99.45-99.45 99.45s-99.44-44.61-99.44-99.45V99.45C53.52 44.6 98.12 0 152.96 0s99.45 44.61 99.45 99.45z"></path>
+                <path fill="#7fb335" d="M252.41 99.45v165.12c0 54.83-44.6 99.45-99.45 99.45V0c54.84 0 99.45 44.61 99.45 99.45z"></path>
+                <path fill="#a6673a" d="M383.79 387.4v103.36a21.2 21.2 0 0 1-42.38 0V387.38a21.19 21.19 0 1 1 42.38 0z"></path>
+                <path fill="#99522e" d="M383.79 387.4v103.36a21.2 21.2 0 0 1-21.2 21.18V366.2a21.2 21.2 0 0 1 21.2 21.2z"></path>
+                <path fill="#88cc2a" d="M462.04 253.37v52.1c0 54.84-44.6 99.45-99.45 99.45s-99.44-44.6-99.44-99.44v-52.12c0-54.82 44.6-99.44 99.45-99.44s99.44 44.62 99.44 99.45z"></path>
+                <path fill="#7fb335" d="M462.04 253.37v52.1c0 54.84-44.6 99.45-99.45 99.45v-251c54.84 0 99.45 44.62 99.45 99.45z"></path>
+                <path fill="#88cc2a" d="M455.46 490.81A21.2 21.2 0 0 1 434.27 512H71.15a21.2 21.2 0 0 1 0-42.38h363.12c11.7 0 21.19 9.48 21.19 21.2z"></path>
+                <path fill="#7fb335" d="M455.46 490.81A21.2 21.2 0 0 1 434.27 512H252.71v-42.38h181.56c11.7 0 21.19 9.48 21.19 21.2z"></path>
+            </svg>
+        </div>
+        <h3>Nature</h3>
+        <button><span>Continue</span></button>
+    </section>
+
+    <section class="respond">
+        <div class="bar">
+            <div class="progress"></div>
+        </div>
+        <div class="question">
+            <h2>Which of this is <q>You eat pasta?</q></h2>
+            <div class="questions-one">
+                <label class="container">El caballo es pequeño
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Tú comes pasta
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Èl come pan
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+        <p class="skip">Skip this question</p>
+        <button class="btn-submit"><span>Submit</span></button>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

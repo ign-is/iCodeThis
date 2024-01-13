@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root {
+    --bg-body-left: rgb(147, 157, 208);
+    --bg-body-right: rgb(134, 197, 187);
+    --bg-item: rgb(255, 255, 255);
+    --text-primary: rgb(172, 94, 239);
+    --text-secondary: rgb(133, 133, 133);
+    --circle: rgb(154, 143, 251);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(90deg, var(--bg-body-left), var(--bg-body-right));
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    background-color: var(--bg-item);
+    width: 400px;
+    height: 650px;
+    border-radius: 28px;
+    position: relative;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 230px;
+    border-top-right-radius: 28px;
+    border-top-left-radius: 28px;
+    z-index: -1;
+}
+
+.circle, .fa-arrow-left-long {
+    position: absolute;
+    cursor: pointer;
+}
+
+.circle {
+    top: 140px;
+    right: 20px;
+    font-size: 2.2rem;
+    color: var(--bg-item);
+    background-color: var(--circle);
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    padding-top: 4px;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0px 6px 12px 3px rgba(154, 143, 251,0.6);
+}
+
+.fa-arrow-left-long {
+    font-size: 1.8rem;
+    left: 25px;
+    top: 20px;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-bottom: 60px solid var(--bg-item);
+    border-left: 400px solid transparent;
+    position: absolute;
+    margin-top: 170px;
+}
+
+.main, 
+.images {
+    padding: 0px 26px;
+}
+
+.main h3, .album {
+    color: var(--text-primary);
+}
+
+.main h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.main p {
+    color: var(--text-secondary);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.album {
+    padding: 0 26px;
+    margin-bottom: 8px;
+}
+
+.images {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+
+.images img {
+    width: 110px;
+    height: 135px;
+    border-radius: 4px;
+    z-index: 1;
+    box-shadow: 0px 3px 4px 2px rgba(154, 143, 251,0.6);
+    cursor: pointer;
+}
+
+

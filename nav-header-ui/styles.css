@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+:root {
+    --bg-left-nav: rgb(184, 131, 255);
+    --bg-right-nav: rgb(252, 109, 148);
+    --bg-input: rgb(184, 97, 181);
+    --text-color: rgb(255, 255, 255);
+    --text-color-alpha: rgba(255, 255, 255, 0.7);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+    
+}
+
+span {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    background-image: linear-gradient(90deg, var(--bg-left-nav), var(--bg-right-nav));
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 70px;
+    color: var(--text-color);
+    width: 100%;
+}
+
+.logo {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.day {
+    margin: 0 auto;
+    height: 60px;
+    border: 1px solid var(--text-color-alpha);
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: -5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 75px;
+}
+
+.day p {
+    font-size: 0.8rem;
+    margin-top: 2px;
+}
+
+.day h5 {
+    font-size: 1rem;
+    margin-top: 3px;
+}
+
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 360px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color-alpha);
+}
+
+li:hover a {
+    color: var(--text-color);
+}
+
+section {
+    background-image: linear-gradient(90deg, var(--bg-left-nav), var(--bg-right-nav));
+    width: 100%;
+    height: 280px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+section p {
+    font-weight: 300;
+    padding-top: 60px;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.inspired  {
+    width: 450px;
+    margin: 0 auto;
+    display: flex;
+}
+
+label {
+    display: block;
+    background-color: var(--bg-input);
+    padding: 12px;
+    border-radius: 6px;
+    width: 300px;
+    margin-right: 5px;
+}
+
+input[type="email"] {
+    border: none;
+    background-color: transparent;
+    color: var(--text-color);
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+}
+
+::placeholder {
+    color: var(--text-color-alpha);
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid var(--text-color-alpha);
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 10px 18px;
+    border-radius: 6px;
+}
+
+.small {
+    padding-top: 14px;
+    font-size: 0.8rem;
+    color: var(--text-color-alpha);
+}
+
+.circle {
+    position: absolute;
+    background-image: linear-gradient(138deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.15));
+    border-radius: 50%;
+}
+
+.circle-right {
+    bottom: -120px;
+    right: -60px;
+    height: 340px;
+    width: 340px;
+}
+
+.circle-left-one {
+    left: -100px;
+    bottom: -80px;
+    height: 270px;
+    width: 270px;
+} 
+
+.circle-left-two {
+    left: 80px;
+    bottom: -100px;
+    height: 230px;
+    width: 230px;
+}

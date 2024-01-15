@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --bg-body: rgb(244, 245, 255);
+    --bg-behind-item: rgb(233, 236, 255);
+    --bg-item: white;
+    --text-color: rgb(44, 44, 87);
+    --btn-bg-left: rgb(96, 244, 144);
+    --btn-bg-right: rgb(120, 244, 238);
+    --btn-seconnd-bg-left: rgb(152, 194, 255);
+    --btn-seconnd-bg-right: rgb(190, 171, 251);
+    --bg-zip: rgb(242, 245, 255);
+    --bg-check: rgb(233, 236, 255);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-body);
+}
+
+.behind {
+    background-color: var(--bg-behind-item);
+    width: 490px;
+    height: 570px;
+    border-radius: 28px;
+    z-index: -1;
+    position: absolute;
+    margin-top: -60px;
+}
+
+section {
+    background-color: var(--bg-item);
+    width: 410px;
+    height: 570px;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0px 10px 29px 5px rgba(215,226,243,0.9);
+}
+
+section > p:first-of-type {
+    margin-bottom: 30px;
+}
+
+section > p:nth-of-type(2) span{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+span {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+button {
+    border: none;
+    padding: 14px;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.btn-buy {
+    background-image: linear-gradient(90deg, var(--btn-bg-left), var(--btn-bg-right));
+    margin-bottom: 14px;
+}
+
+.btn-buy:hover {
+    background-image: linear-gradient(45deg, var(--btn-bg-right), var(--btn-bg-left));
+}
+
+.zip {
+    background-color: var(--bg-zip);
+    padding: 12px;
+    border-radius: 7px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.zip p {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.zip label {
+    background-color: var(--bg-zip);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    padding: 14px;
+    margin-right: 5px;
+}
+
+.zip input { 
+    border: none;
+    outline: none;
+    background-color: var(--bg-zip);
+    font-size: 1rem;
+    font-weight: 600;
+    width: 50%;
+}
+
+::placeholder {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.zip button {
+    width: 30%;
+    display: inline-block;
+    background-color: var(--bg-item);
+    padding: 14px;
+    font-weight: 600;
+}
+
+.zip button:hover {
+    background-color: var(--btn-seconnd-bg-right);
+}
+
+.fa-magnifying-glass {
+    margin-right: 5px;
+}
+
+.btn-pick {
+    background-image: linear-gradient(90deg, var(--btn-seconnd-bg-left), var(--btn-seconnd-bg-right));
+}
+
+.btn-pick:hover {
+    background-image: linear-gradient(45deg, var(--btn-seconnd-bg-right), var(--btn-seconnd-bg-left));
+}
+
+.checks {
+    margin-top: 18px;
+}
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container:last-of-type {
+    margin-bottom: 26px;
+    margin-top: 18px;
+}
+
+.container a {
+    color: var(--text-color);
+}
+
+.container div {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 1.04rem;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+  /* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: #eee;
+    border-radius: 50%
+}
+  
+  /* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+  /* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: var(--bg-check);
+}
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+  /* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+  /* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 11px;
+    top: 6px;
+    width: 5px;
+    height: 12px;
+    border: solid var(--text-color);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

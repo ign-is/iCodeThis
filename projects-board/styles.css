@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --bg: rgb(255, 255, 255);
+    --gb-aside: rgb(37, 37, 49);
+    --bg-team: rgb(57, 60, 82);
+    --bg-user: rgb(233, 85, 128);
+    --text-color: rgb(45, 45, 45);
+    --text-gray: rgb(95, 96, 105);
+    --border: rgb(192, 191, 200);
+    --circle-team: rgb(234, 13, 83);
+    --circle-boardme: rgb(255, 183, 79);
+    --circle-feature: rgb(255, 132, 92);
+    --circle-marketing: rgb(83, 173, 255);
+    --circle-uidd: rgb(169, 96, 246);
+    --circle-topics: rgb(143, 213, 50);
+    --circle-bugs: rgb(255, 85, 157);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gb-aside);
+    font-family: 'Poppins', sans-serif;
+}
+
+span {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 95vh;
+    width: 90vw;
+    background-color: var(--bg);
+    border-radius: 7px;
+    padding: 30px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 7px
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 35px;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    border-bottom: none;
+    transition: border 50ms ease;
+}
+
+nav ul li:hover {
+    font-weight: 600;
+    border-bottom: 3px solid var(--circle-team);
+}
+
+nav ul li a {
+    color: var(--text-color);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav ul li > span {
+    width: 6px;
+    height: 6px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.upgrade-user {
+    display: flex;
+    align-items: center;
+}
+
+.upgrade-user button {
+    background-color: var(--bg);
+    border: 1px solid var(--text-color);
+    padding: 10px 24px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+.upgrade-user button:hover {
+    background-color: var(--circle-uidd);
+    color: var(--bg);
+}
+
+.upgrade-user .user {
+    margin-left: 18px;
+    background-color: var(--bg-user);
+    color: var(--bg);
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    height: calc(100% - 50px);
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+aside {
+    background-color: var(--gb-aside);
+    color: var(--bg);
+    border-radius: 24px;
+    width: 270px;
+    height: 100%;
+    margin-right: 30px;
+    font-size: 0.9rem;
+    padding: 26px;
+}
+
+.text-gray {
+    color: var(--text-gray);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+aside ul li {
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+aside ul li a {
+    color: rgb(86, 147, 206);
+    margin-bottom: 30px;
+}
+
+aside ul li > span {
+    width: 7px;
+    height: 7px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.boardme {
+    background-color: var(--circle-boardme);
+}
+
+.features {
+    background-color: var(--circle-feature);
+}
+
+.marketing {
+    background-color: var(--circle-marketing);
+}
+
+.uidd {
+    background-color: var(--circle-uidd);
+}
+
+.topics {
+    background-color: var(--circle-topics);
+}
+
+.bugs {
+    background-color: var(--circle-bugs);
+}
+
+.team-continer {
+    background-color: var(--bg-team);
+    padding: 20px;
+    border-radius: 14px;
+}
+
+.team-continer h5 {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.team-continer p {
+    font-weight: 200;
+    line-height: 18px;
+    margin-bottom: 20px;
+    margin-top: 12px;
+}
+
+.team-continer button {
+    border: none;
+    width: 100%;
+    padding: 8px;
+    font-weight: 600;
+    border-radius: 7px;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+}
+
+.team-continer button:hover {
+    background-color: var(--gb-aside);
+    color: var(--bg);
+}
+
+section {
+    padding-top: 20px;
+}
+
+section .title {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+section .inner-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    row-gap: 8px;
+    width: 640px;
+    height: 300px;
+}
+
+.square {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg);
+    font-size: 3rem;
+    font-weight: 800;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 200ms ease-out;
+}
+
+.square:hover {
+    transform: scale(1.1);
+}
+
+.square.marketing {
+    box-shadow: 0px 5px 14px 0px rgba(83, 173, 255, 0.6);
+}
+
+.square.features {
+    box-shadow: 0px 5px 14px 0px rgba(255, 132, 92, 0.6);
+}
+
+.square.boardme {
+    box-shadow: 0px 5px 14px 0px rgba(255, 183, 79, 0.6);
+}
+
+.square.uidd {
+    box-shadow: 0px 5px 14px 0px rgba(169, 96, 246, 0.6);
+}
+
+.square-container-add {
+    color: var(--text-gray);
+}
+
+.square-container-add > div {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: var(--text-gray);
+    font-size: 3rem;
+    font-weight: 300;
+    border-radius: 20px;
+    border: 2px solid var(--border);
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.square-container-add > div:hover {
+    background-color: var(--border);
+    color: var(--bg);
+}
+
+.fa-plus {
+    display: block;
+    background-color: red;
+}
+
+.square-container p, .square-container-add p {
+    margin-top: 12px;
+    font-size: 0.9rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+.privacy {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--bg-team);
+}
+
+.privacy p {
+    cursor: pointer;
+}
+
+.privacy i {
+    cursor: pointer;
+}
+
+.privacy div {
+    height: 30px;
+    width: 30px;
+    border: 2px solid var(--border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    cursor: pointer;
+}

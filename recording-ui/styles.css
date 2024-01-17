@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+    --bg-body: rgb(222, 243, 242);
+    --bg-item: rgb(248, 252, 255);
+    --bg-footer: rgb(243, 250, 250);
+    --color: rgb(103, 105, 107);
+    --color-pause: rgb(4, 190, 164);
+    --color-stop: rgb(216, 0, 0);
+    --color-time: rgb(36, 48, 48);
+    --color-microphone: rgb(6, 197, 85);
+    --color-close: rgb(208, 208, 208);
+    --color-shadow: rgba(174, 226, 227, 0.6)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-body);
+    color: var(--color);
+}
+
+.display {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: var(--bg-item);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 40px;
+    box-shadow: 0px 10px 60px 30px var(--color-shadow),0px -8px 60px 30px var(--color-shadow);
+}
+
+i {
+    display: block;
+    cursor: pointer;
+}
+
+.recording {
+    margin-top: -50px;
+}
+
+.time {
+    font-size: 2rem;
+    color: var(--color-time);
+}
+
+.btns p {
+    font-size: 1.2rem;
+}
+
+.play-pause {
+    color: var(--color-pause);
+    gap: 8px; 
+    cursor: pointer;
+}
+
+.stop {
+    color: var(--color-stop);
+    gap: 8px; 
+    cursor: pointer;       
+}
+
+.fa-pause,
+.fa-stop {
+    font-size: 2rem;
+}
+
+.draw,
+.magnify,
+.micro,
+.play-pause,
+.stop {
+    display: flex;
+    align-items: center;
+}
+
+.draw,
+.magnify {
+    column-gap: 8px;
+}
+
+.micro {
+    column-gap: 14px;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+}
+
+.footer {
+    background-color: var(--bg-footer);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0px 20px;
+}
+
+.fa-window-minimize,
+.fa-x {
+    position: absolute;
+    top: 14px;
+    color: var(--color-close);
+}
+
+.fa-window-minimize {
+    right: 36px;
+}
+
+.fa-x {
+    right: 14px;
+}
+
+.fa-microphone {
+    color: var(--color-microphone);
+}
+
+.fa-video,
+.fa-volume-high {
+    color: var(--color-close);
+}
+
+.micro {
+    position: relative;
+}
+
+.fa-xmark {
+    position: absolute;
+    bottom: 16px;
+    font-size: 1.1rem;
+    color: var(--color-stop);
+}

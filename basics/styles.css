@@ -1,0 +1,152 @@
+:root {
+    --bg-body: rgb(231, 224, 254);
+    --bg-item: rgb(255, 255, 255);
+    --bg-button: rgb(217, 217, 217);
+    --bt-shadow: rgb(205, 205, 205);
+    --orange: rgb(239, 85, 48);
+    --purple: rgb(69, 33, 170);
+    --hover: rgb(133, 108, 219);
+    --active: rgb(208, 196, 241);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-body);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    width: 55vw;
+    height: 100%;
+    padding: 30px 14vw;
+    background-color: var(--bg-item);
+    box-shadow: -12px 0px 21px -3px rgba(69, 33, 170,0.1),12px 0px 21px -3px rgba(69, 33, 170,0.1);
+}
+
+button {
+    text-transform: uppercase;
+    box-shadow: 0px 6px 2px -3px rgba(205, 205, 205,0.7);
+    display: block;
+    margin-bottom: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-typo {
+    padding: 5px 8px;
+    margin-bottom: 26px;
+}
+
+.btn-heading {
+    padding: 5px 22px;
+    margin-bottom: 16px;
+}
+
+i {
+    display: block;
+    margin-top: 5px;
+}
+
+.arial {
+    margin-top: 14px;
+    margin-bottom: 5px;
+}
+
+.roman {
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 15px;
+}
+
+.line {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    text-decoration: line-through;
+}
+
+h1 { 
+    font-size: 2em; 
+    margin-bottom: 4px;
+}
+
+h2 { 
+    font-size: 1.5em; 
+    margin-bottom: 4px;
+}
+
+h3 { 
+    font-size: 1.17em; 
+    margin-bottom: 30px;
+}
+
+.btn-color {
+    padding: 5px 18px;
+    margin-bottom: 20px;
+}
+
+.orange {
+    color: var(--orange);
+    margin-bottom: 10px;
+}
+
+.cube {
+    background-color: var(--orange);
+    height: 77px;
+    width: 77px;
+}
+
+.purple {
+    color: var(--purple);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.circle {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: var(--purple);
+    margin-bottom: 40px;
+}
+
+.btn {
+    padding: 5px 16px;
+}
+
+.bold {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.btn-default,
+.btn-hovered,
+.btn-active {
+    padding: 14px 70px;
+    color: white;
+    text-transform: none;
+    margin-top: 7px;
+    border-radius: 0px;
+}
+
+.btn-default {
+    background-color: var(--purple);
+}
+
+.btn-hovered {
+    background-color: var(--hover);
+}
+
+.btn-active {
+    background-color: var(--active);
+}

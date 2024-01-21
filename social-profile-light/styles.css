@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+:root {
+    --bg-body: rgb(244, 230, 232);
+    --bg-item: rgb(254, 254, 254);
+    --bg-btn-follow-left: rgb(255, 52, 103);
+    --bg-btn-follow-right: rgb(251, 147, 57);
+    --bg-btn-send: rgb(255, 238, 210);
+    --text-color: rgb(29, 29, 29);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-body);
+    color: var(--text-color);
+    font-family: 'Lato', sans-serif;
+}
+
+span {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.profile-card {
+    width: 485px;
+    height: 460px;
+    background-color: var(--bg-item);
+    border-radius: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 65px 50px 50px 50px;
+    box-shadow: 0px 10px 30px -3px rgba(0,0,0,0.1);
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0px 10px 30px -3px rgba(0,0,0,0.2);
+}
+
+h2 {
+    font-weight: 900;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: -20px;
+}
+
+p {
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.btns {
+    display: flex;
+    gap: 10px
+}
+
+button {
+    border: none;
+    border-radius: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 186px;
+    padding: 18px;
+    transition: all 300ms ease-in;
+}
+
+.follow {
+    background-image: linear-gradient(90deg, var(--bg-btn-follow-left), var(--bg-btn-follow-right));
+}
+
+.follow:hover {
+    background-image: linear-gradient(180deg, var(--bg-btn-follow-right), var(--bg-btn-follow-left));
+}
+
+.send {
+    background-color: var(--bg-btn-send);
+}
+
+.send:hover {
+    background-color: rgb(255, 210, 210);
+}
+
+i {
+    margin-right: 7px;
+    margin-top: 3px;
+}

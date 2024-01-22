@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+        <h1>Try FREE for 4 weeks</h1>
+        <p>We uncover the facts around the <br>
+        clock, all over the globe.</p>
+        <div class="plans">
+            <div class="monthly">
+                <label class="container">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <div class="monthly-info">
+                    <h4>MONTHLY</h4>
+                    <h3>4 weeks for free</h3>
+                    <p>Then $3 every month for the first year</p>
+                </div>
+            </div>
+            <div class="yearly border">
+                <label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <div class="yearly-info">
+                    <div class="value">Best value</div>
+                    <h4>YEARLY</h4>
+                    <h3>4 weeks for free</h3>
+                    <p>Then $30 for the first year</p>
+                </div>
+            </div>
+        </div>
+        <button class="btn-continue"><span>Continue</span></button>
+        <button class="btn-pay"><span>Continue with </span><svg aria-label="PayPal" fill="none" width="77" height="36" viewBox="0 0 170 48">
+            <path fill="#003087" d="M62.6 28.7a10.1 10.1 0 0 0 10-8.6c.7-5-3.2-9.3-8.7-9.3h-8.8a.7.7 0 0 0-.7.6l-4 25a.6.6 0 0 0 .7.8h4.7a.7.7 0 0 0 .7-.6l1.1-7.3a.7.7 0 0 1 .7-.6h4.3Zm3.9-8.8c-.3 1.8-1.7 3.2-4.4 3.2h-3.5l1-6.7H63c2.9 0 3.8 1.7 3.5 3.5Zm26.4-1.2h-4.5a.7.7 0 0 0-.7.6l-.1 1S84 16.3 78 19a10.6 10.6 0 0 0-6 6.7s-2.2 6.7 3 10.4c0 0 4.7 3.6 10.1-.2v.6a.6.6 0 0 0 .5.7h4.5a.7.7 0 0 0 .7-.6l2.7-17.2a.6.6 0 0 0-.6-.7Zm-6.6 9.5a5 5 0 0 1-5 4.3 4.5 4.5 0 0 1-1.4-.2 4 4 0 0 1-2.7-4.5 5 5 0 0 1 5-4.3l1.4.2a4 4 0 0 1 2.7 4.5Z"></path>
+            <path fill="#0070E0" d="M126.7 28.7a10.1 10.1 0 0 0 10-8.6c.7-5-3.1-9.3-8.6-9.3h-8.9a.7.7 0 0 0-.7.6l-4 25a.6.6 0 0 0 .4.8.6.6 0 0 0 .3 0h4.7a.7.7 0 0 0 .7-.6l1.1-7.3a.7.7 0 0 1 .7-.6h4.3Zm3.9-8.8c-.3 1.8-1.7 3.2-4.4 3.2h-3.5l1-6.7h3.5c2.8 0 3.7 1.7 3.4 3.5Zm26.4-1.2h-4.5a.7.7 0 0 0-.7.6l-.1 1s-3.5-3.9-9.6-1.3a10.6 10.6 0 0 0-5.9 6.7s-2.3 6.7 2.9 10.4c0 0 4.7 3.6 10.1-.2v.6a.6.6 0 0 0 .3.6l.3.1h4.4a.7.7 0 0 0 .7-.6l2.7-17.2a.7.7 0 0 0-.1-.5.6.6 0 0 0-.5-.2Zm-6.6 9.5a5 5 0 0 1-5 4.3 4.5 4.5 0 0 1-1.4-.2 4 4 0 0 1-2.7-4.5 5 5 0 0 1 5-4.3c.5 0 1 0 1.4.2a4 4 0 0 1 2.7 4.5Z"></path>
+            <path fill="#003087" d="m109.2 19.1-5.4 9-2.7-8.9a.7.7 0 0 0-.6-.5h-4.9a.5.5 0 0 0-.5.7l4.9 15.1-4.4 7.2a.5.5 0 0 0 .4.8h5.2a.9.9 0 0 0 .8-.4l13.6-22.6a.5.5 0 0 0-.4-.8H110a.9.9 0 0 0-.8.4Z"></path>
+            <path fill="#0070E0" d="m162 11.4-4 25a.6.6 0 0 0 .4.7l.3.1h4.6a.7.7 0 0 0 .7-.6l4-25a.6.6 0 0 0-.2-.6.6.6 0 0 0-.4-.2h-4.7a.7.7 0 0 0-.7.6Z"></path>
+            <path fill="#001C64" d="M37.1 22.3c-1 5.7-5.6 10-11.8 10h-3.9c-.8 0-1.6.8-1.7 1.6L18 44.7c-.1.6-.4.8-1 .8h-6.3c-.6 0-.8-.2-.7-.8l.7-7.5-7.5-.4c-.6 0-.8-.3-.8-1L7.6 3.3c0-.6.5-.9 1-.9h13.1c6.3 0 10.2 4.2 10.7 9.7 3.8 2.5 5.5 5.9 4.7 10.2Z"></path>
+            <path fill="#0070E0" d="m12.6 25-1.9 12.2-1.2 7.6a1 1 0 0 0 1 1.2h6.7a1.3 1.3 0 0 0 1.2-1l1.8-11.1a1.3 1.3 0 0 1 1.2-1h4a12.5 12.5 0 0 0 12.2-10.6A9.7 9.7 0 0 0 32.4 12a10 10 0 0 1-.1 1.4A12.5 12.5 0 0 1 20 24h-6.1a1.3 1.3 0 0 0-1.3 1Z"></path>
+            <path fill="#003087" d="M10.7 37.2H3A1 1 0 0 1 2 36L7.2 3a1.3 1.3 0 0 1 1.3-1h13.2C28 2 32.5 6.6 32.4 12a11.6 11.6 0 0 0-5.4-1.2H16a1.3 1.3 0 0 0-1.3 1l-2 13.3-2 12.1Z"></path>
+        </svg></button>
+        <a href="#">View more offers</a>
+    </section>
+</body>
+</html>

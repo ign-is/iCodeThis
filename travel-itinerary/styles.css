@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --bg-left: rgb(0, 150, 207);
+    --bg-right: rgb(0, 173, 199);
+    --bg-header: rgb(237, 239, 241);
+    --text-primary: rgb(79, 103, 120);
+    --icon-primary: rgb(150, 178, 201);
+    --text-title: rgb(0, 149, 218);
+    --check: rgb(88, 233, 0);
+    --btns: rgb(41, 181, 248);
+    --bg-item: rgb(255, 255, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(90deg, var(--bg-left), var(--bg-right));
+    color: var(--text-primary);
+    font-family: 'Poppins', sans-serif;
+}
+
+.itinerary {
+    width: 450px;
+    height: 830px;
+    background-color: var(--bg-item);
+    border-radius: 7px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.header {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: var(--bg-header);
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.header i {
+    color: var(--icon-primary);
+    cursor: pointer;
+}
+
+.fa-chevron-left {
+    font-size: 1.5rem;
+}
+
+.fa-ellipsis {
+    font-size: 1.9rem;
+}
+
+.fa-circle-check {
+    color: var(--check);
+    font-size: 1.4rem;
+    display: block;
+    margin-bottom: 6px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.4);
+    border-radius: 50%;
+}
+
+.line {
+    width: 1px;
+    height: 194px;
+    background-color: rgb(224, 224, 224);
+}
+
+.line-check {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.section, 
+.section-two,
+.section-three,
+.section-four {
+    display: flex;
+    padding: 30px;
+}
+
+.step h4 {
+    color: var(--text-title);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 22px;
+    margin-top: -5px;
+}
+
+.step p {
+    font-size: 0.8rem;
+}
+
+.step h1 {
+    margin-top: -5px;
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.gray {
+    background-color: var(--bg-header);
+    border-radius: 16px;
+    width: fit-content;
+    padding: 3px 16px;
+    font-size: 1rem;
+    margin-top: -14px;
+    margin-bottom: 40px;
+}
+
+.section-two {
+    margin-top: -53px;
+}
+
+.section-two .line {
+    height: 156px;
+}
+
+.section-three {
+    margin-top: -52px;
+}
+
+.section-three .line {
+    height: 116px;
+}
+
+.section-three p {
+    margin-top: -20px;
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
+
+.section-three .gray {
+    display: inline;
+    margin-right: 3px;
+    padding: 7px;
+    font-size: 1.1rem;
+    border-radius: 12px;
+}
+
+.section-three .gray:last-of-type {
+    font-size: 1rem;
+    padding: 7px 12px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(228, 230, 231);
+    margin-top: -115px;
+}
+
+.section-four {
+    margin-top: -40px;
+} 
+
+.section-four h4 {
+    margin-top: -24px;
+}
+
+.section-four p {
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.section-four .btn {
+    width: fit-content;
+}
+
+.btn {
+    background-color: var(--btns);
+    padding: 8px 15px;
+    border-radius: 9px;
+    color: var(--bg-item);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 300ms ease-in;
+}
+
+.btn:hover {
+    background-color: blue;
+}

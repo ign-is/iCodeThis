@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --bg-body: rgb(246, 246, 246);
+    --bg-items: rgb(31, 33, 37);
+    --bg-seconday: rgb(253, 180, 4);
+    --color-star: rgb(147, 154, 238);
+    --color-text: rgb(255, 255, 255);
+    --color-text-secondary: rgb(42, 42, 42);
+    --line: rgb(144, 146, 150);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-body);
+    color: var(--color-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.restaurants,
+.choose-time,
+.people-container {
+    background-color: var(--bg-items);
+    border-radius: 9px;
+    box-shadow: 0px 14px 30px 10px rgba(0,0,0,0.2);
+}
+
+/* Restaurants */
+.restaurants {
+    width: 490px;
+    height: 270px;
+    padding: 30px 32px 19px 32px;
+    margin-left: 10px;
+    margin-top: 50px;
+    margin-right: 30px;
+}
+
+.restaurants h1 {
+    margin-bottom: 35px;
+    font-size: 1.6rem;
+}
+
+.restaurants .container {
+    display: flex;
+    background-color: var(--color-text);
+    color: var(--color-text-secondary);
+    padding: 15px;
+    border-radius: 9px;
+    position: relative;
+}
+
+.restaurants .inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.restaurants .star {
+    display: flex;
+    position: absolute;
+    right: 17px;
+    top: 31px;
+    gap: 4px;
+}
+
+.restaurants .star > p {
+    font-size: 1rem;
+}
+
+.fa-star {
+    color: var(--color-star);
+}
+
+.restaurants .place, .restaurants .open {
+    display: flex;
+    align-items: flex-start;
+}
+
+.restaurants p {
+    font-size: 0.8rem;
+}
+
+.restaurants .fa-location-dot,
+.restaurants .fa-clock {
+    color: var(--bg-seconday);
+    margin-right: 5px;
+    font-size: 1rem;
+}
+
+img {
+    width: 120px;
+    height: 122px;
+    object-fit: cover;
+    border-radius: 7px;
+    margin-right: 15px;
+}
+
+
+.left {
+    display: grid;
+}
+
+/* Button */
+button {
+    color: var(--color-text);
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 36px;
+    border: none;
+    background-color: var(--bg-seconday);
+    padding: 21px 94px;  
+    transition: all 200ms ease-in;
+    cursor: pointer;
+    justify-self: end;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+button:hover {
+    background-color: rgb(253, 153, 4);
+}
+
+button span {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* People */
+.people-container {
+    height: 330px;
+    width: 435px;
+    padding: 34px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.people-container a {
+    text-decoration: none;
+    color: var(--bg-seconday);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.people-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(144, 146, 150, 0.2);
+    padding-bottom: 30px;
+}
+
+.people-header .right {
+    color: var(--bg-seconday);
+    cursor: pointer;
+} 
+
+.people-header .left {
+    display: flex;
+    font-weight: 300;
+    align-items: center;
+}
+
+.number {
+    display: block;
+    margin-right: 4px;
+}
+
+.people {
+    display: flex;
+}
+
+.fa-user-group {
+    color: var(--line);
+    margin-right: 12px;
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    font-weight: 300;
+    text-align: center;
+    row-gap: 18px;
+    padding-top: 34px;
+    padding-bottom: 22px;
+}
+
+.num {
+    cursor: pointer;
+    height: 38px;
+    width: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.num-people {
+    border-radius: 50%;
+    background-color: var(--bg-seconday);
+}
+
+/* Time */
+.choose-time {
+    height: 230px;
+    width: 435px;
+    padding: 33px;
+    font-weight: 300;
+}
+
+.clock-choose {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.clock-choose 
+.fa-clock {
+    color: var(--bg-seconday);
+    margin-right: 24px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(144, 146, 150, 0.2);
+}
+
+.choose {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 24px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.chosen-time {
+    background-color: var(--bg-seconday);
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: -7px;
+}
+
+.time {
+    cursor: pointer;
+}

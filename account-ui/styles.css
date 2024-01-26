@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Poppins:wght@300;400;700&display=swap');
+
+:root {
+    --bg-body: rgb(215, 227, 239);
+    --bg-items: rgb(255, 255, 255);
+    --color-text: rgb(44, 36, 85);
+    --icon-alpha: rgba(44, 36, 85, 0.6);
+    --bg-app-permissions: rgb(246, 252, 255);
+    --bg-menu: rgb(230, 238, 244);
+    --bg-notification: rgb(255, 170, 54);
+    --font-titles: 'Merriweather', serif;
+    --font-main: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--bg-body);
+    font-family: var(--font-main);
+    color: var(--color-text);
+}
+
+.user,
+.permissions {
+    background-color: var(--bg-items);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* User */
+
+.user {
+    width: 304px;
+    height: 184px;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.1);
+    margin: 60px auto 30px auto;
+}
+
+.user h1 {
+    font-family: var(--font-titles);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-top: -60px;
+    border-radius: 50%;
+}
+
+/* App permissions */
+.permissions {
+    height: 336px;
+    width: 400px;
+    padding: 38px 30px;
+}
+
+.permissions > div {
+    display: flex;
+    align-items: center;
+}
+
+.permissions > div:last-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 40px;
+}
+
+.fa-lock {
+    font-size: 1.3rem;
+    margin-right: 14px;
+}
+
+.permissions h1 {
+    font-size: 1.5rem;
+    font-family: var(--font-titles);
+    font-weight: 700;
+    margin-top: -4px;
+}
+
+.app-access {
+    padding: 7px 9px;
+    border: 1px solid #dddddd;
+    background-color: var(--bg-app-permissions);
+    width: fit-content;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+button {
+    background-color: var(--color-text);
+    color: var(--bg-items);
+    width: fit-content;
+    border-radius: 5px;
+    padding: 15px 14px;
+    font-size: 1rem;
+    border: none;
+    margin-top: 28px;
+    cursor: pointer;
+}
+
+button span {
+    font-family: var(--font-main);
+    font-weight: 300;
+}
+
+/* Menu */
+.menu {
+    width: 100px;
+    height: 358px;
+    background-color: var(--bg-menu);
+    border-radius: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    color: var(--icon-alpha);
+    margin-top: -50px;
+    margin-right: 90px;
+}
+
+.menu .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 22px;
+    font-size: 2rem;
+    background-color: var(--bg-items);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.menu .icon:hover {
+    color: var(--color-text);
+    box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.1);
+}
+
+.menu .icon:nth-of-type(3) {
+    position: relative;
+}
+
+.menu .icon:nth-of-type(2) {
+    color: var(--color-text);
+    box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.1);
+}
+
+.menu .notification {
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background-color: var(--bg-notification);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: 700;
+    color: var(--color-text);
+    top: 0px;
+    right: 0px;
+}
+
+.fa-bell {
+    transform: rotate(45deg);
+}
+

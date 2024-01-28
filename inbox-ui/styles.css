@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Poppins:wght@300;400;700&display=swap');
+
+:root {
+    --bg-body: rgb(245, 248, 255);
+    --bg-item: rgb(255, 255, 255);
+    --bg-behind-top-right: rgb(63, 233, 167);
+    --bg-behind-bottom-left: rgb(63, 244, 210);
+    --bg-cirlce-second: rgb(220, 119, 67);
+    --bg-circle-fourth: rgb(210, 210, 210);
+    --color-text: rgb(31, 37, 85);
+    --shadow: rgba(207, 246, 246, 0.6);
+    --color-text-secondry: rgb(128, 128, 128);
+    --bg-hover: rgb(245, 248, 254);
+    --font-titles: 'Merriweather', serif;
+    --font-main: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-main);
+    color: var(--color-text);
+    background-color: var(--bg-body);
+}
+
+section {
+    width: 617px;
+    height: 770px;
+    background-color: var(--bg-item);
+    padding: 95px 95px 95px 75px;
+    border-radius: 36px;
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    box-shadow: 0px 14px 26px 10px var(--shadow);
+}
+
+h1 {
+    font-family: var(--font-titles);
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+button {
+    background-color: var(--color-text);
+    color: var(--bg-item);
+    border-radius: 18px;
+    border: none;
+    width: 100%;
+    padding: 30px;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+}
+
+button span {
+    font-family: var(--font-main);
+    margin-right: 12px;
+    font-size: 1.1rem;
+}
+
+button:hover {
+    background-image: linear-gradient(45deg, var(--bg-behind-bottom-left), var(--bg-behind-top-right));
+    font-weight: 600;
+}
+
+img {
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.image {
+    position: relative;
+    margin-right: 12px;
+}
+
+.dot {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 3px solid var(--bg-item);
+    box-sizing: content-box;
+    right: 0px;
+    top: 0px;
+}
+
+.circle-one {
+    background-color: var(--bg-behind-top-right);
+}
+
+.circle-two {
+    background-color: var(--bg-cirlce-second);
+}
+
+.circle-three {
+    background-color: var(--bg-behind-bottom-left);
+}
+
+.circle-fourth {
+    background-color: var(--bg-circle-fourth);
+}
+
+.user {
+    width: 100%;
+    height: 107px;
+    border-radius: 16px;
+    display: flex;
+    padding: 15px;
+    transition: all 200ms ease-in;
+}
+
+.user:hover {
+    background-color: var(--bg-hover);
+}
+
+.name-message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 6px;
+}
+
+.name {
+    font-weight: 600;
+}
+
+.days {
+    font-size: 0.8rem;
+    color: var(--color-text-secondry);
+    align-self: flex-start;
+    margin-top: 12px;
+    margin-left: auto;
+}
+
+.behind {
+    height: 640px;
+    width: 577px;
+    border-radius: 36px;
+    background-image: linear-gradient(45deg, var(--bg-behind-bottom-left), var(--bg-behind-top-right));
+    z-index: -1;
+    position: absolute;
+    left: -50px;
+    top: -50px;
+}

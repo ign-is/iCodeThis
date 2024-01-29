@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Merriweather:wght@700&display=swap');
+
+:root {
+    --bg-body: rgb(255, 251, 251);
+    --bg-item: rgb(255, 255, 255);
+    --btn-primary: rgb(160, 70, 37);
+    --btn-secondary: rgb(13, 100, 194);
+    --text-color: rgb(24, 24, 47);
+    --text-color-secondary: rgb(133, 131, 132);
+    --border: rgba(133, 131, 132, 0.4);
+    --shadow: rgba(249, 224, 237, 0.8);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 35px;
+    
+}
+
+section {
+    display: flex;
+    width: 970px;
+    height: 685px;
+    padding: 20px 24px;
+    padding-top: 20px;
+    padding-bottom: 24px;
+    padding-left: 20px;
+    padding-right: 112px;
+    box-shadow: 0px 10px 20px 4px var(--shadow);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 16px;
+}
+
+.right {
+    margin-top: 70px;
+    margin-left: 88px;
+    width: 100%;
+}
+
+img {
+    height: 640px;
+    width: 435px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    object-fit: cover;
+}
+
+label {
+    display: block;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 22px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    border: 1px solid var(--border);
+    padding: 18px;
+    border-radius: 4px;
+    margin-top: 3px;
+    background-color: var(--bg-body);
+    outline: none;
+}
+
+::placeholder {
+    font-size: 1rem;
+    color: var(--text-color-secondary);
+}
+
+button {
+    width: 100%;
+    padding: 18px;
+    border-radius: 4px;
+    color: var(--bg-item);
+    font-size: 1rem;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.log-in {
+    background-color: var(--btn-primary);
+    box-shadow: 0px 10px 15px -3px rgba(160, 70, 37, 0.4);
+
+}
+
+.linkedin {
+    background-color: var(--btn-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+    box-shadow: 0px 10px 15px -3px rgba(13, 100, 194, 0.4);
+}
+
+.fa-linkedin {
+    font-size: 1.3rem;
+    display: block;
+}
+
+p {
+    color: var(--text-color-secondary);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+a {
+    margin-top: 95px;
+    display: block;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 990px) {
+    section {
+        flex-direction: column;
+        height: fit-content;
+        width: 455px;
+        padding: 10px;
+    }
+
+    img {
+        border-radius: 12px;
+        height: 320px;
+        object-fit: cover;
+    }
+
+    .right {
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    input, 
+    button {
+        width: 400px;
+    }
+
+    .log-in {
+        margin-top: 20px;
+    }
+
+    h1,
+    p {
+        text-align: center;
+        margin-left: -60px;
+    }
+
+    p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    a {
+        margin-top: 40px;
+        text-align: center;
+        margin-left: -60px;
+        margin-bottom: 20px;
+    }
+}

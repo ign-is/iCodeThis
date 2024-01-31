@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources Slider</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>Search educational <br> resources</h1>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="left item">
+                <div class="icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="text">
+                    <p class="title"><b>Search forum</b></p>
+                    <p>Share suggestions, ask questions, and
+                    connect with other users and top 
+                    contributors in the Search community
+                    forum.</p>
+                </div>
+            </div>
+            <div class="right item">
+                <div class="icon">
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+                <div class="text">
+                    <p class="title"><b>Inside app</b></p>
+                    <p>Get the most out with latest 
+                    additions to Settings.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="left item">
+                <div class="icon">
+                    <i class="fa-solid fa-video"></i>
+                </div>
+                <div class="text">
+                    <p class="title"><b>Video content</b></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vitae nesciunt, impedit.</p>
+                </div>
+            </div>
+            <div class="right item">
+                <div class="icon">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+                <div class="text">
+                    <p class="title"><b>Share with students</b></p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa facere.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="left item">
+                <div class="icon">
+                    <i class="fa-solid fa-download"></i>
+                </div>
+                <div class="text">
+                    <p class="title"><b>Watch offline</b></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sit animi.</p>
+                </div>
+            </div>
+            <div class="right item">
+                <div class="icon">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="text">
+                    <p class="title"><b>Worldwide community</b></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptates officiis sed! Quo eos saepe ipsa, architecto repellat.</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Next and previous buttons -->
+        <div class="prev" onclick="plusSlides(-1)">
+            <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="next" onclick="plusSlides(1)">
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+    </div>
+    <br>
+  
+    <!-- The dots/circles -->
+    <div style="text-align:center" class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="circle-outer-wrap">
+        <div class="circle-wrap">
+            <div class="circle"></div>
+        </div>
+    </div>
+    <div class="create">
+        <h2>Create a Link</h2>
+        <p>Promote any brand with a simple link</p>
+
+        <select name="themes" id="themes">
+            <option value="premium"><span>Premium Themes &#x25BC;</option>
+            <option value="dark">Dark Theme</option>
+            <option value="glass">Glass Theme</option>
+            <option value="green">Green Theme</option>
+        </select>
+        
+        <label for="website">
+            <input 
+                type="text" 
+                id="website" 
+                placeholder="Enter a webside URL"
+            >
+        </label>
+        <div class="btns">
+            <button class="btn-create">
+                <span>Create</span>
+            </button>
+            <button class="advance">
+                <span>Advance</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="promote">
+        <h2>Promote</h2>
+        <p>Use this link to promote.</p>
+        <p>Link updates may take up to 5 minutes to propagate.</p>
+       
+        <div class="select-themes">
+            <select name="link" id="link">
+                <option value="https">https://&#x25BC;</option>
+                <option value="http">http://</option>
+            </select>
+           
+            <label for="theme">
+                <input 
+                    type="text"
+                    placeholder="Premium Themes"
+                >
+            </label>
+        </div>
+
+        <p class="share">Share</p>
+        <div class="icons">
+            <div class="icon-facebook">
+                <i class="fa-brands fa-square-facebook"></i>
+            </div>
+            <div class="icon-twitter">
+                <i class="fa-brands fa-square-twitter"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

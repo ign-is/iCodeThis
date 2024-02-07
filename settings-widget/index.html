@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings Widget</title>
+    <link rel="stylesheet" href="styles.css">
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" 
+        referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <div class="left">
+        <div class="options">
+            <div class="elipsis">
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            <ul>
+                <li>Edit your list</li>
+                <li>Account settings</li>
+                <li>View yout proffile</li>
+            </ul>
+        </div>
+    </div>
+   
+    <div class="rigth">
+        <div class="customize">
+            <h2>Customize your widget</h2>
+            <div class="options-radio">
+                <label for="contact">
+                    <input type="radio" id="contact" name="radio" value="contact">
+                    Display Contact button
+                </label><br>
+                <label for="email">
+                    <input type="radio" id="email" name="radio" value="email" checked="checked">
+                        Hide email address
+                </label><br>
+                <label for="publish">
+                    <input type="radio" id="publish" name="radio" value="publish">
+                        Display Publish button
+                </label>
+            </div>
+            <div class="btns">
+                <button class="cancel">
+                    <span>Cancel</span>
+                </button>
+                <button class="save">
+                    <span>Save</span>
+                </button>
+            </div>
+        </div>
+    
+        <div class="other">
+            <h2>Other</h2>
+            <label class="form-control">
+                <input type="checkbox" name="checkbox" />
+                Turn on in-app notifications.
+            </label>
+            <label class="form-control">
+                <input type="checkbox" name="checkbox" checked/>
+                Receive weekly newsletters and other offers.
+            </label>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

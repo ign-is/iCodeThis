@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(210, 222, 247);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+section {
+    background-color: rgb(246, 250, 255);
+    width: 840px;
+    height: 400px;
+    border-radius: 30px;
+    padding: 50px;
+    box-shadow: 12px 12px 0px 7px rgba(246, 250, 255,0.3);
+}
+
+h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 7px;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-right: 30px;
+}
+
+.graph {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: conic-gradient( rgb(246,250,255) 6deg, rgb(102,149,253) 6deg 110deg, rgb(246,250,255) 110deg 115deg, rgb(68,115,229) 115deg 200deg, rgb(246,250,255) 200deg 205deg, rgb(30,82,223) 205deg 320deg,rgb(246,250,255) 320deg 325deg,rgb(150,181,255) 315deg 340deg );
+    background-color: rgb(246, 250, 255);
+    position: relative;
+    font-size: 1.5rem;
+}
+
+.graph::before {
+    position: absolute;
+    content: "Traffic sources";
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    top: 18px;
+    left: 18px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.num {
+    width: 20px;
+    align-self: flex-start;
+    margin-left: 4px;
+}
+
+.line-num {
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.line {
+    height: 4px;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+.channel {
+    width: 50%;
+    background-color: rgb(102,149,253);
+}
+
+.direct {
+    width: 42%;
+    background-color: rgb(68,115,229);
+}
+
+.search {
+    width: 25%;
+    background-color: rgb(30,82,223);
+}
+
+.external {
+    width: 14%;
+    background-color: rgb(102,149,253);
+}
+
+a {
+    display: block;
+    text-align: end;
+    margin-right: -30px;
+    margin-top: 10px;
+}
+
+

@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --bg-body: rgb(243, 244, 251);
+    --text-color: rgb(27, 27, 56);
+    --bg-item: rgb(255, 255, 255);
+    --border-search-bar: rgb(208, 206, 219);
+    --placeholder: rgb(118, 119, 128);
+    --bg-price: rgb(229, 231, 246);
+    --bg-name: rgb(246, 228, 245);
+    --bg-stats: rgb(250, 229, 229);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: var(--bg-body);
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    width: 1205px;
+    height: 910px;
+    border: 6px solid var(--text-color);
+    border-radius: 16px;
+    background-color: var(--bg-item);
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 14px 18px -2px rgba(0,0,0,0.2);
+}
+
+section > h1 {
+    margin-top: 115px;
+    margin-bottom: 35px;
+}
+
+label {
+    width: 600px;
+    height: 80px;
+    border: 2px solid var(--border-search-bar);
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    margin: 0 auto;
+    color: var(--placeholder);
+    padding: 20px;
+    margin-bottom: 70px;
+    cursor: pointer;
+}
+
+input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    color: var(--placeholder);
+    margin-left: 10px;
+}
+
+::placeholder {
+    font-family: 'Poppins', sans-serif;
+    color: var(--placeholder);
+}
+
+.upper-container {
+    gap: 26px;
+    display: flex;
+    text-align: left;
+}
+
+.upper-container > div > h2 {
+    margin-bottom: 24px;
+}
+
+.upper-container > div > p {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 28px;
+}
+
+.upper-container > div > button {
+    background-color: transparent;
+    border: 1px solid var(--border-search-bar);
+    border-radius: 34px;
+    padding: 14px 18px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: -20px;
+    transition: all 200ms ease-in;
+}
+
+.upper-container > div > button:hover {
+    background-color: var(--bg-item);
+}
+
+.price,
+.name,
+.stats,
+.calendar,
+.subscribe,
+.api {
+    width: 350px;    
+}
+
+.price,
+.name,
+.stats {
+    height: 265px;
+    border-radius: 9px;
+    padding: 45px 20px 45px 35px;
+}
+
+.price {
+    background-color: var(--bg-price);
+}
+
+.name {
+    background-color: var(--bg-name);
+}
+
+.stats {
+    background-color: var(--bg-stats);
+}
+
+.bellow-container { 
+    display: flex;
+    text-align: left;
+    margin-top: 40px;
+    gap: 26px;
+}
+
+.bellow-container  p, .bellow-container a {
+    font-weight: 600;
+}
+
+
+.calendar,
+.subscribe,
+.api {
+    width: 350px;   
+    height: 200px; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 1218px) {
+    section {
+        width: 830px;
+        padding-left: 42px;
+        height: fit-content;
+    }
+
+    section h1 {
+        margin-top: 50px;
+        font-size: 1.7rem;
+    }
+
+    label {
+        width: 500px;
+        margin-bottom: 30px;
+        height: 60px;
+        font-size: 1rem;
+    }
+
+    input {
+        font-size: 1rem;
+    }
+
+    .upper-container {
+        flex-wrap: wrap;
+    }
+
+    .bellow-container {
+        flex-wrap: wrap;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        gap: 0px;
+    }
+
+    .stats,
+    .api {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 831px) {
+    section {
+        width: 425px;
+        padding-left: 30px;
+        height: fit-content;
+    }
+
+
+    label {
+        width: 350px;
+    }
+
+    .upper-container {
+        flex-direction: column;
+    }
+
+    .bellow-container {
+        flex-direction: column;
+    }
+}

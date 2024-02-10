@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --bg-body: rgb(241, 244, 255);
+    --bg-item: rgb(255, 255, 255);
+    --text-color: rgb(28, 38, 89);
+    --border: rgb(199, 198, 207);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--bg-body);
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    background-color: var(--bg-item);
+    color: var(--text-color);
+    width: 357px;
+    height: 477px;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 14px 22px -3px rgba(0,0,0,0.1);
+}
+
+.landscape {
+    width: 96px;
+    height: 96px;
+    border: 2px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+.landscape h5 {
+    font-weight: 600;
+}
+
+.fa-image {
+    display: block;
+    font-size: 2rem;
+    margin-top: 5px;
+    margin-bottom: 4px;
+}
+
+.price {
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.price h1 {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.price span {
+    font-size: 0.8rem;
+}
+
+.price .currency {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: -10px;
+}
+
+.numbers {
+    margin-bottom: 12px;
+}
+
+.numbers button {
+    width: 50px;
+    height: 40px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--bg-item);
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.numbers button:hover {
+    background-color: var(--text-color);
+    color: var(--bg-item);
+}
+
+.numbers button span {
+    font-family: 'Poppins', sans-serif;
+}
+
+#active {
+    background-color: var(--text-color);
+    color: var(--bg-item);
+}
+
+section > p {
+    font-weight: 500;
+    font-size: 0.8rem;
+    margin-bottom: 30px;
+}
+
+section > button {
+    width: 250px;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--bg-item);
+    background-color: var(--text-color);
+    border-radius: 7px;
+    padding: 20px;
+    border: none;
+    box-shadow: 0px 14px 22px -3px rgba(28, 38, 89 ,0.2);
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+section > button:hover {
+    background-color: var(--border);
+    color: var(--text-color);
+    font-weight: 600;
+}
+

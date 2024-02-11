@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --bg-body: rgb(239, 243, 255);
+    --bg-item: rgb(255, 255, 255);
+    --text-color-secondary: rgb(143, 141, 167);
+    --text-color-primary: rgb(61, 56, 112);
+    --font-titles: 'Merriweather', serif;
+    --font-main: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: var(--bg-body);
+    color: var(--text-color-primary);
+    font-family: var(--font-main);
+}
+
+section {
+    width: 450px;
+    /* height: 815px; */
+    height: auto;
+    background-color: var(--bg-item);
+    border-radius: 34px;
+    padding: 50px;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 120px;
+}
+
+h1 {
+    font-family: var(--font-titles);
+    font-size: 2.1rem;
+    font-weight: 900;
+    margin-bottom: 6px;
+}
+
+section p {
+    color: var(--text-color-secondary);
+}
+
+section h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    margin-bottom: 18px;
+}
+
+.decoration {
+    text-decoration: underline;
+}
+
+.plus {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 95px;
+    height: 60px;
+    border-radius: 18px;
+    background-color: var(--text-color-primary);
+    color: var(--bg-item);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.plus:hover {
+    background-color: var(--text-color-secondary);
+}
+
+.fa-ellipsis {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 2.4rem;
+    color: var(--text-color-secondary);
+    cursor: pointer;
+}
+
+.todos {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.completed-todos {
+    color: var(--text-color-secondary);
+}
+
+.add {
+    z-index: 4;
+    width: 250px;
+    height: 100px;
+    background-color: var(--bg-item);
+    border: 1px solid var(--text-color-primary);
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 12px;
+    position: absolute;
+    bottom: 30px;
+}
+
+.add input {
+    padding: 7px 10px;
+    width: 95%;
+    outline: none;
+    border: 1px solid var(--text-color-secondary);
+}
+
+.add button {
+    border: none;
+    background-color: var(--text-color-primary);
+    color: var(--bg-item);
+    padding: 6px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.add button:hover {
+    background-color: var(--text-color-secondary);
+    
+}
+
+.add button span {
+    font-family: var(--font-main);
+}
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 50px;
+    padding-top: 5px;
+    margin-bottom: 32px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    border: 1px solid var(--text-color-primary);
+    border-radius: 50%;
+}
+  
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    /* background-color: #2196F3; */
+    background-color: var(--bg-item);
+    border: 1px solid var(--text-color-secondary);
+}
+  
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 14px;
+    top: 9px;
+    width: 8px;
+    height: 14px;
+    border: solid var(--text-color-secondary);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

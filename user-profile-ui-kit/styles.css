@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --bg-body: rgb(68, 99, 146);
+    --bg-circle: rgb(78, 114, 170);
+    --bg-items: rgb(255, 255, 255);
+    --text-color: rgb(22, 28, 33);
+    --bg-color-secondary: rgb(41, 66, 103);
+    --border: rgb(234, 245, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-body);
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.circle {
+    width: 780px;
+    height: 780px;
+    border-radius: 50%;
+    background-color: var(--bg-circle);
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: -1;
+}
+
+.views {
+    width: 550px;
+    height: 150px;
+    padding: 40px 45px;
+    background-color: var(--bg-items);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 10px 16px -3px rgba(0,0,0,0.3);
+    margin-top: 30px;
+    margin-left: -30px;
+    margin-right: 20px;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.number h2 {
+    font-size: 1.9rem;
+}
+
+.fa-eye {
+    color: var(--bg-color-secondary);
+    font-size: 2rem;
+}
+
+.user-images {
+    display: flex;
+}
+
+.user-images img{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 3px solid var(--bg-items);
+    object-fit: cover;
+}
+
+.img-one {
+    z-index: 3;
+    margin-right: -20px;
+}
+
+.img-two {
+    z-index: 2;
+    margin-right: -20px;
+}
+
+.img-three {
+    z-index: 1;
+}
+
+
+.user {
+    height: 405px;
+    width: 345px;
+    background-color: var(--bg-items);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 45px;
+    box-shadow: 0px 10px 16px -3px rgba(0,0,0,0.3);
+    margin-top: -60px;
+}
+
+.user-img {
+    position: relative;
+}
+
+.user-img img {
+    width: 145px;
+    height: 145px;
+    border: 7px solid var(--border);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.pro {
+    color: var(--bg-items);
+    padding: 4px 8px;
+    border-radius: 16px;
+    background-color: var(--bg-color-secondary);
+    display: inline;
+    position: absolute;
+    bottom: 0px;
+    left: 35%;
+}
+
+.name-user {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.name-user h2 {
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    
+}
+.customize {
+    width: 425px;
+    height: 407px;
+    border-radius: 20px;
+    background-color: var(--bg-items);
+    padding: 25px 25px 40px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 10px 16px -3px rgba(0,0,0,0.3);
+    margin-right: 40px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 98px;
+    height: 98px;
+    border-radius: 50%;
+    border: 9px solid var(--border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+    color: var(--bg-color-secondary);
+    margin-right: 20px;
+}
+
+button {
+    background-color: var(--bg-color-secondary);
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+button:hover {
+    background-color: var(--bg-circle);
+}
+
+button span {
+    font-family: 'Poppins', sans-serif;
+    color: var(--bg-items);
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 973px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left {
+        align-items: center;
+    }
+
+    .user,
+    .customize,
+    .views {
+        margin: 0px 0px 40px 0px;
+    }
+}

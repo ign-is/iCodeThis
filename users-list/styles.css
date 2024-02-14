@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Poppins:wght@300;400;700&display=swap');
+
+
+:root {
+    --bg-body: rgb(229, 234, 248);
+    --bg-item: rgb(255, 255, 255);
+    --text-color-primary: rgb(22, 48, 42);
+    --text-color-secondary: rgb(132, 159, 255);
+    --text-color-interests: rgb(98, 110, 179);
+    --text-navbar: rgb(88, 87, 99);
+    --placeholder: rgb(91, 94, 104);
+    --border-input: rgb(195, 194, 217);
+    --font-titles: 'Merriweather', serif;
+    --font-main: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: var(--bg-body);
+    font-family: var(--font-main);
+    color: var(--text-color-primary);
+}
+
+section {
+    width: 1210px;
+    height: 790px;
+    background-color: var(--bg-item);
+    padding: 90px 100px;
+    border-radius: 18px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 10px 15px -2px rgba(0,0,0,0.2);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    column-gap: 2px;
+}
+
+li {
+    border-radius: 6px;
+    padding: 16px;
+    color: var(--text-navbar);
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+li:hover {
+    background-color: var(--text-color-secondary);
+    color: var(--bg-item);
+}
+
+.active {
+    background-color: var(--text-color-secondary);
+    color: var(--bg-item);
+}
+
+label {
+    width: 325px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border-input);
+    border-radius: 4px;
+    padding: 0px 17px;
+}
+
+
+.fa-magnifying-glass {
+    font-size: 1.5rem;
+    margin-right: 8px;
+}
+
+input {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+::placeholder {
+    color: var(--placeholder);
+    font-family: var(--font-main);
+    font-size: 1rem;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 24px;
+}
+
+h1,
+h2 {
+    font-family: var(--font-titles);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 12px;
+    margin-top: 65px;
+    transition: all 100ms ease-in;
+}
+
+.user {
+    display: flex;
+    width: 325px;
+    height: 208px;
+    border-radius: 20px;
+    padding: 22px;
+    column-gap: 20px;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+.user:hover {
+    border: 1px solid var(--border-input);
+    box-shadow: 0px 9px 15px -3px rgba(132, 159, 255, 0.4);
+}
+
+.name-place {
+    width: 175px;
+}
+
+.name-place h2 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+
+.interests {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 14px;
+}
+
+.interests span {
+    font-size: 0.7rem;
+    color: var(--text-color-interests);
+    border: 1px solid var(--text-color-secondary);
+    border-radius: 10px;
+    padding: 0px 5px;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+.interests span:hover {
+    background-color: var(--text-color-secondary);
+    color: var(--bg-item);
+}
+
+@media screen and (max-width: 1216px) {
+    section {
+        width: 900px;
+        height: fit-content;
+        padding: 50px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    nav {
+        flex-direction: column-reverse;
+        row-gap: 28px;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 40px;
+        margin-top: 26px;
+    }
+}
+
+@media screen and (max-width: 907px) {
+    section {
+        width: 600px;
+        padding: 20px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        margin-left: 117px;
+    }
+}
+
+
+@media screen and (max-width: 627px) {
+    section {
+        width: 400px;
+    }
+
+    .container {
+        margin-top: 20px;
+        margin-left: 16px;
+    }
+
+    label {
+        margin-top: -16px;
+    }
+
+    ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 2px;
+    }
+}

@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --bg-body: rgb(227, 246, 244);
+    --bg-item: rgb(255, 255, 255);
+    --bg-secondary: rgb(45, 105, 141);
+    --text-color: rgb(40, 38, 68);
+    --bg-icons: rgb(28, 95, 134);
+    --bg-icons-secondary: rgb(227, 246, 244);
+    --bg-heart: rgb(255, 96, 91);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--bg-body);
+    font-family: "Roboto", sans-serif;
+}
+
+.some,
+.men-woman-kids,
+.categories,
+.horizontal-container,
+.sales,
+.pay {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.some {
+    width: 525px;
+    height: 138px;
+    padding: 38px 32px 38px 40px;
+    background-color: var(--bg-secondary);
+    color: var(--bg-item);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 16px;
+}
+
+.some .left {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.some .chebron, .pay .chebron {
+    background-color: var(--bg-icons);
+    color: var(--bg-icons-secondary);
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.bigger {
+    font-size: 1.1rem;
+}
+
+.men-woman-kids {
+    width: 360px;
+    height: 88px;
+    padding: 15px;
+    background-color: var(--bg-item);
+    border-radius: 16px;
+}
+
+.men-woman-kids ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    gap: 2px;
+}
+
+.men-woman-kids ul li {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.active {
+    background-color: var(--bg-secondary);
+    color: var(--bg-item);
+}
+
+
+
+.categories {
+    width: 400px;
+    height: 400px;
+    background-color: var(--bg-item);
+    border-radius: 18px;
+}
+
+.categories .option {
+    height: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.option:hover {
+    background-color: var(--bg-icons);
+}
+
+.categories .option:first-of-type {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.445);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.categories .option:nth-of-type(2) {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.445);
+}
+
+.categories .option:last-of-type {
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.categories .option .left {
+    display: flex;
+    align-items: center;
+}
+
+.categories .option .left > i {
+    font-size: 1.8rem;
+    margin-right: 20px;
+}
+
+.categories .option .arrow-icon {
+    width: 45px;
+    height: 45px;
+    background-color: var(--bg-icons-secondary);
+    color: var(--bg-icons);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.categories .option > div:first-of-type p:first-of-type {
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.categories .option > div:first-of-type p:last-of-type {
+    color: gray;
+    font-size: 0.9rem;
+}
+
+
+.sales {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 124px;
+    width: 500px;
+    background-color: var(--bg-item);
+    border-radius: 16px;
+    padding: 35px 35px 20px 35px;
+}
+
+.sales .left > p:first-of-type {
+    margin-bottom: 14px;
+    font-weight: 500;
+}
+
+.sales .left > p:last-of-type {
+    font-size: 0.9rem;
+}
+
+.sales .close {
+    width: 44px;
+    height: 44px;
+    background-color: var(--bg-icons-secondary);
+    color: var(--bg-icons);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.pay {
+    width: 555px;
+    height: 150px;
+    background-color: var(--bg-secondary);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--bg-item);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.pay .left {
+    display: flex;
+    align-items: center;
+}
+
+.pay .left > div:last-of-type p:last-of-type {
+    font-size: 0.9rem;
+    margin-top: 8px;
+}
+
+.paypal {
+    width: 78px;
+    height: 78px;
+    background-color: var(--bg-item);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 24px;
+}
+
+svg {
+    width: 60px;
+}
+
+span {
+    font-weight: bold;
+}
+
+
+/* horizontl scroll  */
+
+.horizontal-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
+    padding: 16px;
+    max-width: 428px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.card {
+    min-width: 428px;
+    min-height: 410px;
+    display: flex;
+    border-radius: 16px;
+    transition: all 0.2s;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    scroll-snap-align: start;
+    position: relative;
+}
+
+.horizontal-container::-webkit-scrollbar {
+    height: 10px;
+}
+
+.horizontal-container::-webkit-scrollbar-track {
+    background: var(--bg-item);
+    border-radius: 999px;
+}
+
+.horizontal-container::-webkit-scrollbar-thumb {
+    background: var(--bg-icons);
+    border-radius: 999px;
+}
+
+.heart {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background-color: var(--bg-item);
+    color: var(--bg-heart);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 1.4rem;
+}
+
+.fa-heart {
+    margin-top: 2px;
+}
+
+img {
+    object-fit: cover;
+    min-width: 428px;
+    min-height: 410px;
+    border-radius: 16px;
+}

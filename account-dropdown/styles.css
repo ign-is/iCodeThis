@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200..1000&display=swap');
+
+:root {
+    --bg-primary: rgb(26, 118, 210);
+    --bg-body: rgb(239, 239, 239);
+    --bg-item: rgb(255, 255, 255);
+    --bg-item-secondary: rgb(245, 247, 249);
+    --text-color: rgb(80, 112, 124);
+    --text-color-red: rgb(224, 41, 111);
+    --text-color-red-opacity: rgba(224, 41, 111, 0.4);
+    --bg-btn: rgb(18, 108, 184);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, var(--bg-primary) 30%, var(--bg-body) 30%);
+    font-family: "Mulish", sans-serif;
+    color: var(--text-color);
+    position: relative;
+    padding-bottom: 30px;
+}
+
+span {
+    font-family: "Mulish", sans-serif;
+}
+
+section {
+    width: 555px;
+    position: absolute;
+    top: 20px;
+    right: 20%;
+}
+
+.nav {
+    display: flex;
+    column-gap: 14px;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+    color: var(--bg-item);
+}
+
+.btn-name {
+    background-color: var(--bg-btn);
+    border: none;
+    padding: 4px 16px;
+    color: var(--bg-item);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.btn-name span {
+    margin-right: 4px;
+}
+
+.envelope,
+.bell {
+    cursor: pointer;
+    transition: all 100ms ease-in;
+    border-radius: 50%;
+}
+
+.envelope:hover,
+.bell:hover, 
+.btn-name:hover {
+    box-shadow: 0px -10px 15px -3px rgba(255, 255, 255,0.3),0px 10px 15px -3px rgba(255, 255, 255,0.3);
+}
+
+.bell {
+    position: relative;
+}
+
+.dot {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: var(--text-color-red);
+    border: 4px solid var(--text-color-red-opacity);
+}
+
+.profile {
+    background-color: var(--bg-item);
+    border-radius: 10px;
+    width: 100%;
+    height: 565px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.2);
+    display: none;
+}
+
+.top {
+    background-color: var(--bg-item);
+    width: 100%;
+    height: 40%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 40px 50px;
+}
+
+.down {
+    background-color: var(--bg-item-secondary);
+    width: 100%;
+    height: 60%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 40px 50px;
+}
+
+img {
+    height: 146px;
+    width: 146px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.right  {
+    height: 105px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.right h1 {
+    font-size: 1.6rem;
+}
+
+.right p {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+}
+
+.btns {
+    column-gap: 2px;
+}
+
+button {
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.btn-view {
+    background-color: var(--bg-primary);
+    border: none;
+    color: var(--bg-item);
+    padding: 8px 16px;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.btn-view:hover {
+    background-color: var(--bg-item);
+    color: var(--bg-primary);
+    border: 1px solid var(--bg-primary);
+}
+
+.btn-add {
+    background-color: var(--bg-item);
+    color: var(--bg-primary);
+    border: none;
+    padding: 8px 16px;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.btn-add:hover {
+    background-color: var(--bg-primary);
+    color: var(--bg-item);
+}
+
+ul {
+    list-style: none;
+    font-size: 1.3rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+li {
+    cursor: pointer;
+    transition: all 100ms ease-in;
+}
+
+li:hover {
+    font-weight: 600;
+}

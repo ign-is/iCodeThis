@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --bg-body: rgb(245, 245, 245);
+    --bg-body-opacity: rgba(245, 245, 245, 0.8);
+    --bg-item: rgb(255, 255, 255);
+    --text-color: rgb(40, 49, 78);
+    --text-color-secondary: rgb(165, 166, 173);
+    --text-color-email: rgb(243, 164, 33);
+    --btn-hover: rgb(180, 173, 239);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--bg-body);
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.login, 
+.phone {
+    width: 765px;
+    height: 385px;
+    background-color: var(--bg-item);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 45px;
+    box-shadow: 0px -5px 20px -3px rgba(0,0,0,0.1),0px 10px 20px -3px rgba(0,0,0,0.1);
+}
+
+.login {
+    padding: 24px 45px 30px 45px;
+}
+
+.phone {
+    height: 420px;
+    margin-top: 20px;
+}
+
+img {
+    width: 75px;
+}
+
+.titles {
+    display: flex;
+    align-items: center;
+}
+
+.title h1 {
+    font-weight: 600;
+}
+
+.title  p {
+    color: var(--text-color-secondary);
+}
+
+strong {
+    font-weight: 600;
+}
+
+.email-primary {
+    border-bottom: 2px solid rgba(128, 128, 128, 0.1);
+}
+
+button {
+    color: var(--text-color);
+    padding: 5px 20px;
+    background-color: var(--bg-body);
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+button:hover {
+    background-color: var(--btn-hover);
+}
+
+span {
+    font-family: "Poppins", sans-serif;
+}
+
+.email-primary, 
+.company-elipsis {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.email-primary {
+    padding-bottom: 25px;
+}
+
+.fa-ellipsis {
+    color: var(--text-color-secondary);
+    font-size: 1.6rem;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+.add {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    cursor: pointer;
+}
+
+.add:hover > .plus {
+    background-color: var(--text-color-email);
+    color: var(--bg-body);
+}
+
+.add:hover > p {
+    text-decoration: underline;
+}
+
+.plus {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 3px solid var(--bg-body);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: var(--text-color-email);
+    transition: all 200ms ease-in;
+}
+
+.add p {
+    color: var(--text-color-email);
+    font-weight: 600;
+    transition: all 200ms ease-in;
+}
+
+.stripes {
+    background: repeating-linear-gradient(
+        135deg,
+        var(--bg-body-opacity),
+        var(--bg-body-opacity) 30px,
+        var(--bg-item) 30px,
+        var(--bg-item) 50px
+    );
+    text-align: center;
+    height: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .login,
+    .phone {
+        width: 400px
+    }
+    
+    .login {
+        height: 450px;
+        text-align: center;
+    }
+
+    .login .titles {
+        flex-direction: column;
+        
+    }
+
+    .email-primary,
+    .company-elipsis {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .email-primary {
+        padding-bottom: 10px;
+        border-bottom: none;
+        height: 80px;
+    }
+
+    .fa-ellipsis {
+        margin-right: 0px;
+    }
+
+    .add {
+        justify-content: center;
+    }
+
+    strong {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .phone {
+        height: 550px;
+    }
+
+    .phone .titles {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .phone .title {
+        margin-top: 5px;
+    }
+
+}

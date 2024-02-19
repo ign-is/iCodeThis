@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,600;1,600&display=swap');
+
+:root {
+    --bg-body: rgb(5, 39, 69);
+    --bg-top: rgb(5, 45, 80);
+    --bg-bottom: rgb(2, 54, 98);
+    --bg-secondary: rgb(54, 195, 254);
+    --text-color: rgb(255, 255, 255);
+    --text-color-select: rgb(54, 95, 127);
+    --text-color-opacity: rgba(54, 95, 127, 0.9);
+    --text-subtitle: rgb(157, 170, 186);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: var(--bg-body);
+    font-family: "Mulish", sans-serif;
+}
+
+section {
+    width: 420px;
+    height: 745px;
+    position: relative;
+    background-color: var(--bg-bottom);
+    padding: 24px 40px;
+}
+
+.skewed {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 420px;
+    height: 36%;
+    background: var(--bg-top);
+    z-index: 0;
+    transform: skewY(-5deg);
+    transform-origin: top left;
+}
+
+.fa-chevron-left {
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.fa-gear {
+    font-size: 1.7rem;
+    cursor: pointer;
+    transition: all 600ms ease-in;
+}
+
+.fa-gear:hover {
+    transform: rotate(360deg);
+}
+
+.top {
+    position: relative;
+    z-index: 1;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.top h1 {
+    font-size: 2.7rem;
+    font-weight: 500;
+}
+
+.top h3 {
+    font-weight: 500;
+    color: var(--text-subtitle);
+}
+
+.plus {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: var(--bg-secondary);
+    font-size: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -5px;
+    bottom: -115px;
+    cursor: pointer;
+}
+
+.plus > i {
+     transition: all 300ms ease-in;
+}
+
+.plus:hover > i {
+    transform: rotate(90deg);
+}
+
+.insert {
+    position: absolute;
+    right: 120px;
+    top: 210px;
+    width: 230px;
+    background-color: var(--bg-bottom);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    box-shadow: 0px -8px 15px -3px rgba(0,0,0,0.2),0px 10px 15px -3px rgba(0,0,0,0.2);
+    display: none;
+}
+
+.insert button {
+    border: none;
+    background-color: var(--bg-secondary);
+    padding: 4px 14px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0px 4px 15px -3px rgba(0,0,0,0.2);
+    margin-bottom: 10px
+}
+
+.insert button:hover {
+    color: var(--text-color);
+}
+
+.insert h2 {
+    margin-bottom: 8px;
+}
+
+input {
+    background-color: var(--bg-bottom);
+    border: none;
+    width: 65%;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    outline: none;
+}
+
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    background: none;
+}
+  
+input[type="time"]{
+    z-index: 0;
+    position: relative;
+}
+  
+input[type="time"]:after{
+    content: "";
+    background-image: url(https://cdn.icon-icons.com/icons2/1508/PNG/512/timeadmin_103908.png);
+    height: 20px;
+    width: 20px;
+    background-size: contain;
+    z-index: -1;
+    position: absolute;
+    right: 0;
+}
+
+section > .bottom {
+    margin-bottom: 50px;
+}
+
+.hour-alarm-check {
+    width: 100%;
+    height: 60px;
+}
+
+.hour-alarm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hour-alarm h2 {
+    color: var(--text-color-opacity);
+    font-size: 2.3rem;
+}
+
+.week {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+}
+
+li {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--text-color-opacity);
+    cursor: pointer;
+}
+
+li:hover {
+    color: var(--text-color);
+}
+
+
+/* TOGGLE SWITCH */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+  
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 28px;
+    width: 28px;
+    left: 4px;
+    bottom: 2px;
+    background-color: var(--bg-top);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider:before{
+    background-color: var(--bg-secondary);
+}
+
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+  /* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+  
+.contain {
+    width: 70px;
+    height: 34px; 
+    position: relative;
+}
+  
+.line {
+    position: absolute;
+    width: 35px;
+    height: 7px;
+    background-color: var(--bg-top);
+    top: 15px;
+    left: 12px;
+    border-radius: 4px;
+}
+

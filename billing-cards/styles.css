@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Merriweather:wght@400;700&display=swap');
+
+:root {
+    --bg-body: rgb(29, 31, 51);
+    --bg-item: rgb(39, 39, 66);
+    --bg-secondary: rgb(233, 65, 115);
+    --text-color: rgb(255, 255, 255);
+    --text-color-secondary: rgb(164, 167, 180);
+    --border: rgb(74, 74, 120);
+    --title-font: "Merriweather", serif;
+    --primary-font: "IBM Plex Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--bg-body);
+    color: var(--text-color);
+    position: relative;
+    gap: 40px;
+    font-family: var(--primary-font)
+}
+
+h2 {
+    font-family: var(--title-font);
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2.2rem;
+}
+
+button > span {
+    font-family: var(--primary-font);
+}
+
+.professional {
+    width: 480px;
+    height: 331px;
+    background-color: var(--bg-item);
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.upgrade {
+    border: none;
+    background-color: var(--bg-secondary);
+    color: var(--text-color);
+    font-size: 1rem;
+    padding: 18px 36px;
+    font-weight: 500;
+    border-radius: 4px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.upgrade:hover {
+    background-color: var(--bg-body);
+    border: 1px solid var(--bg-secondary);
+}
+
+.btns a {
+    color: var(--text-color-secondary);
+    cursor: pointer;
+    transition: all 200ms ease-in;
+    padding: 10px;
+}
+
+.btns a:hover {
+    background-color: var(--bg-body);
+}
+
+.invoice {
+    width: 535px;
+    height: 520px;
+    border-radius: 10px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: var(--bg-item);
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 14px 20px;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.pdf {
+    color: var(--bg-secondary);
+    opacity: 0;
+}
+
+li:hover {
+    background-color: var(--bg-body);
+}
+
+li:hover > .pdf {
+    opacity: 1;
+}
+
+.show {
+    border: 2px solid var(--border);
+    color: var(--text-color);
+    padding: 18px 36px;
+    border-radius: 4px;
+    background-color: var(--bg-item);
+    font-size: 1rem;
+    width: fit-content;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.show:hover {
+    background-color: var(--bg-body);
+    border: 1px solid var(--bg-secondary);
+}
+
+.square {
+    background-color: var(--bg-secondary);
+    height: 250px;
+    width: 430px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: -1;
+    bottom: 4%;
+}
+
+@media screen and (max-width: 1080px) {
+    body {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .professional {
+        margin-top: 20px;
+    }
+
+    .square {
+        top: 100px;
+        position: fixed;
+    }
+
+    .invoice {
+        margin-bottom: 30px;
+        width: 480px;
+    }
+}

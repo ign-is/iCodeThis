@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --bg-color: #50262d;
+    --bg-secondary: #ef5e4b; 
+    --bg-secondary-alpha: #ef5e4b77; 
+    --bg-primary: #fffaf5;
+    --bg-plus-minus: #e0e0e0;
+    --text-color: #83817f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--bg-color);
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.log {
+    height: 575px;
+    width: 440px;
+    background-color: var(--bg-primary);
+    color: var(--text-color);
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px -8px 15px -3px rgba(0,0,0,0.2),0px 17px 15px -3px rgba(0,0,0,0.2);
+}
+
+.header {
+    height: 85px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-secondary);
+    padding: 30px;
+    font-size: 1.5rem;
+    color: var(--bg-primary);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    box-shadow: 0px 10px 15px -1px rgba(239, 94, 75,0.3);
+}
+
+img {
+    width: 140px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+    border-bottom: 1px solid var(--text-color);
+    padding-bottom: 5px;
+    width: fit-content;
+    margin: 35px auto;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+.log .plus {
+    background-color: var(--bg-secondary);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.6rem;
+    color: var(--bg-primary);
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    transition: all 200ms ease-in;
+}
+
+.log .plus:hover {
+    transform: rotate(180deg);
+}
+
+.header > i {
+    transition: all 200ms ease-in;
+}
+
+.header > i:hover {
+    color: var(--text-color);
+}
+
+i {
+    cursor: pointer;
+}
+
+.container {
+    padding: 20px;
+    background-color: white;
+    margin: 0 14px;
+    box-shadow: 0px 10px 15px -1px rgba(239, 94, 75, 0.1);
+    display: none;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+.select-hour {
+    border: 1px solid var(--bg-plus-minus);
+    background-color: white;
+    padding: 12px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+::placeholder {
+    font-size: 1rem;
+    color: var(--text-color);
+
+}
+
+.pick {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.pick .number {
+    font-size: 1.7rem;
+    border: 1px solid var(--bg-secondary-alpha);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plus-num,
+.minus {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-plus-minus);
+    color: var(--text-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.cancel,
+.save {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    height: 60px;
+    width: 170px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.save {
+    background-color: var(--bg-secondary);
+    color: var(--bg-primary);
+    box-shadow: 0px 10px 15px -1px rgba(239, 94, 75,0.3);
+}
+
+.save:hover {
+    background-color: var(--bg-color);
+}
+
+.cancel {
+    color: var(--text-color);
+    background-color: white;
+}
+
+.cancel:hover {
+    text-decoration: underline;
+}
+
+span {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.message {
+    background-color: white;
+    padding: 20px 40px;
+    box-shadow: 0px 10px 15px -1px rgba(239, 94, 75,0.3);
+    width: 340px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--bg-secondary-alpha);
+}

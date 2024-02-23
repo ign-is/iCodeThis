@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --bg-body: #46504f;
+    --title: #333a3a;
+    --bg-item-up: #35393c;
+    --bg-item-down: #303435;
+    --number: #bd3e54;
+    --text-time: #697676;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--bg-body);
+    font-family: "Rajdhani", sans-serif;
+    text-transform: uppercase;
+}
+
+h1 {
+    color: var(--title);
+    font-size: 6rem;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-bottom: 30px;
+    /* width: 700px; */
+}
+
+.box {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    background-color: var(--bg-item-up);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.number {
+    color: var(--number);
+    font-size: 10rem;
+    font-weight: 500;
+    z-index: 1;
+}
+
+p {
+    writing-mode: vertical-lr; 
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);   
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    color: var(--text-time);
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 2.6rem;
+    z-index: 1;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--bg-item-down);
+    height: 300px;
+    width: 500px;
+    bottom: -100px;
+    right: -100px;
+    transform: rotate(150deg);
+}
+
+@media screen and (max-width: 1487px) {
+    h1 {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .boxes {
+        align-items: center;
+        gap: 20px;
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+
+    .boxes {
+        align-items: center;
+        gap: 20px;
+        width: 400px;
+    }
+}

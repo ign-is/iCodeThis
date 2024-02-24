@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Rajdhani:wght@400;500;600&display=swap');
+
+:root {
+    --bg-body: #122b62;
+    --bg-top-item: #0c2251;
+    --bg-down-item: #13285a;
+    --bg-select: #0092d4;
+    --text-color: #9ea1b9;
+    --ul-text-color: #cfcfcf;
+    --ul-text-secondary: #364b7d;  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: "Inconsolata", monospace;
+    background-color: var(--bg-body);
+}
+
+.sass {
+    width: 920px;
+    height: 1095px;
+    box-shadow: 0px 10px 17px -3px rgba(0,0,0,0.2);
+}
+
+.top {
+    width: 100%;
+    height: 325px;
+    background-color: var(--bg-top-item);
+}
+
+.top h1 {
+    color: var(--bg-select);
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.top p {
+   font-size: 1.7rem;
+   text-align: center;
+   color: var(--text-color);
+}
+
+.down {
+    width: 100%;
+    height: fit-content;
+    background-color: var(--bg-down-item);
+    color: var(--ul-text-color);
+
+}
+
+.down p {
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 38px 0px 0px 38px;
+}
+
+.down ul {
+    list-style: none;
+    height: 100%;
+    color: var(--ul-text-secondary);
+}
+
+.down ul li {
+    padding: 32px 38px;
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.down ul li:hover {
+    background-color: var(--bg-select);
+    cursor: pointer;
+    color: var(--ul-text-color);
+}
+
+.down ul li:nth-of-type(1),
+.down ul li:nth-of-type(2),
+.down ul li:nth-of-type(3) {
+    color: var(--ul-text-color);
+}
+
+li.active {
+    background-color: var(--bg-select);
+    color: var(--ul-text-color);
+}
+
+
+@media screen and (max-width: 920px) {
+    .sass {
+        width: 450px;
+        height: fit-content;
+    }
+
+    .top {
+        height: 220px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .top h1 {
+        font-size: 1.5rem;
+        padding-top: 40px;
+    }
+
+    .top p {
+        font-size: 1.3rem;
+    }
+
+    .down p {
+        font-size: 1rem;
+    }
+
+    .down ul li {
+        padding: 22px 28px;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

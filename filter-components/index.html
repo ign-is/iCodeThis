@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Component</title>
+    <link rel="stylesheet" href="styles.css">
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+</head>
+<body>
+    <nav>
+        <label class="search" for="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="search" placeholder="Search for apps">
+        </label>
+        <div class="dropdown-hover">
+            <button class="btn-drop">
+                <span>Sort</span>
+                <i class="fa-solid fa-chevron-up"></i>
+            </button>
+            <ul class="hover-ul">
+                <li>Top rated</li>
+                <li>Top trending</li>
+                <li>Top selling</li>
+                <li>Newest</li>
+            </ul>
+        </div>
+        <label class="container">Free for all teams
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <button class="btn-more">
+            <span>More Filters</span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <button class="categories">
+            <span>Categories</span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </button>
+    </nav>
+
+
+    <div class="intranet">
+        <div class="square"></div>
+        <h3>Intranet Suite</h3>
+        <p>Your fully personalized central <br>
+        collaboration hub that connects teams,<br>
+        locations, tools and people</p>
+        <ul>
+            <li>mobile</li>
+            <li>project management</li>
+            <li>themes & styles</li>
+        </ul>
+        <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <a href="#">45 reviews</a>
+    </div>
+</body>
+</html>

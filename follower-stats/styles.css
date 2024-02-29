@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --bg-body: #e8f2fa;
+    --bg-item: #f5f9fc;
+    --bg-box: #ffffff;
+    --border: #f8cd5c;
+    --select: #ffa353;
+    --plus: #ffca54;
+    --title: #7f819e;
+    --number: #3b3960;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: var(--bg-body);
+    font-family: "Montserrat", sans-serif;
+    color: var(--number);
+}
+
+.social {
+    width: 180px;
+    height: 650px;
+    background-color: var(--bg-item);
+    padding: 20px 20px 30px 20px;
+    border-top: 6px solid var(--border);
+    border-radius: 7px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.social h3 {
+    color: var(--title);
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 30px;
+}
+
+.box {
+    font-size: 2rem;
+    background-color: var(--bg-box);
+    /* width: 140px; */
+    width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    flex-direction: column;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 200ms ease-in;
+}
+
+.box > i {
+    font-size: 2rem;
+}
+
+.box h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.fa-instagram {
+    font-size: 72px;
+    background: #f09433; 
+    background: -moz-linear-gradient(
+        45deg, 
+        #f09433 0%, 
+        #e6683c 25%, 
+        #dc2743 50%, 
+        #cc2366 75%, 
+        #bc1888 100%); 
+    background: -webkit-linear-gradient(
+        45deg, 
+        #f09433 0%,
+        #e6683c 25%,
+        #dc2743 50%,
+        #cc2366 75%,
+        #bc1888 100%); 
+    background: linear-gradient(
+        45deg, 
+        #f09433 0%,
+        #e6683c 25%,
+        #dc2743 50%,
+        #cc2366 75%,
+        #bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', 
+    endColorstr='#bc1888',
+    GradientType=1 );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 200ms ease-in;
+}
+
+.fa-twitter {
+    color: #1DA1F2;
+    transition: all 200ms ease-in;
+}
+
+.fa-facebook-f {
+    color: #4267B2;
+    transition: all 200ms ease-in;
+}
+
+.plus {
+    background-color: var(--plus);
+    width: 100%;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--bg-box);
+    border-radius: 3px;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+}
+
+.plus:hover {
+    background-color: var(--select);
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.2);
+}
+
+.fa-plus {
+    transition: all 200ms ease-in;
+}
+
+.plus:hover .fa-plus {
+    transform: rotate(180deg);
+}
+
+
+

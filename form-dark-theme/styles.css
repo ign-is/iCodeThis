@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --bg-body: #171717;
+    --bg-items: #222222;
+    --btn: #5d73d9;
+    --text: #ffffff;
+    --text-secondary: #bfbbdc;
+    --btn-hover: #1e40d6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: "Inter", sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+body > .right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 50px;
+    margin-top: -30px;
+}
+
+span,
+::placeholder {
+    font-family: "Inter", sans-serif;
+}
+
+::placeholder {
+    font-family: "Inter", sans-serif;
+    color: var(--text-secondary);
+} 
+
+form {
+    height: 700px;
+    width: 360px;
+    border-radius: 16px;
+    background-color: var(--bg-items);
+    position: relative;
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.fa-xmark {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+form label {
+    font-weight: 600;
+}
+
+form label input, 
+.email-ok label input {
+    border: 1px solid gray;
+    color: var(--text);
+    border-radius: 4px;
+    height: 50px;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--bg-items);
+    margin-top: 5px;
+    outline-color: var(--btn);
+    font-size: 1rem;
+}
+
+form label textarea {
+    background-color: var(--bg-items);
+    border: 1px solid gray;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 5px;
+    padding: 20px;
+    color: var(--text);
+    outline-color: var(--btn);
+    font-size: 1rem;
+
+}
+
+form button {
+    width: 100%;
+    height: 50px;
+    background-color: var(--btn);
+    border-radius: 4px;
+    color: var(--text);
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+form button:hover {
+    background-color: var(--btn-hover);
+}
+
+/* show */
+.get-started {
+    width: 530px;
+    height: 200px;
+    border-radius: 16px;
+    display: flex;
+    padding: 30px 47px;
+    background-color: var(--bg-items);
+    column-gap: 20px;
+    margin-left: 50px;
+}
+
+.get-started .fa-shield-halved {
+    color: var(--btn);
+    font-size: 3.7rem;
+}
+
+.get-started .right {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.get-started .right button {
+    width: 156px;
+    height: 40px;
+    background-color: var(--text);
+    color: var(--bg-items);
+    border-radius: 12px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.get-started .right button:hover {
+    background-color: var(--btn);
+    color: var(--text);
+}
+
+/* newsletter */
+.newsletter {
+    width: 534px;
+    height: 275px;
+    border-radius: 16px;
+    background-color: var(--bg-items);
+    padding: 40px;
+}
+
+.newsletter .fa-envelope-open {
+    font-size: 3.3rem;
+    margin-bottom: 20px;
+}
+
+.newsletter h2 {
+    margin-bottom: 34px;
+}
+
+.email-ok {
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
+    height: 50px;
+}
+
+.email-ok button {
+    width: 95px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--btn);
+    color: var(--text);
+    font-size: 1rem;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.email-ok button:hover {
+    background-color: var(--btn-hover);
+}
+
+@media screen and (max-width: 1010px) {
+    body {
+        align-items: center;
+        flex-direction: column-reverse; 
+        gap: 0;
+    }
+
+    body .right {
+        margin-left: 0px;
+    }
+
+    .newsletter {
+        width: 440px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .get-started {
+        margin-left: 0px;
+        margin-top: 30px;
+        width: 440px;
+        height: 340px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .get-started .fa-shield-halved {
+        font-size: 4rem;
+    }
+
+    .get-started .right {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .get-started .right h3 {
+        margin-top: 30px;
+    }
+
+    .get-started .right button {
+        margin: 0 auto;
+    }
+
+    form {
+        margin-top: 30px;
+    }
+}

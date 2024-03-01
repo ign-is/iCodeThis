@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Dark Theme</title>
+    <link rel="stylesheet" href="styles.css">
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+</head>
+<body>
+
+    <form>
+        <i class="fa-solid fa-xmark"></i>
+        <p>Hi!</p>
+        <p>One of our consultants will assist you <br>
+        as soon as they can!</p>
+        <label for="name">
+            Name 
+            <input type="text">
+        </label>
+        <label for="Email">
+            Email
+            <input type="emial">
+        </label>
+        <label for="phone">
+            Phone
+            <input type="number">
+        </label>
+        <label for="textarea">
+            Message
+            <textarea 
+                name="textarea" 
+                id="textarea" 
+                cols="30" 
+                rows="10">
+            </textarea>
+        </label>
+        <button>
+            <span>Start chat</span>
+        </button>
+    </form>
+    <div class="right">
+        <div class="get-started">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div class="right">
+                <h3>Show others that you are safe</h3>
+                <p>If you approve yout profile with BankID, you are <br>
+                perceived as a safer person to trade with</p>
+                <button>
+                    <span>Get started</span>
+                </button>
+            </div>
+        </div>
+    
+        <div class="newsletter">
+            <i class="fa-regular fa-envelope-open"></i>
+            <h2>Subscribe to the newsletter</h2>
+            <div class="email-ok">
+                <label for="email">
+                    <input id="email" type="email" placeholder="Eneter email address">
+                </label>
+                <button>
+                    <span>OK</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

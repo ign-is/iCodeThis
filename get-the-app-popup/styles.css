@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --bg-body: rgb(247, 246, 249);
+    --bg-item: rgb(255, 255, 255);
+    --close: rgb(170, 172, 192);
+    --text: rgb(37, 45, 70);
+    --border: rgb(228, 232, 251);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text);
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.get-the-app {
+    background-color: var(--bg-item);
+    width: 1055px;
+    height: 740px;
+    border-radius: 16px;
+    text-align: center;
+    position: relative;
+    padding: 100px;
+    box-shadow: 0px 10px 30px -3px rgba(0,0,0,0.2);
+}
+
+.fa-xmark {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 3rem;
+    color: var(--close);
+    cursor: pointer;
+}
+
+.get-the-app h1 {
+    font-weight: 500;
+    margin-bottom: 55px;
+    font-size: 4rem;
+}
+
+.get-the-app > p {
+    margin-bottom: 110px;
+    font-size: 2.3rem;
+}
+
+.get-the-app .boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boxes .box {
+    width: 230px;
+    height: 230px;
+    border: 30px solid var(--border);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+   
+}
+
+.boxes .box > p {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.boxes .box > i {
+    font-size: 3rem;
+    display: block;
+}
+
+.boxes .box:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    border-color: var(--text);
+}
+
+@media screen and (max-width: 1010px) {
+    .get-the-app {
+         width: 700px;
+         padding: 50px;
+         height: fit-content;
+    }
+
+    .get-the-app h1 {
+        margin-bottom: 10px;
+    }
+
+    .get-the-app > p {
+        margin-bottom: 50px;
+    }
+
+    .boxes {
+        flex-wrap: wrap;
+        row-gap: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .box:last-of-type {
+        margin: auto;
+    }
+
+    .fa-xmark {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .get-the-app {
+        width: 450px;
+    }
+
+    .get-the-app h1 {
+        font-size: 3rem;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .get-the-app > p {
+        font-size: 1.9rem;
+        margin-bottom: 24px;
+    }
+
+    .boxes {
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .box:last-of-type {
+        margin: 0px;
+    }
+}

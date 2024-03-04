@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --bg-left: #326193;
+    --bg-right: #1b879b;
+    --text-color: #fcfffb;
+    --border-img: #64c2d9;
+    --bg-p-section: #effafb;
+    --bg-skills-section: #ffffff;
+    --p-text: #232c46;
+    --border: #bec0d1;
+    --skills-text: #14a185;
+    --btn: #00b7a6;
+    --bg-nav: #bdeded;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-image: linear-gradient(45deg, var(--bg-left), var(--bg-right));
+    font-family: "Open Sans", sans-serif;
+}
+
+.profile {
+    width: 500px;
+    height: 900px;
+    border-top: 6px solid var(--text-color);
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.profile h2 {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.profile img {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    border: 7px solid var(--border);
+    object-fit: cover;
+    margin-bottom: -180px;
+    margin-top: 7px;
+}
+
+.blue-background {
+    color: var(--text-color);
+    text-align: center;
+    padding: 14px 45px;
+    background-image: url("https://images.unsplash.com/photo-1550695319-209e0e343dc9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 212px;
+}
+
+.blue-background .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+.paragraph-section {
+    background-color: var(--bg-p-section);
+    color: var(--p-text);
+    text-align: center;
+    height: 240px;
+    padding: 90px 45px 45px 45px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.sections {
+    background-color: var(--bg-skills-section);
+    height: 324px;
+    border-top: 2px solid var(--border);
+    padding: 0 45px;
+}
+
+.sections ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--border);
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+.sections ul li {
+    height: 60px;
+    width: 114px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.sections ul li:nth-of-type(2),
+.sections ul li:hover {
+    height: 60px;
+    background-color: var(--bg-p-section);
+    color: var(--bg-left);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+
+.progress-bg {
+    width: 100%;
+    height: 15px;
+    border-radius: 16px;
+    background-color: var(--bg-nav);
+}
+
+.sections h3 {
+    color: var(--btn);
+}
+
+.progress {
+    background-image: linear-gradient(90deg, var(--bg-left), var(--skills-text));
+    height: 15px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.advertising .progress {
+    width: 60%;
+}
+
+.wedding .progress {
+    width: 80%;
+}
+
+.fashion .progress {
+    width: 40%;
+}
+
+.advertising,
+.wedding,
+.fashion {
+    margin-bottom: 18px;
+}
+
+.advertising h3,
+.wedding h3,
+.fashion h3 {
+    margin-bottom: 6px;
+}
+
+button {
+    border: none;
+    width: 100%;
+    height: 100px;
+    background-color: var(--btn);
+    color: var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+span {
+    font-family: "Open Sans", sans-serif; 
+}
+
+button:hover {
+    background-color: var(--bg-left);
+}

@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --bg-body-left: #fee4ea;
+    --bg-body-right: #232e4d;
+    --bg-item: #ffffff;
+    --bg-down: #f8fafb;
+    --text-secondary: #a3a2d2;
+    --text-terciary: #626377;
+    --logo: #f53d4b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(300deg, var(--bg-body-right) 50%, var(--bg-body-left) 50%);
+    font-family: "Montserrat", sans-serif;
+    color: var(--bg-body-right);
+}
+
+.job-post {
+    width: 824px;
+    height: 524px;
+    border-radius: 14px;
+    background-color: var(--bg-item);
+    padding: 47px;
+    position: relative;
+}
+
+.fa-ellipsis {
+    position: absolute;
+    top: 30px;
+    right: 47px;
+    font-size: 1.8rem;
+    color: var(--text-terciary);
+    cursor: pointer;
+}
+
+.top {
+    display: flex;
+    column-gap: 30px;
+}
+
+.circle {
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    border: 2px solid rgba(128, 128, 128, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+}
+
+svg {
+    color: var(--logo);
+    width: 90px;
+}
+
+.circle:hover  {
+    background-color: var(--logo);
+    color: var(--bg-item);
+}
+
+.circle:hover > svg {
+    color: var(--bg-item);
+}
+
+.top .right h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.top .right p {
+    font-size: 1.1rem;
+    color: var(--text-terciary);
+    margin-bottom: 20px;
+}
+
+.top .right i {
+    margin-right: 5px;
+    color: var(--text-secondary);
+}
+
+.top .right .btns {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.top .right button {
+    width: 130px;
+    height: 45px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 200ms ease-in;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.top .right button span {
+    font-family: "Montserrat", sans-serif;
+}
+
+.save {
+    border: 1px solid var(--bg-body-right);
+    background-color: var(--bg-item);
+    color: var(--bg-body-right);
+}
+
+.save:hover {
+    background-color: var(--bg-body-right);
+    color: var(--bg-item);
+}
+
+.apply {
+    background-color: var(--bg-body-right);
+    color: var(--bg-item);
+    border: none;
+}
+
+.apply:hover {
+    border: 1px solid var(--bg-body-right);
+    background-color: var(--bg-item);
+    color: var(--bg-body-right);
+}
+
+.down {
+    width: 735px;
+    height: 165px;
+    border: 2px solid rgba(128, 128, 128, 0.1);
+    background-color: var(--bg-down);
+    border-radius: 6px;
+    display: flex;
+    column-gap: 50px;
+    padding: 35px 28px;
+    margin-top: 60px;
+}
+
+.down div h3 {
+    color: var(--text-terciary);
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.down div p {
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.gray {
+    color: var(--text-terciary);
+}
+
+a {
+    color: var(--bg-body-right);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: 55px;
+    padding-bottom: 4px;
+    width: fit-content;
+    transition: all 200ms ease-in;
+}
+
+a:hover {
+    border-bottom: 1px solid var(--bg-body-right);
+}
+
+@media screen and (max-width: 850px) {
+
+    body {
+        height: 100%;
+    }
+
+    .job-post {
+        width: 450px;
+        height: fit-content;
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .top {
+        margin-bottom: 30px;
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    .circle {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+
+    svg {
+        width: 80px;
+    }
+
+    .top .right {
+        text-align: center;
+    }
+
+    .top .right .btns {
+        justify-content: center;
+    }
+
+    .down {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 18px;
+        padding: 18px;
+        height: fit-content;
+        width: 250px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    a {
+        margin-top: 30px;
+    }
+}

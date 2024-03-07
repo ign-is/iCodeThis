@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Screen 2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+</head>
+<body>
+    <div class="form">
+        <div class="sign">
+            <button class="sign-btn-sign-in">
+                <span>Sign in</span>
+            </button>
+            <button class="sign-btn-sign-up">
+                <span>Sign up</span>
+            </button>
+        </div>
+
+        <div class="sign-in">
+            <label for="username">
+                <input 
+                    type="text" 
+                    id="username" 
+                    placeholder="Username"
+                >
+                <i class="fa-solid fa-user"></i>
+            </label>
+            <label for="pass">
+                <input 
+                    type="password"
+                    id="password"
+                    placeholder="Password"
+                >
+                <i class="fa-solid fa-lock"></i>
+            </label>
+            <div class="remember">
+                <label class="container"> 
+                    <p>Remember me</p>
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <a href="#">Forgot password</a>
+            </div>
+            <button class="btn-log-in">
+                <span>LOG IN</span>
+            </button>
+
+            <div class="or">
+                <div class="line"></div>
+                <p>or</p>
+                <div class="line"></div>
+            </div>
+
+            <button class="btn-log-facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+                <span>Log in with Facebook</span>
+            </button>
+        </div>
+
+
+        <div class="sign-up">
+            <label for="name">
+                <input 
+                    type="text" 
+                    id="name" 
+                    placeholder="Name"
+                >
+                <i class="fa-solid fa-user"></i>
+            </label>
+            <label for="emial">
+                <input 
+                    type="emial"
+                    id="emial"
+                    placeholder="Email"
+                >
+                <i class="fa-solid fa-envelope"></i>
+            </label>
+            <label for="pass">
+                <input 
+                    type="password"
+                    id="pass"
+                    placeholder="Password"
+                >
+                <i class="fa-solid fa-lock"></i>
+            </label>
+
+            <div class="male-female">
+                <label class="container"> 
+                    <p>Male</p>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container"> 
+                    <p>Female</p>
+                    <input type="checkbox" checked>
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+
+            <button class="btn-sign-up">
+                <span>SIGN UP</span>
+            </button>
+
+            <div class="or">
+                <div class="line"></div>
+                <p>or</p>
+                <div class="line"></div>
+            </div>
+
+            <button class="btn-sign-facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+                <span>Sign Up with Facebook</span>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

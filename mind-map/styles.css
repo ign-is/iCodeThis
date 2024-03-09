@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --bg-body: rgb(237, 238, 249);
+    --bg-item: rgb(245, 247, 251);
+    --text-color: rgb(25, 63, 80);
+    --online: rgb(255, 255, 255);
+    --intuitive-line: rgb(255, 171, 80);
+    --intuitive-background: rgba(255, 171, 80, 0.1);
+    --memory-line: rgb(193, 109, 108);
+    --memory-background: rgba(193, 109, 108, 0.1);
+    --collab-line: rgb(77, 200, 229);
+    --collab-background: rgba(77, 200, 229, 0.1);
+    --focus-line: rgb(73, 142, 221);
+    --focus-background: rgba(73, 142, 221, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--bg-body);
+}
+
+.map {
+    width: 900px;
+    height: 600px;
+    background-color: var(--bg-item);
+    position: relative;
+    border-radius: 16px;
+    box-shadow: 0px -6px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.online-line {
+    position: absolute;
+    background-color: var(--online);
+    padding: 10px 20px;
+    border-radius: 18px;
+    text-align: center;
+    left: 30%;
+    top: 35%;
+    z-index: 3;
+    box-shadow: 0px 10px 23px 4px rgba(0,0,0,0.1);
+}
+
+.intuitive-line {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    border-right: 2px dashed var(--intuitive-line);
+    width: 140px;
+    height: 160px;
+    border-radius: 35%;
+}
+
+.intuitive {
+    width: fit-content;
+    padding: 10px 16px;
+    background-color: var(--intuitive-background);
+    border-bottom: 2px solid var(--intuitive-line);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    position: absolute;
+    top: -39px
+}
+
+.memory-line {
+    position: absolute;
+    left: 6%;
+    bottom: 35%;
+    width: 250px;
+    height: 160px;
+    border-radius: 40px;
+    border-right: 2px dashed var(--memory-line);
+}
+
+.memory {
+    position: absolute;
+    bottom: 0px;
+    right: 38px;
+    padding: 10px 16px;
+    background-color: var(--memory-background);
+    border-bottom: 2px solid var(--memory-line);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.collab-line {
+    position: absolute;
+    top: 25%;
+    right: 25%;
+    border-left: 2px dashed var(--collab-line);
+    width: 250px;
+    height: 100px;
+    border-radius: 35%;
+}
+
+.collab {
+    position: absolute;
+    right: 50px;
+    top: -38px;
+    padding: 10px 16px;
+    background-color: var(--collab-background);
+    border-bottom: 2px solid var(--collab-line);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.focus-line {
+    position: absolute;
+    bottom: 45%;
+    right: 25%;
+    border-left: 2px dashed var(--focus-line);
+    width: 250px;
+    height: 110px;
+    border-radius: 30%;
+}
+
+.focus {
+    position: absolute;
+    right: 119px;
+    bottom: 0px;
+    padding: 10px 16px;
+    background-color: var(--focus-background);
+    border-bottom: 2px solid var(--focus-line);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.free-line {
+    position: absolute;
+    bottom: 45%;
+    right: 35%;
+    border-right: 2px dashed var(--focus-line);
+    width: 170px;
+    height: 100px;
+    border-radius: 20%;
+}
+
+.free {
+    position: absolute;
+    padding: 10px 16px;
+    background-color: var(--bg-item);
+    border-bottom: 2px solid var(--focus-line);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    right: -140px; 
+    top: -30px;
+    box-shadow: -20px 0px 0px -3px rgba(245, 247, 251 ,1);
+}
+
+.overview-line {
+    position: absolute;
+    bottom: 43%;
+    right: 27%;
+    border-bottom: 2px dashed var(--focus-line);
+    width: 100px;
+    height: 100px;
+    border-radius: 15%;
+}
+
+.overview {
+    position: absolute;
+    padding: 10px 16px;
+    background-color: var(--bg-item);
+    border-bottom: 2px solid var(--focus-line);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    bottom: -2px;
+    right: -190px;
+    width: 240px;
+}
+
+.free-flow-line {
+    position: absolute;
+    bottom: 27%;
+    right: 30%;
+    border-left: 2px dashed var(--focus-line);
+    width: 90px;
+    height: 110px;
+    border-radius: 35%;
+}
+
+.free-flow {
+    position: absolute;
+    padding: 10px 16px;
+    background-color: var(--bg-item);
+    border-bottom: 2px solid var(--focus-line);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    bottom: 0px;
+    left: 26px;
+    width: 180px;
+}

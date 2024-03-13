@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --bg-body: rgb(244, 245, 255);
+    --bg-items: rgb(255, 255, 255);
+    --text-color: rgb(10, 6, 46);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: fit-content;
+    row-gap: 30px;
+    font-family: "Rubik", sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav, .shop-subscribe,
+.popular, .categories {
+    background-color: var(--bg-items);
+    border-radius: 18px;
+    box-shadow: 0px 18px 24px -3px rgba(0,0,0,0.1);
+    font-weight: 500;
+}
+
+.nav {
+    width: 635px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    font-size: 1.1rem;
+}
+
+.nav ul li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.nav ul li:hover {
+    border-bottom: 2px solid var(--text-color);
+    margin-bottom: -2px;
+}
+
+.shop-subscribe {
+    width: 375px;
+    height: 135px;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.shop-subscribe ul {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    column-gap: 30px;
+}
+
+.shop-subscribe ul li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.shop-subscribe ul li span {
+    padding-left: 10px;
+}
+
+.fa-bars {
+    font-size: 1.6rem;
+} 
+
+.popular {
+    width: 565px;
+    height: 260px;
+    padding: 50px 20px 50px 50px;
+}
+
+.popular h2 {
+    margin-bottom: 16px;
+    font-size: 1.4rem;
+}
+
+.popular ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    font-size: 1rem;
+}
+
+.popular ul li {
+    padding: 12px;
+    border-radius: 20px;
+    background-color: var(--bg-body);
+    cursor: pointer;
+}
+
+.categories {
+    width: 420px;
+    height: 395px;
+    padding: 50px;
+}
+
+.categories ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.categories ul li {
+    width: 148px;
+    height: 155px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 17px;
+    transition: all 150ms ease-in;
+    cursor: pointer;
+}
+
+.categories ul li:hover {
+    background-color: var(--bg-body);
+}
+
+.categories ul li i {
+    font-size: 2rem;
+}
+
+.active {
+    background-color: var(--bg-body);
+}

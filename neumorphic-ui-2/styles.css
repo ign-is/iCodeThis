@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --bg-body: #edf0f8;
+    --bg-item: #ffffff;
+    --bg-item-secondary: #7892fd;
+    --text-color: #43444d;
+    --border: #d1d2e8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: 100vh;
+    background-color: var(--bg-body);
+    font-family: "Poppins", sans-serif;
+    color: var(--text-color);
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.filters {
+    width: 320px;
+    height: 345px;
+    border-radius: 8px;
+    background-color: var(--bg-item);
+    box-shadow: 0px 14px 20px -3px rgba(0,0,0,0.1);
+}
+
+.top {
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+    padding: 0px 16px 0px 22px;
+
+}
+
+.top h2 {
+    font-size: 1.4rem;
+}
+
+.done {
+    border: none;
+    background-color: var(--bg-item-secondary);
+    color: var(--bg-item);
+    border-radius: 5px;
+    height: 40px;
+    width: 85px;
+    box-shadow: 6px 10px 14px -3px rgba(120, 146, 253, 0.5);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 200ms ease-in;
+}
+
+.done span {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 42px;
+    padding-top: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-bottom: 33px;
+    margin-left: 22px;
+    margin-top: 24px;
+}
+  
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: var(--bg-item);
+    border: 2px solid var(--border);
+    border-radius: 4px;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: var(--bg-item);
+}
+  
+
+.container input:checked ~ .checkmark {
+    background-color: var(--bg-item-secondary);
+    border: none;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+.container .checkmark:after {
+    left: 11px;
+    top: 7px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--bg-item);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.btns {
+    display: flex;
+    width: 295px;
+    column-gap: 26px;
+}
+
+.add {
+    width: 55%;
+}
+
+.export {
+    width: 45%;
+}
+
+.export i {
+    transform: rotate(45deg);
+    margin-right: 7px;
+}
+
+.add i {
+    margin-right: 7px;
+}
+
+.add,.export {
+    font-size: 1.2rem;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--bg-body);
+    border: none;
+    border-radius: .5rem;
+    color: #444;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    box-shadow: -6px -6px 14px rgba(255, 255, 255, .7),
+                -6px -6px 10px rgba(255, 255, 255, .5),
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 10px rgba(0, 0, 0, .15);
+}
+
+.add:hover, .export:hover {
+    box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
+                -2px -2px 4px rgba(255, 255, 255, .4),
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+}
+
+.add:active, .export:active {
+    box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),
+                inset -2px -2px 4px rgba(255, 255, 255, .5),
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+}
+
+.learn {    
+    background: #edf0f8;
+    border-radius: 14px;
+    box-shadow: inset 9.91px 9.91px 15px #D8DAE2, inset -9.91px -9.91px 15px #FFFFFF;
+    width: 295px;
+    height: 255px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-learn {
+    width: 257px;
+    height: 218px;
+    border-radius: 10px;
+    background-color: var(--bg-body);
+    box-shadow: 14px 14px 20px -3px rgba(0,0,0,0.1),-6px -6px 15px -3px rgba(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.inner-learn h2 {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.fa-award {
+    font-size: 2.3rem;
+}
+
+.inner-learn button {
+    border: none;
+    background-color: var(--bg-item-secondary);
+    color: var(--bg-item);
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 20px;
+    width: 190px;
+    height: 40px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0px 6px 15px -3px rgba(120, 146, 253, 0.3);
+    transition: all 200ms ease-in;
+}
+
+.btn-learn:hover,
+.done:hover {
+    box-shadow: none;
+    background-color: var(--text-color);
+    color: var(--bg-item-secondary);
+}
+
+.inner-learn button:active,
+.done:active {
+    transform: scale(0.95);
+}
+
+.inner-learn button span {
+    font-family: "Poppins", sans-serif;
+}
+
+
+@media screen and (max-width: 648px) {
+    body {
+        flex-direction: column;
+        height: fit-content;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}

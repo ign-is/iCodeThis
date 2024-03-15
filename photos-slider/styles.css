@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --bg-body: #b2e5fd;
+    --bg-item: #ffffff;
+    --text-color: #4f5961;
+    --chebron: #a7abae;
+    --text-color-secondary: #15affa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--bg-body);
+    color: var(--text-color);
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    width: 1070px;
+    height: 335px;
+    background-color: var(--bg-item);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.container .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 830px;
+    margin-bottom: 20px;
+}
+
+.container .header h2 {
+    font-size: 1.5rem;
+}
+
+.container .header button {
+    border: none;
+    background-color: transparent;
+    color: var(--text-color-secondary);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+span {
+    font-family: "Open Sans", sans-serif;
+}
+
+i {
+    font-size: 2.2rem;
+    color: var(--chebron);
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+
+    width: 824px;
+    height: 195px;
+}
+  
+.carousel .slides {
+    display: flex;
+    column-gap: 16px;
+    transition: transform 0.5s;
+}
+  
+  
+.carousel img {
+    object-fit: cover;
+
+    width: 194px;
+    height: 194px;
+    cursor: pointer;
+}
+
+  
+.carousel .prev, .carousel .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+  
+.prev {
+    position: absolute;
+    left: 70px;
+    top: 60%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+  
+.next {
+    position: absolute;
+    right: 70px;
+    top: 60%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+/* @media screen and (max-width: 1071px) {
+    .container {
+        width: 675px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+    }
+
+    .container .header {
+        width: 650px;
+        padding: 20px;
+        margin-bottom: 0px;
+    }
+
+    .container .header h2 {
+        font-size: 1.7rem;
+    }
+
+    .carousel {
+        width: 630px;
+        overflow-x: hidden;
+        margin-left: 10px;
+    }
+
+    .prev,
+    .next {
+        display: none;
+    }
+} */

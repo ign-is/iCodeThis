@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --bg-body: rgb(252, 251, 252);
+    --bg-item: rgb(255, 255, 255);
+    --text-primary: rgb(144, 152, 158);
+    --text-secondary: rgb(48, 47, 68);
+    --btn: rgb(35, 46, 77);
+    --clip: rgb(67, 145, 221);
+    --photo: rgb(245, 163, 38);
+    --smile: rgb(255, 219, 61);
+    --hover: rgb(242, 246, 252);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: var(--bg-body);
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    background-color: var(--bg-item);
+    height: 235px;
+    width: 740px;
+    box-shadow: 0px 14px 30px -3px rgba(0,0,0,0.1);
+    padding: 30px 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+p {
+    color: var(--text-secondary);
+    font-weight: 500;
+    
+}
+
+h1 {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+    font-size: 1.7rem;
+    position: relative;
+    margin-left: -12px;
+}
+
+.icon {
+    height: 55px;
+    width: 60px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.icon:hover {
+    background-color: var(--hover);
+}
+
+.fa-camera {
+    color: var(--photo);
+}
+
+.clip {
+    position: relative;
+}
+
+.clip:hover ~ .attach {
+    display: flex;
+}
+
+.fa-paperclip {
+    color: var(--clip);
+}
+
+.camera:hover ~ .picture {
+    display: flex;
+}
+
+.emoji:hover ~ .emojis {
+    display: flex;
+}
+
+.fa-face-smile {
+    color: var(--smile);
+}
+
+.attach,
+.emojis,
+.picture {
+    border: none;
+    background-color: var(--btn);
+    color: white;
+    border-radius: 4px;
+    width: 134px;
+    height: 42px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    position: absolute;
+    bottom: -48px;
+    left: 20px;
+}
+
+.emojis {
+    column-gap: 5px;
+    left: 85px;
+}
+
+.picture {
+    left: -30px;
+}
+
+@media screen and (max-width: 742px) {
+    .container {
+        width: 450px;
+    }
+}
+

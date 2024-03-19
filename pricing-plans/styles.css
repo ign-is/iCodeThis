@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+:root {
+    --bg-body: #FBF3D5;
+    --border: #D6DAC8;
+    --btns: #EFBC9B;
+    --text-color: #9CAFAA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg-body);
+}
+
+.container {
+    width: 1130px;
+    height: 335px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 14px 14px 0px -3px rgba(214, 218, 200, 1);
+    border: 1px solid var(--border);
+}
+
+.container div > .contain {
+    width: 100%;
+    /* height: 100%; */
+    height: 335px;
+    border-right: 1px solid var(--border);
+    padding-top: 68px;
+    padding-bottom: 108px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container > div {
+    width: 100%;
+    height: 100%;  
+}
+
+.container > div h2 {
+    margin-bottom: 20px;
+}   
+
+.container > div p {
+    margin-bottom: 30px;
+}  
+
+.container > div button {
+    width: 127px;
+    height: 47px;
+    background-color: var(--btns);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 200ms ease-in;
+}
+
+.container > div button:hover {
+    background-color: var(--text-color);
+    color: white;
+}
+
+.container > div:last-of-type .contain {
+    padding-bottom: 30px;
+}
+
+.container > div:last-of-type .contain button {
+    height: 47px;
+    width: 145px;
+    margin-bottom: 10px;
+
+}
+
+.container > div:last-of-type p span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+span {
+    font-family: "Poppins", sans-serif;
+}
+
+
+.container > div .contain .check {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 60px;    
+}
+
+.radio-check {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+
+.radio-check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: var(--border);
+    border-radius: 50px;
+}
+  
+.radio-check:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+.radio-check input:checked ~ .checkmark {
+    background-color: var(--btns);
+}
+  
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.radio-check input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+.radio-check .checkmark:after {
+    left: 5px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border: solid white;
+    background-color: white;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1155px) {
+    body {
+        height: fit-content;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .container {
+        width: 566px;
+        height: fit-content;
+        flex-wrap: wrap;
+    }
+
+    .container div {
+        width: 50%;
+    }
+
+    .container > div .contain {
+        border-bottom: 1px solid var(--border);
+    }
+    
+}
+
+@media screen and (max-width: 591px) {
+    .container {
+        width: 283px;
+    }
+
+    .container div {
+        width: 100%;
+    }
+
+    .check {
+        padding-left: 60px;
+    }
+
+    .check .radio-check {
+        margin-bottom: 60px;
+    }
+}

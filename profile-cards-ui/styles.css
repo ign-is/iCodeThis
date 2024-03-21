@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --bg-body: #FFEDD8;
+    --text-color: #240A34;
+    --btn: #EABE6C;
+    --btn-hover: #891652;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: var(--bg-body);
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    flex-direction: column;
+}
+
+.follow-card {
+    height: 510px;
+    width: 445px;
+    border-radius: 4px;
+    background-color: white;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 12px 19px 0px rgba(0,0,0,0.1);
+}
+
+.follow-card .top {
+    width: 100%;
+    height: 35%;
+}
+
+.follow-card .top img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.follow-card > img {
+    position: absolute;
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -80px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: block;
+    border: 8px solid var(--btn);
+    z-index: 3;
+}
+
+.follow-card h2 {
+    margin-top: 85px;
+    margin-bottom: 10px;
+}
+
+.follow-card p {
+    font-weight: 500;
+    margin-bottom: 34px;
+}
+
+span {
+    font-family: "Poppins", sans-serif;
+}
+
+.btn-follow {
+    background-color: var(--btn-hover);
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    height: 50px;
+    width: 150px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 150ms ease-in;
+}
+
+.btn-follow:hover {
+    border: 3px solid var(--btn-hover);
+    color: var(--btn-hover);
+    background-color: var(--btn);
+    font-weight: 600;
+}
+
+.contact-card {
+    width: 640px;
+    height: 280px;
+    border-radius: 4px;
+    background-color: white;
+    display: flex;
+    align-items: flex-start;
+    padding: 58px;
+    box-shadow: 0px 12px 19px 0px rgba(0,0,0,0.1);
+}
+
+.contact-card img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 45px;
+}
+
+.contact-card .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.contact-card .right p {
+    margin-top: -25px;
+}
+
+.btn-contact {
+    width: 152px;
+    height: 50px;
+    text-transform: uppercase;
+    border: 2px solid var(--btn-hover);
+    color: var(--btn-hover);
+    font-size: 1rem;
+    background-color: transparent;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: -14px;
+    transition: all 150ms ease-in;
+}
+
+.btn-contact:hover {
+    border: 3px solid var(--btn-hover);
+    background-color: var(--btn-hover);
+    color: white;
+}
+
+.profile-card {
+    width: 768px;
+    height: 227px;
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 40px 52px;
+    position: relative;
+    box-shadow: 0px 12px 19px 0px rgba(0,0,0,0.1);
+    margin-right: -300px;
+}
+
+.profile-card img {
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 45px;
+}
+
+.name-place {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.inline {
+    font-size: 0.9rem;
+}
+
+.inline span i {
+    margin-right: 4px;
+    font-size: 1rem;
+}
+
+.inline span:first-of-type {
+    margin-right: 20px;
+}
+
+.inline span:last-of-type i {
+    margin-right: 3px;
+}
+
+.btn-profile {
+    position: absolute;
+    top: 35px;
+    right: 30px;
+    width: 200px;
+    height: 50px;
+    border-radius: 6px;
+    background-color: var(--btn-hover);
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border: none;
+    transition: all 150ms ease-in;
+    cursor: pointer;
+}
+
+.btn-profile:hover {
+    border: 3px solid var(--btn-hover);
+    background-color: var(--btn);
+    color: var(--btn-hover);
+    font-weight: 600;
+}
+
+.top-body {
+    display: flex;
+    align-items: flex-end;
+    column-gap: 50px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1173px) {
+    .top-body {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    .profile-card {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 795px) {
+    .contact-card {
+        width: 445px;
+        height: 380px;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px;
+
+    }
+
+    .contact-card img {
+        margin-right: 0px;
+        height: 130px;
+    }
+
+    .contact-card .right {
+        height: 160px;
+        text-align: center;
+    }
+
+    .btn-contact {
+        margin: 0 auto;
+    }
+
+    .profile-card {
+        flex-direction: column;
+        width: 445px;
+        height: 390px;
+    }
+
+    .profile-card img {
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+
+    .name-place {
+        height: 50px;
+    }
+
+    .btn-profile {
+        position: static;
+        margin-top: 40px;
+    }
+}
+

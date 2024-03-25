@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --bg-body: #8B93FF;
+    --bg-item: #FFF7FC;
+    --text-color: #5755FE;
+    --text-secondary: #FF71CD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--bg-body);
+    font-family: "Encode Sans Expanded", sans-serif;
+}
+
+.container {
+    color: var(--text-color);
+    width: 550px;
+    height: 550px;
+    padding:  115px 70px 114px 75px;
+    border-radius: 14px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 8px 12px 22px -3px rgba(255, 247, 252, 0.7),
+            -8px 0px 22px -3px rgba(255, 247, 252,0.7);
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    background: url("https://images.unsplash.com/photo-1605633561363-87dc6c83fd39?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") 0 0 repeat;
+    transform: rotate(180deg);
+    background-size: cover;
+}
+
+.container .background {
+    text-transform: uppercase;
+    background-color: var(--text-secondary);
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: var(--bg-item);
+    text-align: center;
+}
+
+.container h2 {
+    font-weight: 400;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 4px;
+}
+
+.container h3 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    word-spacing: 8px;
+}
+
+.container p {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 24px;
+    font-weight: 500;
+    background-color: rgba(255, 247, 252, 0.7);
+}
+
+.container .code {
+    color: var(--bg-item);
+    font-size: 1.6rem;
+    font-weight: 600;
+    background-color: rgba(87, 85, 254, 0.7);
+    text-align: center;
+    padding: 17px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 150ms ease-in;
+}
+
+.container .code:hover {
+    background-color: var(--bg-body);
+}
+
+.copied {
+    background-color: var(--bg-item);
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+    
+}
+
+.copied h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-bottom: 3px solid var(--text-secondary);
+    padding-bottom: 4px;
+}

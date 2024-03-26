@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 800px;
+    height: 500px;
+    border-radius: 18px;
+    border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 40px 0px 100px 0px;
+    text-align: center;
+    box-shadow: 0px 0px 40px rgb(82, 59, 141),
+                inset 0px 0px 30px rgba(0, 0, 0, 0.8);
+    color: #b2aeae;
+    cursor: pointer;
+    transition: all 180ms ease-in;
+}
+
+.container:hover {
+    transform: scale(1.03);
+    color: #cfcdcd;
+    box-shadow: 0px 0px 20px rgba(254, 38, 150, 0.8),
+                inset 0px 0px 30px rgba(0, 0, 0, 0.8);
+}
+
+.ui {
+    font-size: 0.9rem;
+}
+
+h1 {
+    margin-top: -20px;
+    font-size: 9rem;
+}
+
+h3 {
+    margin-top: -36px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.visit {
+    font-size: 0.9rem;
+}
+
+.visit a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.visit a:hover {
+    color: white;
+}
+
+@media screen and (max-width: 870px) {
+    .container {
+        width: 600px;
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .container {
+        width: 450px;
+    }
+}

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+:root {
+    --bg-body: #ef89b0;
+    --bg-item: #ffffff;
+    --btn-left: #e86cd4;
+    --btn-right: #ff6aa7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Mulish", sans-serif;
+    background-color: var(--bg-body);
+}
+
+.container {
+    width: 395px;
+    height: 620px;
+    border-radius: 10px;
+    background-color: var(--bg-item);
+    padding: 42px 39px;
+    box-shadow: 74px 94px 35px -3px rgba(0,0,0,0.1);
+}
+
+h2 {
+    font-weight: 500;
+    margin-bottom: 38px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+    margin-bottom: 24px;
+}
+
+img {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.right {
+    height: 45px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.years {
+    color: gray;
+}
+
+.btn-view {
+    width: 100%;
+    height: 65px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-image: linear-gradient(90deg, var(--btn-left), var(--btn-right));
+    color: var(--bg-item);
+    cursor: pointer;
+    margin-top: 16px;
+    box-shadow: 0px 10px 10px -3px rgba(255, 106, 167, 0.5);
+    transition: all 160ms ease-in;
+}
+
+.btn-view:hover {
+    transform: scale(1.04);
+    box-shadow: 0px 7px 10px -3px rgba(255, 106, 167, 0.5);
+}
+
+span {
+    font-family: "Mulish", sans-serif;
+}

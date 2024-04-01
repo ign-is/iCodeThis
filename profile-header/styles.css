@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --bg-body: #e0e0e0;
+    --bg-item: #fff9f2;
+    --text: #12153b;
+    --progress: #f37a35;
+    --bar: #e0e0e0;
+    --font-family: "Poppins", sans-serif; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--bg-body);
+    font-family: var(--font-family);
+    color: var(--text);
+}
+
+.container {
+    background-color: var(--bg-item);
+    width: 1050px;
+    height: 418px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 32px;
+    object-fit: cover;
+    margin-bottom: 14px;
+}
+
+.left h1 {
+    font-size: 1.5rem;
+    margin-bottom: 9px;
+}
+
+.left h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.left p {
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+}
+
+.icons {
+    display: flex;
+    column-gap: 18px;
+}
+
+.icon {
+    position: relative;
+    border: 1px solid var(--bg-body);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 15px;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.icon:hover {
+    background-color: var(--progress);
+    color: var(--bg-item);
+}
+
+.tooltip-git,
+.tooltip-link,
+.tooltip-meta,
+.tooltip-eth {
+    background-color: var(--text);
+    color: var(--bg-item);
+    position: absolute;
+    bottom: -30px;
+    height: 20px;
+    width: 55px;
+    text-align: center;
+    padding-top: 1px;
+    border-radius: 4px;
+    visibility: hidden;
+}
+
+.tooltip-link {
+    width: 58px;
+}
+
+.tooltip-meta {
+    width: 74px;
+}
+
+.tooltip-eth {
+    width: 76px;   
+}
+
+.tooltip-git > i,
+.tooltip-link > i,
+.tooltip-meta > i,
+.tooltip-eth > i {
+    color: var(--text);
+    position: absolute;
+    left: 21px;
+    top: -9px;
+    font-size: 1rem;
+}
+
+.tooltip-link > i {
+    left: 24px;
+}
+
+.tooltip-meta > i {
+    left: 30px;
+}
+
+.tooltip-eth > i{
+    left: 30px;
+}
+
+.tooltip-git > p,
+.tooltip-link > p,
+.tooltip-meta > p,
+.tooltip-eth > p {
+    font-size: 0.8rem;
+}
+
+.git:hover .tooltip-git,
+.linkedin:hover .tooltip-link,
+.meta:hover .tooltip-meta,
+.eth:hover .tooltip-eth {
+    visibility: visible;
+}
+
+svg {
+    width: 2rem;
+    border-radius: 16px;
+}
+
+
+.rate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.organizations {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.info {
+    border: 2px solid var(--text);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+    position: relative;
+}
+
+.tooltip-info {
+    height: 18px;
+    width: 40px;
+    background-color: var(--text);
+    color: var(--bg-item);
+    position: absolute;
+    top: -32px;
+    text-align: center;
+    border-radius: 4px;
+    padding-top: 1px;
+    visibility: hidden;
+}
+
+.tooltip-info > i {
+    color: var(--text);
+    position: absolute;
+    bottom: -9px;
+    left: 15px;
+    font-size: 1rem;
+}
+
+.info:hover .tooltip-info {
+    visibility: visible;
+}
+
+.right {
+    margin-top: 70px;
+}
+
+
+.bar {
+    width: 410px;
+    height: 12px;
+    border-radius: 16px;
+    background-color: var(--bar);
+    margin-bottom: 101px;
+}
+
+.progress {
+    height: 100%;
+    width: 80%;
+    background-color: var(--progress);
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+
+.bottom {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.bottom p {
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.btn-follow {
+    width: 190px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: var(--text);
+    color: var(--bg-item);
+    border-radius: 9px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.btn-follow span {
+    font-family: var(--font-family);
+}
+
+.btn-follow:hover {
+    border: 3px solid var(--text);
+    background-color: var(--bar);
+    color: var(--text);
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1050px) {
+
+    body {
+        height: fit-content;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .container {
+        width: 700px;
+        height: fit-content;
+        margin-top: 80px;
+    }
+
+    .right {
+        width: fit-content;
+    }
+
+    .bar {
+        width: 260px
+    }
+
+}
+
+@media screen and (max-width: 710px) { 
+    .container {
+        width: 450px;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .container .left {
+        text-align: center;
+    }
+
+    .icons {
+        margin-left: 26px;
+    }
+
+    .right {
+        margin: 36px auto 0px;
+    }
+
+    .bar {
+        margin-bottom: 34px;
+    }
+
+    .bottom {
+        align-items: center;
+    }
+}
+
+

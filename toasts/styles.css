@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --bg-body: #f0f3fb;
+    --bg-white: #ffffff;
+    --bg-dark: #141625;
+    --green: #0abf2d;
+    --close: #b2b0da;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: var(--bg-body);
+    row-gap: 30px;
+    font-family: "Montserrat", sans-serif;
+}
+
+nav {
+    height: 60px;
+    width: 980px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.2);
+}
+
+.line > nav {
+    box-shadow: none;
+}
+
+.check,
+.check-white {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+    background-color: var(--green);
+    color: var(--bg-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.check-white {
+    background-color: var(--bg-white);
+    color: var(--green);
+}
+
+
+.nav-square,
+.nav-round,
+.line-nav {
+    background-color: var(--bg-white);
+    color: var(--bg-dark);
+}
+
+
+.square-dark,
+.round-dark,
+.line-dark {
+    background-color: var(--bg-dark);
+    color: var(--bg-white);
+}
+
+.nav-square,
+.nav-round,
+.square-dark,
+.round-dark {
+    padding-left: 15px;
+}
+
+.round-dark,
+.nav-round {
+    border-radius: 30px;
+}
+
+.line-nav,
+.line-dark {
+    justify-content: center;
+}
+
+.line-bottom {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 210px;
+    height: 3px;
+    background-color: var(--close);
+}
+
+.fa-xmark {
+    position: absolute;
+    right: 24px;
+    top: 20px;
+    font-size: 1.3rem;
+    color: var(--close);
+}
+
+@media screen and (max-width: 982px) {
+    nav {
+        width: 750px;
+    }
+}
+
+@media screen and (max-width: 752px) {
+    nav {
+        width: 450px;
+    }
+}

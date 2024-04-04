@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --footer-left: #dc3669;
+    --footer-right: #ec417a;
+    --bg-body: #e8f2ef;
+    --middle: #f9fbfc;
+    --btn: #ffffff;
+    --btn-color: #45535e;
+    --available: #5c88a2;
+    --booked: #cad9dd;
+    --selected: #ec3d81;
+    --text: #45494c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: var(--bg-body);
+    padding: 30px 0px;
+    font-family: "Lato", sans-serif;
+}
+
+.container {
+    height: 820px;
+    width: 475px;
+    border-radius: 10px;
+    background-color: var(--middle);
+    position: relative;
+    box-shadow: 0px 10px 30px -3px rgba(0,0,0,0.3);
+}
+
+
+.header {
+    background-image: url("https://image.tmdb.org/t/p/w600_and_h900_bestv2/kdg6Y06jfq9FV7qknWNcKLYtBJn.jpg");
+    background-position: center 40%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 255px;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    color: var(--middle);
+    position: relative;
+    padding-left: 25px;
+    padding-bottom: 10px;
+}
+
+.color-top {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(92, 136, 162,0.5); */
+    background-color: rgba(0,0,0,0.3);
+    left: 0px;
+    bottom: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.header > p:first-of-type {
+    font-size: 1.3rem;
+    font-weight: 500;
+    z-index: 2;
+}
+
+.header > p:last-of-type {
+    font-size: 0.9rem;
+    z-index: 2;
+    margin-top: 3px;
+}
+
+.fa-location-dot {
+    margin-right: 5px;
+}
+
+.fa-arrow-left-long {
+    position: absolute;
+    left: 25px;
+    top: 18px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.middle-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    margin-top: 10px;
+}
+
+.available,
+.booked,
+.selected {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 0.9rem;
+}
+
+.available-icon {
+    color: var(--available);
+}
+
+.booked-icon {
+    color: var(--booked);
+}
+
+.selected-icon {
+    color: var(--selected);
+}
+
+.middle-bottom {
+    padding-left: 28px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.middle-bottom > div {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    margin-bottom: 20px;
+}
+
+.middle-bottom i {
+    cursor: pointer;
+}
+
+.middle-bottom > div > p {
+    color: gray;
+    width: 10px;
+}
+
+.middle-bottom .fa-couch {
+    font-size: 1.4rem;
+}
+
+.space {
+    width: 30px;
+}
+
+.middle-screen {
+    text-align: center;
+    position: relative;
+    height: 40px;
+    width: 100%;
+}
+
+.middle-screen > p {
+    color: var(--available);
+    margin-left: 22px;
+}
+
+.screen {
+    position: absolute;
+    width: 380px;
+    height: 90px;
+    border-bottom: 3px solid var(--available);
+    border-radius: 45%;
+    bottom: 0px;
+    left: 58px;
+    box-shadow: inset 0px -8px 6px -3px rgba(92, 136, 162,0.2);
+}
+
+.footer {
+    display: flex;
+    width: 475px;
+    height: 125px;
+    color: var(--middle);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+}
+
+.footer .left {
+    width: 130px;
+    height: 100%;
+    background-color: var(--footer-left);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.footer .left > p:last-of-type {
+    font-weight: 600;
+}
+
+.footer .right {
+    background-color: var(--footer-right);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
+    padding-left: 14px;
+}
+
+.date {
+    font-size: 1.2rem;
+}
+
+.number {
+    font-size: 1.1rem;
+}
+
+.total {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.btn {
+    position: absolute;
+    width: 130px;
+    height: 80px;
+    background-color: var(--btn);
+    color: var(--btn-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    right: 28px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+.btn i {
+    font-size: 2.4rem;
+}

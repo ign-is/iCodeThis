@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --bg-body: #f9eff0;
+    --bg-item: #ffffff;
+    --btn: #046586;
+    --text: #171941;
+    --border: #d3d5db;
+    --text-secondary: #7a7a86;
+    --line: #e8eaee;
+    --facebook: #1d77ef;
+    --green: #21ba75;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    padding: 30px 0px;
+    background-color: var(--bg-body);
+    color: var(--text);
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 1060px;
+    height: 708px;
+    border-radius: 16px;
+    display: flex;
+    box-shadow: 0px 20px 20px -5px rgba(0,0,0,0.2);
+}
+
+.left {
+    width: 610px;
+    height: 100%;
+    background-color: var(--bg-item);
+    padding: 60px 90px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+h1 {
+    font-family: "Merriweather", serif;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.left > p:first-of-type {
+    margin-bottom: 40px;
+}
+
+label {
+    width: 100%;
+    height: 72px;
+    border: 2px solid var(--border);
+    border-radius: 4px;
+    display: block;
+    margin-bottom: 18px;
+}
+
+input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    color: var(--text);
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+::placeholder {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    font-family: "Poppins", sans-serif;
+}
+
+span {
+    font-family: "Poppins", sans-serif;
+}
+
+.pass-next {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.pass-next p {
+    color: var(--btn);
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.pass-next button {
+    background-color: var(--btn);
+    color: var(--bg-item);
+    width: 158px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 22px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    box-shadow: 0px 10px 15px -3px rgba(4, 101, 134, 0.2);
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.pass-next button:hover {
+    background-color: var(--bg-item);
+    border: 3px solid var(--btn);
+    color: var(--btn);
+    font-weight: 600;
+}
+
+.pass-next button i {
+    font-size: 1.3rem;
+}
+
+.line {
+    height: 3px;
+    width: 100%;
+    background-color: var(--line);
+    margin-bottom: 30px;
+}
+
+.or {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.btns {
+    display: flex;
+    column-gap: 16px;
+}
+
+.btn-facebook,
+.btn-google {
+    width: 100%;
+    height: 55px;
+    border: 1px solid var(--border);
+    background-color: var(--bg-item);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 14px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.btn-google:hover {
+    border: 1px solid var(--green);
+    color: var(--green);
+}
+
+.btn-google:hover img {
+    border-radius: 50%;
+}
+
+.btn-facebook > i {
+    color: var(--facebook);
+    font-size: 2.1rem;
+    transition: all 200ms ease-in;
+}
+
+.btn-facebook:hover {
+    border: 1px solid var(--facebook);
+    color: var(--facebook);
+}
+
+.container > img {
+    width: 450px;
+    height: 100%;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    object-fit: cover;
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 50px;
+    width: 50px;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--text-secondary);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.close:hover {
+    background-color: var(--bg-item);
+}
+
+
+.btn-google img {
+    width: 35px;
+    height: 35px;
+}
+
+.sign-up {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.sign-span {
+    color: var(--btn);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1060px) {
+
+    body {
+        background-image: url("https://images.unsplash.com/photo-1483004406427-6acb078d1f2d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .container {
+        width: 610px;
+    }
+
+    .left {
+        border-radius: 16px;
+    }
+
+    .container > img:first-of-type {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .container {
+        width: 450px;
+        height: fit-content;
+    }
+
+    .left {
+        padding: 50px 40px;
+    }
+}

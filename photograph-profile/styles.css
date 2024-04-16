@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --bg-body: #3b4b68;
+    --text: #ffffff;
+    --text-title: #686f7d;
+    --text-secondary: #4e4e4e;
+    --bg-icon: #f7f5f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--bg-body);
+    font-family: "Open Sans", sans-serif;
+    color: var(--text);
+}
+
+.container {
+    width: 440px;
+    height: fit-content;
+}
+
+.header {
+    text-align: center;
+    background-image: url("https://images.unsplash.com/photo-1466854076813-4aa9ac0fc347?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 312px;
+    padding: 19px 15px;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.back,
+.menu {
+    width: 66px;
+    height: 38px;
+    background-color: rgb(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 180ms ease-in;
+    cursor: pointer;
+}
+
+.back:hover,
+.menu:hover {
+    background-color: rgb(2, 0, 0, 0.5);
+}
+
+.back {
+    font-size: 0.9rem;
+    column-gap: 3px;
+}
+
+.back i {
+    font-size: 0.9rem;
+}
+
+.menu {
+    font-size: 1.4rem;
+}
+
+.header > img {
+    width: 107px;
+    height: 107px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.4);
+}
+
+.name {
+    color: var(--text-title);
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 285px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.stats .num {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.btns {
+    width: 280px;
+    height: 44px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.btns button {
+    width: 50%;
+    height: 100%;
+    color: var(--text);
+    border: 1px solid var(--text);
+    background-color: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 180ms ease-in;
+    margin-top: 14px;
+}
+
+.btns button:hover {
+    background-color: rgb(255, 255, 255, 0.2);
+}
+
+.follow {
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+}
+
+.btns button.message {
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border-left: none;
+}
+
+span {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    margin-left: 4px;
+}
+
+
+img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+
+.middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    background-color: var(--text);
+    color: var(--text-secondary);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.middle .left,
+.middle .right {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--bg-icon);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 180ms ease-in;
+}
+
+
+.middle .left:hover,
+.middle .right:hover {
+    background-color: var(--text-secondary);
+    color: var(--bg-icon);
+}
+
+.options {
+    text-align: center;
+}
+
+.options h4 {
+    font-weight: 600;
+}
+
+.options p {
+    font-size: 0.8rem;
+}
+
+.images {
+    border: 4px solid var(--text);
+}
+
+.row-one {
+    height: 148px;
+    width: 100%;
+    border-bottom: 4px solid var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--text);
+}
+
+.row-one img {
+    width: 141px;
+    height: 100%;
+}
+
+.row-two {
+    height: 148px;
+    width: 100%;
+    border-bottom: 4px solid var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--text);
+}
+
+.row-two img {
+    width: 214px;
+    height: 100%;
+}
+
+.row-three {
+    height: 144px;
+}
+
+.row-three img {
+    width: 100%;
+    height: 100%;
+}

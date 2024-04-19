@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --bg-body: #d0d5e3;
+    --bg-item: #ffffff;
+    --text: #0f1835;
+    --gray-line: #d6d7df;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    padding: 30px 0px 0px 0px;
+    background-color: var(--bg-body);
+    font-family: "Mulish", sans-serif;
+}
+
+.container {
+    width: 1290px;
+    height: 900px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    background-color: var(--bg-item);
+    color: var(--text);
+    font-weight: 700;
+}
+
+nav {
+    height: 106px;
+    border-bottom: 2px solid var(--gray-line);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 36px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    column-gap: 26px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    cursor: pointer;
+}
+
+nav .right {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+span {
+    font-family: "Mulish", sans-serif;
+}
+
+nav .right button {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 120ms ease-in;
+}
+
+.btn-login {
+    border: 2px solid rgba(128, 128, 128, 0.789);
+    background-color: var(--bg-item);
+}
+
+.btn-login:hover {
+    border: 2px solid var(--text);
+    background-color: rgba(128, 128, 128, 0.789);
+}
+
+.btn-started {
+    background-color: var(--text);
+    color: var(--bg-item);
+    border: none;
+    border: 2px solid var(--text);
+}
+
+.btn-started:hover {
+    background-color: gray;
+    color: var(--text);
+    border: 2px solid var(--text);
+}
+
+.nav-bottom {
+    height: 70px;
+    padding: 0px 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bottom ul {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.nav-bottom i {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.nav-bottom i:hover {
+    color: rgba(128, 128, 128, 0.789);
+}
+
+main {
+    display: flex;
+    column-gap: 70px;
+    padding: 0px 36px;
+}
+
+img {
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.left article {
+    width: 600px;
+}
+
+.left article h1 {
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-bottom: 18px;
+}
+
+
+.left article > img:first-of-type {
+    width: 100%;
+    height: 345px;
+    margin-bottom: 18px;
+}
+
+.left article h3 {
+    font-weight: 700;
+    font-size: 1.7rem;
+    width: 320px;
+    margin-bottom: 6px;
+}
+
+.left article  p {
+    font-weight: 400;
+    font-size: 1.1rem;
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.writter {
+    display: flex;
+    align-items: center;
+}
+
+.writter img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 14px;
+}
+
+.name {
+    font-weight: 300;
+}
+
+.article {
+    display: flex;
+    margin-bottom: 30px;
+    width: 530px;
+}
+
+.article > img {
+    width: 170px;
+    height: 170px;
+    margin-right: 30px;
+}
+
+.article-right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+
+}
+
+.article-right h2 {
+    font-weight: 800;
+    font-size: 1.6rem;
+}
+
+main .right h3 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 18px;
+    margin-top: 38px;
+}
+
+.drop-pro,
+.drop-use {
+    position: relative;
+}
+
+.drop-one,
+.drop-two {
+    width: 85px;
+    height: 60px;
+    background-color: var(--bg-item);
+    color: var(--text);
+    display: flex;
+    align-items: flex-start;
+    padding-left: 2px;
+    justify-content: space-around;
+    flex-direction: column;
+    position: absolute;
+    bottom: -65px;
+    left: 0px;
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: all 120ms ease-in;
+}
+
+.drop-pro:hover .drop-one,
+.drop-use:hover .drop-two{
+    opacity: 1;
+}
+
+@media screen and (max-width: 1300px) {
+    .container {
+        width: 675px;
+        height: fit-content;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    main .right h3 {
+        margin-top: 18px;
+    }
+}
+

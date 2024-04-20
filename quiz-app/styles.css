@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(241, 244, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    width: 700px;
+    height: 510px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-box-shadow: 1px 1px 52px -26px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 1px 1px 52px -26px rgba(66, 68, 90, 1);
+    box-shadow: 1px 1px 52px -26px rgba(66, 68, 90, 1);
+}
+
+header {
+    height: 22%;
+    width: 100%;
+    padding-left: 77px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background: linear-gradient(90deg, rgb(60, 180, 222), rgb(113, 230, 234));
+    position: relative;
+    overflow: hidden;
+}
+
+.circle {
+    height: 300px;
+    width: 760px;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.3);
+    position: absolute;
+    left: -200px;
+    top: 14px;
+    background: linear-gradient(90deg, rgb(60, 180, 222), rgba(255, 255, 255, 0.3));
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    z-index: 1;
+    margin-top: -28px;
+}
+
+li {
+    margin-right: 40px;
+}
+
+ul > li > i {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 3px;
+}
+
+.num {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-right: 4px;
+}
+
+.time {
+    font-size: 1.2rem;
+    margin-top: -24px;
+}
+
+.time > i {
+    margin-right: 2px;
+}
+
+article {
+    width: 546px;
+    height: 334px;
+    background-color: white;
+    position: absolute;
+    top: 80px;
+    left: 73px;
+    padding: 22px 22px; 
+    -webkit-box-shadow: 1px 1px 33px -21px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 1px 1px 33px -21px rgba(66, 68, 90, 1);
+    box-shadow: 1px 1px 33px -21px rgba(66, 68, 90, 1); 
+}
+
+article > .question-section {
+    margin-left: 10px;
+}
+
+h5 {
+    color: rgb(165, 179, 188);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: rgb(103, 106, 105);
+}
+
+.options {
+    margin-top: 10px;
+}
+
+.options > div {
+    width: 100%;
+    padding: 6px 12px;
+    display: flex;
+    align-items: baseline;
+    border-radius: 9px;
+    margin-bottom: 2px;
+    color: rgb(103, 106, 105);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.options > div:first-of-type {
+    background: linear-gradient(90deg, rgb(60, 180, 222) 70%, rgb(113, 230, 234));
+    color: white;
+}
+
+.options > div:hover {
+    background: linear-gradient(90deg, rgb(60, 180, 222) 70%, rgb(113, 230, 234));
+    color: white;
+}
+
+p {
+    font-weight: 300;
+}
+
+.letter {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-right: 7px;
+}
+
+.buttons {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+button {
+    border: 1px solid rgb(58, 181, 224);
+    padding: 12px 22px;
+    border-radius: 9px;
+}
+
+.btn-primary {
+    background-color: white;
+    font-weight: 500;
+    color: rgb(58, 181, 224);
+    margin-right: 4px;
+}
+
+.btn-primary > span {
+    font-weight: bold;
+}
+
+.btn-secondary {
+    background-color: rgb(58, 181, 224);
+    color: white;
+}
+
+.btn-secondary > span {
+    font-weight: bold;
+}

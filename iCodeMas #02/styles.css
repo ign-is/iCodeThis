@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(26, 117, 146);
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(19, 27, 36);
+}
+
+section {
+    background-color: rgb(234, 244, 252);
+    width: 62rem;
+    height: 600px;
+    height: 38rem;
+    padding-top: 35px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+section > p {
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+}
+
+h1, section > p  {
+    text-align: center;
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contain-img {
+    cursor: pointer;
+}
+
+.contain-img, .img-display {
+    width: 145px;
+    height: 150px;
+    margin-left: 20px;
+    background-color: white;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.new, .discount {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+    font-weight: 500;
+    width: 48px;
+    height: 28px;
+    text-align: center;
+    padding-top: 3px;
+    font-size: 0.9rem;
+}
+
+.new {
+    background-color: rgb(35, 114, 149);
+}
+
+.discount {
+    background-color: rgb(225, 89, 83);
+}
+
+.contain-img > img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.product-display {
+    display: flex;
+    align-items: center;
+    height: 140px;
+    margin-top: 70px;
+}
+
+.img-display {
+    width: 240px;
+    height: 230px;
+    margin-left: 210px;
+    margin-right: 35px;
+}
+
+.img-display > img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+}
+
+.right  {
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.product-title {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 3px;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.description {
+    color: rgb(84, 98, 102);
+    font-size: 0.9rem;
+    margin-top: 8px;
+}
+.fa-star, .fa-star-half-stroke {
+    color: rgb(255, 204, 98);
+} 
+
+span {
+    font-family: 'Open Sans', sans-serif;  
+    font-weight: 500;
+    margin-right: 4px;
+}
+
+button {
+    background-color: rgb(34, 115, 149);
+    border: none;
+    padding: 10px 12px;
+    color: white;
+    margin-top: auto;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(66, 142, 175);
+}
+
+.images > .contain-img:nth-child(1) {
+    border: 3px solid rgb(35, 114, 149);
+}

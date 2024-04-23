@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* https://unsplash.com/es/fotos/lago-cerca-de-la-montana-bajo-un-cielo-azul-y-nubes-blancas-durante-el-dia-8t05UUZk8K4 */
+
+body {
+    background-color: rgb(47, 54, 81);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.places, .home-work, .right-trips  {
+    background-color: rgb(67, 101, 226);
+    border-radius: 8px;
+    padding: 45px;
+}
+
+section {
+    display: flex;
+    gap: 35px;
+    height: 400px;
+    width: 900px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 480px;
+}
+
+.places {
+    position: relative;
+}
+
+.places .fa-chevron-right {
+    position: absolute;
+    font-size: 1.5rem;
+    top: 80px;
+    right: 40px;
+}
+
+.places, .home-work {
+    height: 50%;
+    width: 100%;
+}
+
+.right-trips {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 500px;
+    height: 410px;
+}
+
+.right-trips h1 {
+    margin-bottom: 10px;
+}
+
+.right-trips h2 {
+    color: rgb(146, 168, 252);
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 24px;
+    border-radius: 4px;
+}
+
+button {
+    border-radius: 4px;
+    margin-right: auto;
+    border: none;
+    padding: 10px 24px;
+    background-color: rgb(100, 131, 246);
+    box-shadow: 0px 10px 60px 6px rgba(52, 79, 175, 01);
+}
+
+button span {
+    font-size: 0.9rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+p {
+    line-height: 22px;
+}
+
+.home-work h1 {
+    margin-bottom: 20px;
+}
+
+.fa-house-chimney, .fa-laptop {
+    margin-right: 6px;
+    margin-bottom: 22px;
+    margin: 4px 6px 22px 0px;
+}
+
+a {
+    color: white;
+    margin-right: 6px;
+}
